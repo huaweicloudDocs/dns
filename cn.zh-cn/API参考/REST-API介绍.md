@@ -1,4 +1,4 @@
-# REST API介绍<a name="ZH-CN_TOPIC_0132761425"></a>
+# REST API介绍<a name="ZH-CN_TOPIC_0037134406"></a>
 
 第三方应用对公有云API的访问需经过签名认证。
 
