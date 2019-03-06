@@ -58,7 +58,7 @@ POST /v2/zones/\{zone\_id\}/associaterouter
     </td>
     <td class="cellrowborder" valign="top" width="17.04%" headers="mcps1.2.5.1.3 "><p id="p9188475171518"><a name="p9188475171518"></a><a name="p9188475171518"></a>object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="49.09%" headers="mcps1.2.5.1.4 "><p id="p36712148171536"><a name="p36712148171536"></a><a name="p36712148171536"></a>需要关联的Router(VPC)，详细信息请参见<a href="#ZH-CN_TOPIC_0057329431__table4448008117179">表3</a>。</p>
+    <td class="cellrowborder" valign="top" width="49.09%" headers="mcps1.2.5.1.4 "><p id="p36712148171536"><a name="p36712148171536"></a><a name="p36712148171536"></a>需要关联的Router(VPC)，详细信息请参见<a href="#table4448008117179">表3</a>。</p>
     </td>
     </tr>
     </tbody>

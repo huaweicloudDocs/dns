@@ -60,7 +60,7 @@ POST /v2/zones/\{zone\_id\}/disassociaterouter
     </td>
     <td class="cellrowborder" valign="top" width="17.599999999999998%" headers="mcps1.2.5.1.3 "><p id="p159862761815"><a name="p159862761815"></a><a name="p159862761815"></a>object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="51.53%" headers="mcps1.2.5.1.4 "><p id="p198200141815"><a name="p198200141815"></a><a name="p198200141815"></a>需要解关联的Router(VPC)，详细信息请参见<a href="#ZH-CN_TOPIC_0057331452__table441624051815">表3</a>。</p>
+    <td class="cellrowborder" valign="top" width="51.53%" headers="mcps1.2.5.1.4 "><p id="p198200141815"><a name="p198200141815"></a><a name="p198200141815"></a>需要解关联的Router(VPC)，详细信息请参见<a href="#table441624051815">表3</a>。</p>
     </td>
     </tr>
     </tbody>
