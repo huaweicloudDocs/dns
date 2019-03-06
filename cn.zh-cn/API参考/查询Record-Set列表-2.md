@@ -6,7 +6,7 @@
 
 ## URI<a name="section60620523"></a>
 
-GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&line=\{line\_name\}&tags=\{tags\}&status=\{status\}&type=\{type\}&name=\{name\}&id=\{id\}&records=\{records\}&sort\_key=\{sort\_key\}&sort\_dir=\{sort\_dir\}
+GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&line=\{line\_name\}&tags=\{tags\}&status=\{status\}&type=\{type\}&name=\{name\}&id=\{id\}&records=\{records\}&sort\_key=\{sort\_key\}&sort\_dir=\{sort\_dir\}&health\_check\_id=\{health\_check\_id\}
 
 参数说明请参见[表1](#table40248354)。
 
@@ -152,6 +152,15 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p116071347131216"><a name="p116071347131216"></a><a name="p116071347131216"></a>查询结果中Record Set列表的排序方式。</p>
 <p id="p199381616161315"><a name="p199381616161315"></a><a name="p199381616161315"></a>取值范围：</p>
 <a name="ul350010149300"></a><a name="ul350010149300"></a><ul id="ul350010149300"><li>desc：降序排序</li><li>asc：升序排序</li></ul>
+</td>
+</tr>
+<tr id="row154931786466"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p1149398124617"><a name="p1149398124617"></a><a name="p1149398124617"></a>health_check_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.17171717171717%" headers="mcps1.2.5.1.2 "><p id="p849417814464"><a name="p849417814464"></a><a name="p849417814464"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.5.1.3 "><p id="p194942819465"><a name="p194942819465"></a><a name="p194942819465"></a>health_check_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p1495148124615"><a name="p1495148124615"></a><a name="p1495148124615"></a>健康检查ID。</p>
 </td>
 </tr>
 </tbody>
@@ -327,6 +336,13 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     <td class="cellrowborder" valign="top" width="48.3%" headers="mcps1.2.4.1.3 "><p id="p67036304152425"><a name="p67036304152425"></a><a name="p67036304152425"></a>健康检查ID。</p>
     </td>
     </tr>
+    <tr id="row0786156134619"><td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.4.1.1 "><p id="p47860618461"><a name="p47860618461"></a><a name="p47860618461"></a>alias_target</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.810000000000002%" headers="mcps1.2.4.1.2 "><p id="p979319654615"><a name="p979319654615"></a><a name="p979319654615"></a>object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="48.3%" headers="mcps1.2.4.1.3 "><p id="p5112227475"><a name="p5112227475"></a><a name="p5112227475"></a>别名记录。详细信息<a href="创建Record-Set-0.md#table11888161342410">表4</a>。</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 
@@ -351,136 +367,143 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     </tbody>
     </table>
 
+    -   响应样例
 
--   响应样例
-
-    ```
-    {
-        "links": {
-            "self": "https://Endpoint/v2.1/recordsets"
-        },
-        "recordsets": [
-            {
-                "id": "2c9eb155587194ec01587224c9f9014a",
-                "name": "example.com.",
-                "type": "SOA",
-                "ttl": 300,
-                "records": [
-                    "ns1.hotrot.de. xx.example.com. (1 7200 900 1209600 300)"
-                ],
-                "status": "ACTIVE",
-                "links": {
-                    "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587194ec01587224c9f9014a"
-                },
-                "zone_id": "2c9eb155587194ec01587224c9f90149",
-                "zone_name": "example.com.",
-                "created_at": "2016-11-17T11:56:03.439",
-                "updated_at": "2016-11-17T11:56:06.439",
-                "default": true,
-                "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
-                "line": "default_view",
-                "weight": 1,
-                "health_check_id":null
+        ```
+        {
+            "links": {
+                "self": "https://Endpoint/v2.1/recordsets"
             },
-            {
-                "id": "2c9eb155587194ec01587224c9f9014c",
-                "name": "example.com.",
-                "type": "NS",
-                "ttl": 172800,
-                "records": [
-                    "ns2.hotrot.de.",
-                    "ns1.hotrot.de."
-                ],
-                "status": "ACTIVE",
-                "links": {
-                    "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587194ec01587224c9f9014c"
+            "recordsets": [
+                {
+                    "id": "2c9eb155587194ec01587224c9f9014a",
+                    "name": "example.com.",
+                    "type": "SOA",
+                    "ttl": 300,
+                    "records": [
+                        "ns1.hotrot.de. xx.example.com. (1 7200 900 1209600 300)"
+                    ],
+                    "status": "ACTIVE",
+                    "links": {
+                        "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587194ec01587224c9f9014a"
+                    },
+                    "alias_target":null,
+                    "zone_id": "2c9eb155587194ec01587224c9f90149",
+                    "zone_name": "example.com.",
+                    "created_at": "2016-11-17T11:56:03.439",
+                    "updated_at": "2016-11-17T11:56:06.439",
+                    "default": true,
+                    "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
+                    "line": "default_view",
+                    "weight": 1,
+                    "health_check_id":null
                 },
-                "zone_id": "2c9eb155587194ec01587224c9f90149",
-                "zone_name": "example.com.",
-                "created_at": "2016-11-17T11:56:03.439",
-                "updated_at": "2016-11-17T11:56:06.439",
-                "default": true,
-                "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
-                "line": "default_view",
-                "weight": 1,
-                "health_check_id":null
-            },
-            {
-                "id": "2c9eb155587228570158722996ca0002",
-                "name": "example.org.",
-                "type": "SOA",
-                "ttl": 300,
-                "records": [
-                    "ns1.hotrot.de. xx.example.org. (1 7200 900 1209600 300)"
-                ],
-                "status": "ACTIVE",
-                "links": {
-                    "self": "https://Endpoint/v2.1/zones/2c9eb155587228570158722996c50001/recordsets/2c9eb155587228570158722996ca0002"
+                {
+                    "id": "2c9eb155587194ec01587224c9f9014c",
+                    "name": "example.com.",
+                    "type": "NS",
+                    "ttl": 172800,
+                    "records": [
+                        "ns2.hotrot.de.",
+                        "ns1.hotrot.de."
+                    ],
+                    "status": "ACTIVE",
+                    "links": {
+                        "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587194ec01587224c9f9014c"
+                    },
+                    "alias_target":null,
+                    "zone_id": "2c9eb155587194ec01587224c9f90149",
+                    "zone_name": "example.com.",
+                    "created_at": "2016-11-17T11:56:03.439",
+                    "updated_at": "2016-11-17T11:56:06.439",
+                    "default": true,
+                    "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
+                    "line": "default_view",
+                    "weight": 1,
+                    "health_check_id":null
                 },
-                "zone_id": "2c9eb155587228570158722996c50001",
-                "zone_name": "example.org.",
-                "created_at": "2016-11-17T12:01:17.996",
-                "updated_at": "2016-11-17T12:56:06.439",
-                "default": true,
-                "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
-                "line": "xxx",
-                "weight": 1,
-                "health_check_id":null
-            },
-            {
-                "id": "2c9eb155587228570158722996ca0004",
-                "name": "example.org.",
-                "type": "NS",
-                "ttl": 172800,
-                "records": [
-                    "ns2.hotrot.de.",
-                    "ns1.hotrot.de."
-                ],
-                "status": "ACTIVE",
-                "links": {
-                    "self": "https://Endpoint/v2.1/zones/2c9eb155587228570158722996c50001/recordsets/2c9eb155587228570158722996ca0004"
+                {
+                    "id": "2c9eb155587228570158722996ca0002",
+                    "name": "example.org.",
+                    "type": "SOA",
+                    "ttl": 300,
+                    "records": [
+                        "ns1.hotrot.de. xx.example.org. (1 7200 900 1209600 300)"
+                    ],
+                    "status": "ACTIVE",
+                    "links": {
+                        "self": "https://Endpoint/v2.1/zones/2c9eb155587228570158722996c50001/recordsets/2c9eb155587228570158722996ca0002"
+                    },
+                    "alias_target":null,
+                    "zone_id": "2c9eb155587228570158722996c50001",
+                    "zone_name": "example.org.",
+                    "created_at": "2016-11-17T12:01:17.996",
+                    "updated_at": "2016-11-17T12:56:06.439",
+                    "default": true,
+                    "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
+                    "line": "xxx",
+                    "weight": 1,
+                    "health_check_id":null
                 },
-                "zone_id": "2c9eb155587228570158722996c50001",
-                "zone_name": "example.org.",
-                "created_at": "2016-11-17T12:01:17.996",
-                "updated_at": "2016-11-17T12:56:06.439",
-                "default": false,
-                "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
-                "line": "xxx",
-                "weight": 1,
-                "health_check_id":null
-            },
-            {
-                "id": "2c9eb155587228570158722b6ac30007",
-                "name": "www.example.com.",
-                "description": "This is an example record set.",
-                "type": "A",
-                "ttl": 300,
-                "records": [
-                    "192.168.10.2",
-                    "192.168.10.1"
-                ],
-                "status": "ACTIVE",
-                "links": {
-                    "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587228570158722b6ac30007"
+                {
+                    "id": "2c9eb155587228570158722996ca0004",
+                    "name": "example.org.",
+                    "type": "NS",
+                    "ttl": 172800,
+                    "records": [
+                        "ns2.hotrot.de.",
+                        "ns1.hotrot.de."
+                    ],
+                    "status": "ACTIVE",
+                    "links": {
+                        "self": "https://Endpoint/v2.1/zones/2c9eb155587228570158722996c50001/recordsets/2c9eb155587228570158722996ca0004"
+                    },
+                    "alias_target":null,
+                    "zone_id": "2c9eb155587228570158722996c50001",
+                    "zone_name": "example.org.",
+                    "created_at": "2016-11-17T12:01:17.996",
+                    "updated_at": "2016-11-17T12:56:06.439",
+                    "default": false,
+                    "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
+                    "line": "xxx",
+                    "weight": 1,
+                    "health_check_id":null
                 },
-                "zone_id": "2c9eb155587194ec01587224c9f90149",
-                "zone_name": "example.com.",
-                "created_at": "2016-11-17T12:03:17.827",
-                "updated_at": "2016-11-17T12:56:06.439",
-                "default": false,
-                "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
-                "line": "default_view",
-                "weight": 1,
-                "health_check_id":null
+                {
+                    "id": "2c9eb155587228570158722b6ac30007",
+                    "name": "www.example.com.",
+                    "description": "This is an example record set.",
+                    "type": "A",
+                    "ttl": 300,
+                    "records": [
+                        "abc.bcd.com."
+                    ],
+                    "status": "ACTIVE",
+                    "links": {
+                        "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587228570158722b6ac30007"
+                    },
+                    "alias_target":{
+                          "resource_type": "cloudsite",
+                         "resource_domain_name": "2018122216193840mjysxoqn.cname.ysjianzhan.cn."
+                    },
+                    "zone_id": "2c9eb155587194ec01587224c9f90149",
+                    "zone_name": "example.com.",
+                    "created_at": "2016-11-17T12:03:17.827",
+                    "updated_at": "2016-11-17T12:56:06.439",
+                    "default": false,
+                    "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
+                    "line": "default_view",
+                    "weight": 1,
+                    "health_check_id":null
+                }
+            ],
+            "metadata": {
+                "total_count": 5
             }
-        ],
-        "metadata": {
-            "total_count": 5
         }
-    }
-    
-    ```
+        
+        ```
+
 
 
 ## 返回值<a name="section34728767"></a>

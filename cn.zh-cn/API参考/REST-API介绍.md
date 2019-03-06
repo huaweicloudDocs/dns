@@ -1,12 +1,12 @@
-# REST API介绍<a name="ZH-CN_TOPIC_0037134406"></a>
+# REST API介绍<a name="zh-cn_topic_0037134406"></a>
 
 第三方应用对公有云API的访问需经过签名认证。
 
 公有云API符合RESTful API的设计理论。
 
-REST从资源的角度来观察整个网络，提供创建、查询、更新、删掉等方法访问服务的资源。
+REST从资源的角度来观察整个网络，提供创建、查询、更新、删除等方法访问服务的资源。
 
-REST API请求/响应对可以分为如下部分：
+REST API请求/响应可以分为如下部分：
 
 -   请求URI
 -   请求消息头
@@ -20,7 +20,7 @@ REST API请求/响应对可以分为如下部分：
 
 **\{URI-scheme\}://\{Endpoint\}/\{resource-path\}?\{query-string\}**
 
-尽管请求URI包含在请求消息头中，但大多数语言或框架都要求您从请求消息中单独传递它，所有我们在此单独拿出来强调。
+尽管请求URI包含在请求消息头中，但大多数语言或框架都要求您从请求消息中单独传递它，所以在此单独强调。
 
 **表 1**  URI中的参数说明
 
@@ -137,7 +137,7 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 <td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0121682347_p48686133312"><a name="zh-cn_topic_0121682347_p48686133312"></a><a name="zh-cn_topic_0121682347_p48686133312"></a>否</p>
 <p id="zh-cn_topic_0121682347_p186814103317"><a name="zh-cn_topic_0121682347_p186814103317"></a><a name="zh-cn_topic_0121682347_p186814103317"></a>使用AK/SK认证时该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0121682347_p10868121143318"><a name="zh-cn_topic_0121682347_p10868121143318"></a><a name="zh-cn_topic_0121682347_p10868121143318"></a>SDK-HMAC-SHA256 Credential=ZIRRKMTWPTQFQI1WKNKB/20150907//ec2/sdk_request, SignedHeaders=content-type;host;x-sdk-date, Signature=55741b610f3c9fa3ae40b5a8021ebf7ebc2a28a603fc62d25cb3bfe6608e1994</p>
+<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0121682347_p10868121143318"><a name="zh-cn_topic_0121682347_p10868121143318"></a><a name="zh-cn_topic_0121682347_p10868121143318"></a>SDK-HMAC-SHA256 Credential=ZIRRKMTWPTQFQI1WKNKB/20150907//ec2/sdk_request, SignedHeaders=content-type;host;x-sdk-date, Signature=55741b6...e1994</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0121682347_row1286861153311"><td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0121682347_p2086813163316"><a name="zh-cn_topic_0121682347_p2086813163316"></a><a name="zh-cn_topic_0121682347_p2086813163316"></a>Host</p>
@@ -189,7 +189,8 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 <td class="cellrowborder" valign="top" width="20.119999999999997%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0121682347_p4868514338"><a name="zh-cn_topic_0121682347_p4868514338"></a><a name="zh-cn_topic_0121682347_p4868514338"></a>否</p>
 <p id="zh-cn_topic_0121682347_p986818114339"><a name="zh-cn_topic_0121682347_p986818114339"></a><a name="zh-cn_topic_0121682347_p986818114339"></a>使用Token认证时该字段必选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0121682347_p168689113318"><a name="zh-cn_topic_0121682347_p168689113318"></a><a name="zh-cn_topic_0121682347_p168689113318"></a>注：以下仅为Token示例片段MIIPAgYJKoZIhvcNAQcCoIIO8zCCDu8CAQExDTALBglghkgBZQMEAgEwgg1QBgkqhkiG9w0BBwGggg1BBIINPXsidG9rZ</p>
+<td class="cellrowborder" valign="top" width="33.650000000000006%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0121682347_p27152505302"><a name="zh-cn_topic_0121682347_p27152505302"></a><a name="zh-cn_topic_0121682347_p27152505302"></a>注：以下仅为Token示例片段</p>
+<p id="zh-cn_topic_0121682347_p168689113318"><a name="zh-cn_topic_0121682347_p168689113318"></a><a name="zh-cn_topic_0121682347_p168689113318"></a>MIIPAgYJKoZIhvcNAQcCo...ggg1BBIINPXsidG9rZ</p>
 </td>
 </tr>
 </tbody>

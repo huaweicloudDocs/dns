@@ -59,7 +59,7 @@ GET /v2/zones/\{zone\_id\}/nameservers
     <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p2472241219347"><a name="p2472241219347"></a><a name="p2472241219347"></a><em id="i26985596193639"><a name="i26985596193639"></a><a name="i26985596193639"></a>列表数据结构</em></p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="p64387025171923"><a name="p64387025171923"></a><a name="p64387025171923"></a>name server列表对象。</p>
-    <p id="p60737358161124"><a name="p60737358161124"></a><a name="p60737358161124"></a>nameservers参数说明，请参见<a href="#ZH-CN_TOPIC_0057342901__table3847447219326">表3</a>。</p>
+    <p id="p60737358161124"><a name="p60737358161124"></a><a name="p60737358161124"></a>nameservers参数说明，请参见<a href="#table3847447219326">表3</a>。</p>
     </td>
     </tr>
     </tbody>

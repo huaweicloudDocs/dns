@@ -178,6 +178,13 @@ GET /v2.1/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="48.3%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0082840627_p4556711715221"><a name="zh-cn_topic_0082840627_p4556711715221"></a><a name="zh-cn_topic_0082840627_p4556711715221"></a>健康检查ID。</p>
     </td>
     </tr>
+    <tr id="zh-cn_topic_0082840627_row67748315437"><td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0082840627_p1777583174312"><a name="zh-cn_topic_0082840627_p1777583174312"></a><a name="zh-cn_topic_0082840627_p1777583174312"></a>alias_target</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.810000000000002%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0082840627_p477512344313"><a name="zh-cn_topic_0082840627_p477512344313"></a><a name="zh-cn_topic_0082840627_p477512344313"></a>object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="48.3%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0082840627_p7775113154320"><a name="zh-cn_topic_0082840627_p7775113154320"></a><a name="zh-cn_topic_0082840627_p7775113154320"></a>别名记录。详细信息请参见<a href="创建Record-Set-0.md#table11888161342410">表4</a>。</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 
@@ -199,6 +206,7 @@ GET /v2.1/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
         "links": {
             "self": "https://Endpoint/v2.1/zones/2c9eb155587194ec01587224c9f90149/recordsets/2c9eb155587228570158722b6ac30007"
         },
+        "alias_target":null,
         "zone_id": "2c9eb155587194ec01587224c9f90149",
         "zone_name": "example.com.",
         "created_at": "2016-11-17T12:03:17.827",
