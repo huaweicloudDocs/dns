@@ -84,9 +84,8 @@ PUT  /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p5792332173211"><a name="p5792332173211"></a><a name="p5792332173211"></a>List&lt;string&gt;</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p8321575173211"><a name="p8321575173211"></a><a name="p8321575173211"></a>不同Type对应的Value值规则不同。</p>
-    <p id="p813988173211"><a name="p813988173211"></a><a name="p813988173211"></a>如Type为AAAA类型，</p>
-    <p id="p24871834173211"><a name="p24871834173211"></a><a name="p24871834173211"></a>Value是域名对应的IPv6地址列表。</p>
-    <p id="p59053902173211"><a name="p59053902173211"></a><a name="p59053902173211"></a>具体参见《云解析服务用户指南》中“管理 &gt; 管理记录集”章节的“新增记录集”提供的说明及请求样例。</p>
+    <p id="p813988173211"><a name="p813988173211"></a><a name="p813988173211"></a>如Type为AAAA类型，Value是域名对应的IPv6地址列表。</p>
+    <p id="p59053902173211"><a name="p59053902173211"></a><a name="p59053902173211"></a>具体参见《云解析服务用户指南》中“管理记录集”章节提供的说明及请求样例。</p>
     </td>
     </tr>
     </tbody>
