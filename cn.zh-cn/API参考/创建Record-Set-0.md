@@ -101,6 +101,7 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p8321575173211"><a name="p8321575173211"></a><a name="p8321575173211"></a>不同Type对应的Value值规则不同。</p>
     <p id="p813988173211"><a name="p813988173211"></a><a name="p813988173211"></a>如Type为AAAA类型，Value是域名对应的IPv6地址列表。</p>
     <p id="p59053902173211"><a name="p59053902173211"></a><a name="p59053902173211"></a>具体参见《云解析服务用户指南》中“管理记录集”章节的说明及请求样例。</p>
+    <p id="p178785222384"><a name="p178785222384"></a><a name="p178785222384"></a>别名记录时，该值不用填。</p>
     </td>
     </tr>
     <tr id="row19347487142432"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p19620443142437"><a name="p19620443142437"></a><a name="p19620443142437"></a>line</p>
@@ -110,6 +111,15 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p30969417142432"><a name="p30969417142432"></a><a name="p30969417142432"></a>string</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p25494838142432"><a name="p25494838142432"></a><a name="p25494838142432"></a>解析线路，默认为默认线路。请参见<a href="解析线路类型.md">解析线路类型</a>。</p>
+    </td>
+    </tr>
+    <tr id="row46318244195034"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p17706388195034"><a name="p17706388195034"></a><a name="p17706388195034"></a>tags</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p24931324195034"><a name="p24931324195034"></a><a name="p24931324195034"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p6171377195034"><a name="p6171377195034"></a><a name="p6171377195034"></a>List&lt;tag&gt;</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p30119514195034"><a name="p30119514195034"></a><a name="p30119514195034"></a>资源标签。详细信息请参见<a href="#table9752964195025">表3</a>。</p>
     </td>
     </tr>
     <tr id="row3778990815215"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p3329183915215"><a name="p3329183915215"></a><a name="p3329183915215"></a>weight</p>
@@ -124,6 +134,15 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <p id="p11866386153334"><a name="p11866386153334"></a><a name="p11866386153334"></a>取值范围：0~100</p>
     </td>
     </tr>
+    <tr id="row165518115379"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p16554113713"><a name="p16554113713"></a><a name="p16554113713"></a>alias_target</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p865517103714"><a name="p865517103714"></a><a name="p865517103714"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p46551414372"><a name="p46551414372"></a><a name="p46551414372"></a>object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p365512111377"><a name="p365512111377"></a><a name="p365512111377"></a>别名记录。详细信息请参见<a href="#table11888161342410">表4</a>。</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 
@@ -132,9 +151,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <a name="table9752964195025"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0057310891_row15361836112436"><th class="cellrowborder" valign="top" width="15.21%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0057310891_p58707511112436"><a name="zh-cn_topic_0057310891_p58707511112436"></a><a name="zh-cn_topic_0057310891_p58707511112436"></a>名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="15.58%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0057310891_p57687928112436"><a name="zh-cn_topic_0057310891_p57687928112436"></a><a name="zh-cn_topic_0057310891_p57687928112436"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="15.57%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0057310891_p57687928112436"><a name="zh-cn_topic_0057310891_p57687928112436"></a><a name="zh-cn_topic_0057310891_p57687928112436"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="16.27%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0057310891_p42210623112436"><a name="zh-cn_topic_0057310891_p42210623112436"></a><a name="zh-cn_topic_0057310891_p42210623112436"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="16.28%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0057310891_p42210623112436"><a name="zh-cn_topic_0057310891_p42210623112436"></a><a name="zh-cn_topic_0057310891_p42210623112436"></a>参数类型</p>
     </th>
     <th class="cellrowborder" valign="top" width="52.94%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0057310891_p63617265112436"><a name="zh-cn_topic_0057310891_p63617265112436"></a><a name="zh-cn_topic_0057310891_p63617265112436"></a>说明</p>
     </th>
@@ -142,20 +161,55 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </thead>
     <tbody><tr id="zh-cn_topic_0057310891_row35684479112436"><td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0057310891_p13313439112530"><a name="zh-cn_topic_0057310891_p13313439112530"></a><a name="zh-cn_topic_0057310891_p13313439112530"></a>key</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15.58%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p50150432112436"><a name="zh-cn_topic_0057310891_p50150432112436"></a><a name="zh-cn_topic_0057310891_p50150432112436"></a>是</p>
+    <td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p50150432112436"><a name="zh-cn_topic_0057310891_p50150432112436"></a><a name="zh-cn_topic_0057310891_p50150432112436"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="16.27%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p35653193112436"><a name="zh-cn_topic_0057310891_p35653193112436"></a><a name="zh-cn_topic_0057310891_p35653193112436"></a>string</p>
+    <td class="cellrowborder" valign="top" width="16.28%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p35653193112436"><a name="zh-cn_topic_0057310891_p35653193112436"></a><a name="zh-cn_topic_0057310891_p35653193112436"></a>string</p>
     </td>
     <td class="cellrowborder" valign="top" width="52.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0057310891_p48921437201850"><a name="zh-cn_topic_0057310891_p48921437201850"></a><a name="zh-cn_topic_0057310891_p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”,“*”,“&lt;”,“&gt;”,“\”,“,”,“|”,“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0057310891_row20048002112436"><td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0057310891_p66095544112533"><a name="zh-cn_topic_0057310891_p66095544112533"></a><a name="zh-cn_topic_0057310891_p66095544112533"></a>value</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15.58%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p1570770112436"><a name="zh-cn_topic_0057310891_p1570770112436"></a><a name="zh-cn_topic_0057310891_p1570770112436"></a>是</p>
+    <td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p1570770112436"><a name="zh-cn_topic_0057310891_p1570770112436"></a><a name="zh-cn_topic_0057310891_p1570770112436"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="16.27%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p60123528112436"><a name="zh-cn_topic_0057310891_p60123528112436"></a><a name="zh-cn_topic_0057310891_p60123528112436"></a>string</p>
+    <td class="cellrowborder" valign="top" width="16.28%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p60123528112436"><a name="zh-cn_topic_0057310891_p60123528112436"></a><a name="zh-cn_topic_0057310891_p60123528112436"></a>string</p>
     </td>
     <td class="cellrowborder" valign="top" width="52.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0057310891_p61714725112922"><a name="zh-cn_topic_0057310891_p61714725112922"></a><a name="zh-cn_topic_0057310891_p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”,“*”,“&lt;”,“&gt;”,“\”,“,”,“|”,“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 4**  alias\_target对象参数说明
+
+    <a name="table11888161342410"></a>
+    <table><thead align="left"><tr id="row15361836112436"><th class="cellrowborder" valign="top" width="15.21%" id="mcps1.2.5.1.1"><p id="p58707511112436"><a name="p58707511112436"></a><a name="p58707511112436"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="15.57%" id="mcps1.2.5.1.2"><p id="p57687928112436"><a name="p57687928112436"></a><a name="p57687928112436"></a>是否必选</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="16.28%" id="mcps1.2.5.1.3"><p id="p42210623112436"><a name="p42210623112436"></a><a name="p42210623112436"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="52.94%" id="mcps1.2.5.1.4"><p id="p63617265112436"><a name="p63617265112436"></a><a name="p63617265112436"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row35684479112436"><td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.1 "><p id="p13313439112530"><a name="p13313439112530"></a><a name="p13313439112530"></a>resource_type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.2.5.1.2 "><p id="p50150432112436"><a name="p50150432112436"></a><a name="p50150432112436"></a>是</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="16.28%" headers="mcps1.2.5.1.3 "><p id="p35653193112436"><a name="p35653193112436"></a><a name="p35653193112436"></a>string</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.94%" headers="mcps1.2.5.1.4 "><p id="p48921437201850"><a name="p48921437201850"></a><a name="p48921437201850"></a>资源服务类型。支持别名记录的服务。</p>
+    <p id="p899817488294"><a name="p899817488294"></a><a name="p899817488294"></a>取值：cloudsite，waf</p>
+    </td>
+    </tr>
+    <tr id="row20048002112436"><td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.1 "><p id="p66095544112533"><a name="p66095544112533"></a><a name="p66095544112533"></a>resource_domain_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.2.5.1.2 "><p id="p1570770112436"><a name="p1570770112436"></a><a name="p1570770112436"></a>是</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="16.28%" headers="mcps1.2.5.1.3 "><p id="p60123528112436"><a name="p60123528112436"></a><a name="p60123528112436"></a>string</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.94%" headers="mcps1.2.5.1.4 "><p id="p61714725112922"><a name="p61714725112922"></a><a name="p61714725112922"></a>对应服务下的域名。由各服务提供。</p>
     </td>
     </tr>
     </tbody>
@@ -300,12 +354,28 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
         ```
 
 
+    -   A类型（alias）
+
+        ```
+        {
+            "name": "www.example.com.",
+            "description": "This is an example record set.",
+            "type": "A",
+            "ttl": 3600,
+            "alias_target": {
+                         "resource_type": "cloudsite",
+                         "resource_domain_name": "2018122211053616ucavdwdh.cname.ysjianzhan.cn."
+                    }
+        }
+        ```
+
+
 
 ## 响应<a name="section40090803161031"></a>
 
 -   参数说明
 
-    **表 4**  响应样例的参数说明
+    **表 5**  响应样例的参数说明
 
     <a name="table7669703175323"></a>
     <table><thead align="left"><tr id="row52466955175323"><th class="cellrowborder" valign="top" width="27.889999999999997%" id="mcps1.2.4.1.1"><p id="p2769858175323"><a name="p2769858175323"></a><a name="p2769858175323"></a>名称</p>
@@ -435,6 +505,13 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <td class="cellrowborder" valign="top" width="23.810000000000002%" headers="mcps1.2.4.1.2 "><p id="p5524385315221"><a name="p5524385315221"></a><a name="p5524385315221"></a>string</p>
     </td>
     <td class="cellrowborder" valign="top" width="48.3%" headers="mcps1.2.4.1.3 "><p id="p4556711715221"><a name="p4556711715221"></a><a name="p4556711715221"></a>健康检查ID。</p>
+    </td>
+    </tr>
+    <tr id="row67748315437"><td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.4.1.1 "><p id="p1777583174312"><a name="p1777583174312"></a><a name="p1777583174312"></a>alias_target</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.810000000000002%" headers="mcps1.2.4.1.2 "><p id="p477512344313"><a name="p477512344313"></a><a name="p477512344313"></a>object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="48.3%" headers="mcps1.2.4.1.3 "><p id="p7775113154320"><a name="p7775113154320"></a><a name="p7775113154320"></a>别名记录。详细信息请参见<a href="#table11888161342410">表4</a>。</p>
     </td>
     </tr>
     </tbody>

@@ -1,6 +1,11 @@
 # 获取项目ID<a name="ZH-CN_TOPIC_0132758549"></a>
 
-在调用接口的时候，部分URL中需要填入项目ID，所以需要先在管理控制台上获取到项目ID。项目ID获取步骤如下：
+在调用接口的时候，部分URL中需要填入项目ID，所以需要先在管理控制台上获取到项目ID。
+
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>您也可以通过调用IAM接口的方式获取项目ID，请参考[查询指定条件下的项目信息](https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845625.html)。  
+
+项目ID获取步骤如下：
 
 1.  注册并登录管理控制台。
 2.  单击用户名，在下拉列表中单击“基本信息”。

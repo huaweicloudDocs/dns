@@ -84,7 +84,7 @@ POST /v2/zones
     </td>
     <td class="cellrowborder" valign="top" width="12.730000000000002%" headers="mcps1.2.5.1.3 "><p id="p22344380171650"><a name="p22344380171650"></a><a name="p22344380171650"></a>object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="57.2%" headers="mcps1.2.5.1.4 "><p id="p65064378171650"><a name="p65064378171650"></a><a name="p65064378171650"></a>Private zone关联的Router(VPC)信息，详细信息请参见<a href="#ZH-CN_TOPIC_0057311027__table4448008117179">表2</a>。</p>
+    <td class="cellrowborder" valign="top" width="57.2%" headers="mcps1.2.5.1.4 "><p id="p65064378171650"><a name="p65064378171650"></a><a name="p65064378171650"></a>Private zone关联的Router(VPC)信息，详细信息请参见<a href="#table4448008117179">表2</a>。</p>
     </td>
     </tr>
     <tr id="row3748545412107"><td class="cellrowborder" valign="top" width="16.330000000000002%" headers="mcps1.2.5.1.1 "><p id="p6123289312107"><a name="p6123289312107"></a><a name="p6123289312107"></a>tags</p>
@@ -93,7 +93,7 @@ POST /v2/zones
     </td>
     <td class="cellrowborder" valign="top" width="12.730000000000002%" headers="mcps1.2.5.1.3 "><p id="p3535651512107"><a name="p3535651512107"></a><a name="p3535651512107"></a>tag</p>
     </td>
-    <td class="cellrowborder" valign="top" width="57.2%" headers="mcps1.2.5.1.4 "><p id="p4530543812107"><a name="p4530543812107"></a><a name="p4530543812107"></a>资源标签。详细信息请参见请参见<a href="#ZH-CN_TOPIC_0057311027__table19530794112436">表3</a>。</p>
+    <td class="cellrowborder" valign="top" width="57.2%" headers="mcps1.2.5.1.4 "><p id="p4530543812107"><a name="p4530543812107"></a><a name="p4530543812107"></a>资源标签。详细信息请参见请参见<a href="#table19530794112436">表3</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -139,9 +139,9 @@ POST /v2/zones
     <a name="table19530794112436"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0057310891_row15361836112436"><th class="cellrowborder" valign="top" width="15.21%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0057310891_p58707511112436"><a name="zh-cn_topic_0057310891_p58707511112436"></a><a name="zh-cn_topic_0057310891_p58707511112436"></a>名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="15.58%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0057310891_p57687928112436"><a name="zh-cn_topic_0057310891_p57687928112436"></a><a name="zh-cn_topic_0057310891_p57687928112436"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="15.57%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0057310891_p57687928112436"><a name="zh-cn_topic_0057310891_p57687928112436"></a><a name="zh-cn_topic_0057310891_p57687928112436"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="16.27%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0057310891_p42210623112436"><a name="zh-cn_topic_0057310891_p42210623112436"></a><a name="zh-cn_topic_0057310891_p42210623112436"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="16.28%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0057310891_p42210623112436"><a name="zh-cn_topic_0057310891_p42210623112436"></a><a name="zh-cn_topic_0057310891_p42210623112436"></a>参数类型</p>
     </th>
     <th class="cellrowborder" valign="top" width="52.94%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0057310891_p63617265112436"><a name="zh-cn_topic_0057310891_p63617265112436"></a><a name="zh-cn_topic_0057310891_p63617265112436"></a>说明</p>
     </th>
@@ -149,18 +149,18 @@ POST /v2/zones
     </thead>
     <tbody><tr id="zh-cn_topic_0057310891_row35684479112436"><td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0057310891_p13313439112530"><a name="zh-cn_topic_0057310891_p13313439112530"></a><a name="zh-cn_topic_0057310891_p13313439112530"></a>key</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15.58%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p50150432112436"><a name="zh-cn_topic_0057310891_p50150432112436"></a><a name="zh-cn_topic_0057310891_p50150432112436"></a>是</p>
+    <td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p50150432112436"><a name="zh-cn_topic_0057310891_p50150432112436"></a><a name="zh-cn_topic_0057310891_p50150432112436"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="16.27%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p35653193112436"><a name="zh-cn_topic_0057310891_p35653193112436"></a><a name="zh-cn_topic_0057310891_p35653193112436"></a>string</p>
+    <td class="cellrowborder" valign="top" width="16.28%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p35653193112436"><a name="zh-cn_topic_0057310891_p35653193112436"></a><a name="zh-cn_topic_0057310891_p35653193112436"></a>string</p>
     </td>
     <td class="cellrowborder" valign="top" width="52.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0057310891_p48921437201850"><a name="zh-cn_topic_0057310891_p48921437201850"></a><a name="zh-cn_topic_0057310891_p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”,“*”,“&lt;”,“&gt;”,“\”,“,”,“|”,“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0057310891_row20048002112436"><td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0057310891_p66095544112533"><a name="zh-cn_topic_0057310891_p66095544112533"></a><a name="zh-cn_topic_0057310891_p66095544112533"></a>value</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15.58%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p1570770112436"><a name="zh-cn_topic_0057310891_p1570770112436"></a><a name="zh-cn_topic_0057310891_p1570770112436"></a>是</p>
+    <td class="cellrowborder" valign="top" width="15.57%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0057310891_p1570770112436"><a name="zh-cn_topic_0057310891_p1570770112436"></a><a name="zh-cn_topic_0057310891_p1570770112436"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="16.27%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p60123528112436"><a name="zh-cn_topic_0057310891_p60123528112436"></a><a name="zh-cn_topic_0057310891_p60123528112436"></a>string</p>
+    <td class="cellrowborder" valign="top" width="16.28%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0057310891_p60123528112436"><a name="zh-cn_topic_0057310891_p60123528112436"></a><a name="zh-cn_topic_0057310891_p60123528112436"></a>string</p>
     </td>
     <td class="cellrowborder" valign="top" width="52.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0057310891_p61714725112922"><a name="zh-cn_topic_0057310891_p61714725112922"></a><a name="zh-cn_topic_0057310891_p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”,“*”,“&lt;”,“&gt;”,“\”,“,”,“|”,“/”，且首尾字符不能为空格。</p>
     </td>
