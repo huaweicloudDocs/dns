@@ -1,4 +1,4 @@
-# 查询公网Zone的名称服务器<a name="ZH-CN_TOPIC_0057343056"></a>
+# 查询公网Zone的名称服务器<a name="zh-cn_topic_0057343056"></a>
 
 ## 功能介绍<a name="section55898385"></a>
 
@@ -27,9 +27,10 @@ GET /v2/zones/\{zone\_id\}/nameservers
 </td>
 <td class="cellrowborder" valign="top" width="15.459999999999999%" headers="mcps1.2.5.1.2 "><p id="p27139175"><a name="p27139175"></a><a name="p27139175"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.53%" headers="mcps1.2.5.1.3 "><p id="p50789581"><a name="p50789581"></a><a name="p50789581"></a>string</p>
+<td class="cellrowborder" valign="top" width="17.53%" headers="mcps1.2.5.1.3 "><p id="p50789581"><a name="p50789581"></a><a name="p50789581"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="51.55%" headers="mcps1.2.5.1.4 "><p id="p20315403"><a name="p20315403"></a><a name="p20315403"></a>待查询zone的ID。</p>
+<p id="p1669018482183"><a name="p1669018482183"></a><a name="p1669018482183"></a>可以通过<a href="查询公网Zone列表.md">查询公网Zone列表</a>获取。</p>
 </td>
 </tr>
 </tbody>
@@ -37,7 +38,18 @@ GET /v2/zones/\{zone\_id\}/nameservers
 
 ## 请求<a name="section31475357"></a>
 
-无
+-   请求参数
+
+    无
+
+-   请求样例
+
+    查询域名Zone ID为“2c9eb155587194ec01587224c9f90149”的名称服务器列表。
+
+    ```
+    GET https://{DNS_Endpoint}/v2/zones/2c9eb155587194ec01587224c9f90149/nameservers
+    ```
+
 
 ## 响应<a name="section14842765"></a>
 
@@ -48,18 +60,17 @@ GET /v2/zones/\{zone\_id\}/nameservers
     <a name="table2534644119347"></a>
     <table><thead align="left"><tr id="row2134485619347"><th class="cellrowborder" valign="top" width="18.47%" id="mcps1.2.4.1.1"><p id="p5121175619347"><a name="p5121175619347"></a><a name="p5121175619347"></a>名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="21.59%" id="mcps1.2.4.1.2"><p id="p5451156519347"><a name="p5451156519347"></a><a name="p5451156519347"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="19.040000000000003%" id="mcps1.2.4.1.2"><p id="p5451156519347"><a name="p5451156519347"></a><a name="p5451156519347"></a>参数类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="59.940000000000005%" id="mcps1.2.4.1.3"><p id="p5336061019347"><a name="p5336061019347"></a><a name="p5336061019347"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="62.49%" id="mcps1.2.4.1.3"><p id="p5336061019347"><a name="p5336061019347"></a><a name="p5336061019347"></a>说明</p>
     </th>
     </tr>
     </thead>
     <tbody><tr id="row2724213119347"><td class="cellrowborder" valign="top" width="18.47%" headers="mcps1.2.4.1.1 "><p id="p5912903419347"><a name="p5912903419347"></a><a name="p5912903419347"></a>nameservers</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.59%" headers="mcps1.2.4.1.2 "><p id="p2472241219347"><a name="p2472241219347"></a><a name="p2472241219347"></a><em id="i26985596193639"><a name="i26985596193639"></a><a name="i26985596193639"></a>列表数据结构</em></p>
+    <td class="cellrowborder" valign="top" width="19.040000000000003%" headers="mcps1.2.4.1.2 "><p id="p2472241219347"><a name="p2472241219347"></a><a name="p2472241219347"></a>Array of objects</p>
     </td>
-    <td class="cellrowborder" valign="top" width="59.940000000000005%" headers="mcps1.2.4.1.3 "><p id="p64387025171923"><a name="p64387025171923"></a><a name="p64387025171923"></a>name server列表对象。</p>
-    <p id="p60737358161124"><a name="p60737358161124"></a><a name="p60737358161124"></a>nameservers参数说明，请参见<a href="#table3847447219326">表3</a>。</p>
+    <td class="cellrowborder" valign="top" width="62.49%" headers="mcps1.2.4.1.3 "><p id="p64387025171923"><a name="p64387025171923"></a><a name="p64387025171923"></a>name server列表对象，详细内容请参见<a href="#table3847447219326">表3</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -78,14 +89,14 @@ GET /v2/zones/\{zone\_id\}/nameservers
     </thead>
     <tbody><tr id="row3753895719326"><td class="cellrowborder" valign="top" width="18.47%" headers="mcps1.2.4.1.1 "><p id="p19222756195728"><a name="p19222756195728"></a><a name="p19222756195728"></a>hostname</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p13539398195728"><a name="p13539398195728"></a><a name="p13539398195728"></a>string</p>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p13539398195728"><a name="p13539398195728"></a><a name="p13539398195728"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="p22949440195728"><a name="p22949440195728"></a><a name="p22949440195728"></a>主机名。</p>
     </td>
     </tr>
     <tr id="row4963379019326"><td class="cellrowborder" valign="top" width="18.47%" headers="mcps1.2.4.1.1 "><p id="p20035160195728"><a name="p20035160195728"></a><a name="p20035160195728"></a>priority</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p12235287195728"><a name="p12235287195728"></a><a name="p12235287195728"></a>int</p>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p12235287195728"><a name="p12235287195728"></a><a name="p12235287195728"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="p51534186195728"><a name="p51534186195728"></a><a name="p51534186195728"></a>优先级。</p>
     <p id="p63758461163042"><a name="p63758461163042"></a><a name="p63758461163042"></a>示例：</p>
@@ -115,7 +126,9 @@ GET /v2/zones/\{zone\_id\}/nameservers
     ```
 
 
-## 返回值<a name="section66476022"></a>
+## 返回值<a name="section9249181042119"></a>
 
-请参考[通用请求返回值](通用请求返回值.md)。
+接口正常的返回值为2xx，例如200、202或者204。
+
+返回值含义以及更多返回值请参考[状态码](状态码.md)。
 

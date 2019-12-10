@@ -1,15 +1,19 @@
 # API参考
 
--   [使用前必读](使用前必读.md)
--   [接口简介](接口简介.md)
--   [环境准备]
-    -   [获取请求认证](获取请求认证.md)
-    -   [获取项目ID](获取项目ID.md)
+-   [使用前必读]
+    -   [概述](概述.md)
+    -   [调用说明](调用说明.md)
+    -   [终端节点](终端节点.md)
+    -   [约束限制](约束限制.md)
+    -   [基本概念](基本概念.md)
 
--   [接口调用方法]
-    -   [REST API介绍](REST-API介绍.md)
-    -   [示例](示例.md)
+-   [API概览](API概览.md)
+-   [如何调用API]
+    -   [构造请求](构造请求.md)
+    -   [认证鉴权](认证鉴权.md)
+    -   [返回结果](返回结果.md)
 
+-   [快速入门](快速入门.md)
 -   [API说明]
     -   [版本管理]
         -   [查询版本号列表](查询版本号列表.md)
@@ -22,6 +26,7 @@
         -   [查询公网Zone的名称服务器](查询公网Zone的名称服务器.md)
         -   [删除公网Zone](删除公网Zone.md)
         -   [修改公网Zone](修改公网Zone.md)
+        -   [设置Zone状态](设置Zone状态.md)
 
     -   [内网Zone管理]
         -   [创建内网Zone](创建内网Zone.md)
@@ -42,12 +47,12 @@
         -   [修改Record Set](修改Record-Set.md)
 
     -   [Record Set多线路管理]
-        -   [创建Record Set](创建Record-Set-0.md)
-        -   [查询Record Set](查询Record-Set-1.md)
-        -   [查询Record Set列表](查询Record-Set列表-2.md)
-        -   [查询单个Zone下Record Set列表](查询单个Zone下Record-Set列表-3.md)
-        -   [删除Record Set](删除Record-Set-4.md)
-        -   [修改Record Set](修改Record-Set-5.md)
+        -   [创建Record Set](创建Record-Set-多线路.md)
+        -   [查询Record Set](查询Record-Set-多线路.md)
+        -   [查询Record Set列表](查询Record-Set列表-多线路.md)
+        -   [查询单个Zone下Record Set列表](查询单个Zone下Record-Set列表-多线路.md)
+        -   [删除Record Set](删除Record-Set-多线路.md)
+        -   [修改Record Set](修改Record-Set-多线路.md)
         -   [设置Record Set状态](设置Record-Set状态.md)
         -   [关联健康检查](关联健康检查.md)
         -   [解关联健康检查](解关联健康检查.md)
@@ -67,36 +72,22 @@
         -   [查询项目标签](查询项目标签.md)
         -   [查询资源实例](查询资源实例.md)
 
-    -   [导入管理]
-        -   [公网Record Set导入]
-            -   [下载批量导入模板](下载批量导入模板.md)
-            -   [批量导入Record Set](批量导入Record-Set.md)
-            -   [查询批量导入Record Set任务](查询批量导入Record-Set任务.md)
-            -   [删除批量导入任务](删除批量导入任务.md)
-
-        -   [内网Record Set导入]
-            -   [下载批量导入内网Record Set模板文件](下载批量导入内网Record-Set模板文件.md)
-            -   [批量导入内网Record Set记录](批量导入内网Record-Set记录.md)
-            -   [查询批量导入内网Record Set任务状态](查询批量导入内网Record-Set任务状态.md)
-            -   [删除批量导入内网Record Set任务](删除批量导入内网Record-Set任务.md)
+    -   [自定义线路管理]
+        -   [创建自定义线路](创建自定义线路.md)
+        -   [删除自定义线路](删除自定义线路.md)
+        -   [更新自定义线路](更新自定义线路.md)
+        -   [查询自定义线路](查询自定义线路.md)
 
 
-    -   [HTTPDNS管理]
-        -   [开通HTTPDNS](开通HTTPDNS.md)
-        -   [获取账户信息](获取账户信息.md)
-
-    -   [HTTPDNS域名管理]
-        -   [添加域名](添加域名.md)
-        -   [删除域名](删除域名.md)
-        -   [查询域名信息](查询域名信息.md)
-        -   [域名解析统计](域名解析统计.md)
-
-    -   [HTTPDNS域名解析]
-        -   [非鉴权解析接口](非鉴权解析接口.md)
-        -   [批量解析接口](批量解析接口.md)
-
+-   [权限策略和授权项]
+    -   [策略及授权项说明](策略及授权项说明.md)
+    -   [分类](分类.md)
 
 -   [公共参数]
-    -   [通用请求返回值](通用请求返回值.md)
-    -   [解析线路类型](解析线路类型.md)
+    -   [状态码](状态码.md)
     -   [错误码](错误码.md)
+    -   [解析线路类型](解析线路类型.md)
+    -   [枚举类型](枚举类型.md)
+    -   [数据结构](数据结构.md)
+    -   [获取项目ID](获取项目ID.md)
+
