@@ -55,6 +55,11 @@
 <td class="cellrowborder" valign="top" width="63.1%" headers="mcps1.2.3.1.2 "><p id="p1127815352539"><a name="p1127815352539"></a><a name="p1127815352539"></a>DNS API的自定义线路管理接口，实现自定义线路的创建、删除、更新及查询。</p>
 </td>
 </tr>
+<tr id="row1023081012503"><td class="cellrowborder" valign="top" width="36.9%" headers="mcps1.2.3.1.1 "><p id="p6231191025016"><a name="p6231191025016"></a><a name="p6231191025016"></a>名称服务器管理</p>
+</td>
+<td class="cellrowborder" valign="top" width="63.1%" headers="mcps1.2.3.1.2 "><p id="p9231910145013"><a name="p9231910145013"></a><a name="p9231910145013"></a>DNS API的名称服务器管理接口，实现名称服务器的查询。</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -416,6 +421,27 @@ TAG管理接口，用于为资源或实例添加、删除以及查询标签。
 <tr id="row14831378181"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p16717105671810"><a name="p16717105671810"></a><a name="p16717105671810"></a><a href="查询自定义线路.md">查询自定义线路</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p18383791811"><a name="p18383791811"></a><a name="p18383791811"></a>查询自定义线路。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 名称服务器管理接口<a name="section117821133165120"></a>
+
+名称服务器管理接口，用于查询名称服务器列表。
+
+**表 10**  名称服务器管理接口
+
+<a name="table1678212331519"></a>
+<table><thead align="left"><tr id="row11783123318519"><th class="cellrowborder" valign="top" width="34.42%" id="mcps1.2.3.1.1"><p id="p57831233165113"><a name="p57831233165113"></a><a name="p57831233165113"></a>API</p>
+</th>
+<th class="cellrowborder" valign="top" width="65.58%" id="mcps1.2.3.1.2"><p id="p17783183355111"><a name="p17783183355111"></a><a name="p17783183355111"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row5783143311515"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p4783163345116"><a name="p4783163345116"></a><a name="p4783163345116"></a><a href="查询名称服务器列表.md">查询名称服务器列表</a></p>
+</td>
+<td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p77831733105112"><a name="p77831733105112"></a><a name="p77831733105112"></a>查询名称服务器列表。</p>
 </td>
 </tr>
 </tbody>
