@@ -54,8 +54,6 @@
         -   [删除Record Set](删除Record-Set-多线路.md)
         -   [修改Record Set](修改Record-Set-多线路.md)
         -   [设置Record Set状态](设置Record-Set状态.md)
-        -   [关联健康检查](关联健康检查.md)
-        -   [解关联健康检查](解关联健康检查.md)
 
     -   [PTR Record管理]
         -   [设置PTR Record](设置PTR-Record.md)

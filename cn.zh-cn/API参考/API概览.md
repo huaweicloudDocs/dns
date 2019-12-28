@@ -290,16 +290,6 @@ Record Set多线路管理接口，用于在多线路解析中创建、查询、�
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p459714565913"><a name="p459714565913"></a><a name="p459714565913"></a>设置Record Set状态，包括启用或暂停解析。</p>
 </td>
 </tr>
-<tr id="row2081511125918"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p1281513118594"><a name="p1281513118594"></a><a name="p1281513118594"></a><a href="关联健康检查.md">关联健康检查</a></p>
-</td>
-<td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p28157117592"><a name="p28157117592"></a><a name="p28157117592"></a>Record Set关联健康检查。</p>
-</td>
-</tr>
-<tr id="row6815712593"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p1981515119596"><a name="p1981515119596"></a><a name="p1981515119596"></a><a href="解关联健康检查.md">解关联健康检查</a></p>
-</td>
-<td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p481531195916"><a name="p481531195916"></a><a name="p481531195916"></a>Record Set解关联健康检查。</p>
-</td>
-</tr>
 </tbody>
 </table>
 
