@@ -12,7 +12,7 @@
 
 ## 前提条件<a name="zh-cn_topic_0172268189_section1778196161211"></a>
 
--   “DNS Viewer”属于策略，请先在IAM控制台中开通基于策略的访问控制公测，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
+-   “DNS ReadOnlyAccess”属于策略，请先在IAM控制台中开通基于策略的访问控制公测，开通方法请参见：[申请基于策略的访问控制公测](https://support.huaweicloud.com/usermanual-iam/iam_01_019.html)。
 -   给用户组授权之前，请您了解用户组可以添加的DNS权限，并结合实际需求进行选择，DNS支持的系统权限，请参见：[DNS系统权限](https://support.huaweicloud.com/productdesc-dns/dns_pd_0002.html)。若您需要对除DNS之外的其它服务授权，IAM支持服务的所有策略请参见[权限策略](https://support.huaweicloud.com/permissions/policy_list.html?product=dns)。
 
 ## 示例流程<a name="section3547133433710"></a>
@@ -22,7 +22,7 @@
 
 1.  <a name="zh-cn_topic_0172268189_li10269636890"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611269.html)
 
-    在IAM控制台创建用户组，并授予云解析服务只读权限“DNS Viewer”。
+    在IAM控制台创建用户组，并授予云解析服务只读权限“DNS ReadOnlyAccess”。
 
 2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611303.html)
 
@@ -32,7 +32,7 @@
 
     新创建的用户登录控制台，切换至授权区域，验证权限：
 
-    -   在“服务列表”中选择云解析服务，进入DNS的“总览 \> 公网解析”页面，单击右上角“创建公网域名”，尝试创建公网域名，如果无法创建公网域名（假设当前权限仅包含DNS Viewer），表示“DNS Viewer”已生效。
-    -   在“服务列表”中选择除云解析服务外（假设当前策略仅包含DNS Viewer）的任一服务，若提示权限不足，表示“DNS Viewer”已生效。
+    -   在“服务列表”中选择云解析服务，进入DNS的“总览 \> 公网解析”页面，单击右上角“创建公网域名”，尝试创建公网域名，如果无法创建公网域名（假设当前权限仅包含DNS ReadOnlyAccess），表示“DNS ReadOnlyAccess”已生效。
+    -   在“服务列表”中选择除云解析服务外（假设当前策略仅包含DNS ReadOnlyAccess）的任一服务，若提示权限不足，表示“DNS ReadOnlyAccess”已生效。
 
 
