@@ -55,6 +55,8 @@
     <tr id="row13819837192816"><td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.4.1.1 "><p id="p982663713288"><a name="p982663713288"></a><a name="p982663713288"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="47.81%" headers="mcps1.2.4.1.2 "><p id="p1383173742816"><a name="p1383173742816"></a><a name="p1383173742816"></a>记录集的类型，此处为CAA类型。</p>
+    <p id="p8911154710176"><a name="p8911154710176"></a><a name="p8911154710176"></a>添加记录集时，如果提示解析记录集已经存在，说明待添加的记录集与已有的记录集存在限制关系或者冲突。</p>
+    <p id="p091321341812"><a name="p091321341812"></a><a name="p091321341812"></a>详细内容请参见<a href="https://support.huaweicloud.com/dns_faq/dns_faq_016.html" target="_blank" rel="noopener noreferrer">为什么会提示解析记录集已经存在？</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><p id="p7622132712445"><a name="p7622132712445"></a><a name="p7622132712445"></a>CAA – CA证书颁发机构授权校验</p>
     </td>

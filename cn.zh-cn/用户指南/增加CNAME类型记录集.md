@@ -10,7 +10,6 @@
 
 ## 约束与限制<a name="section10284161715528"></a>
 
--   支持为公网域名和内网域名添加CNAME类型记录集。
 -   支持添加“主机记录”为空的CNAME类型记录集。
 -   同一子域名，在同一解析线路下，CNAME类型记录集与NS类型记录集冲突。
 
@@ -58,6 +57,8 @@
     <tr id="ree4409520d7f476d840dff4a8e95c2bd"><td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.4.1.1 "><p id="a693c2dbbb0ad4a9a84064c776d307a3a"><a name="a693c2dbbb0ad4a9a84064c776d307a3a"></a><a name="a693c2dbbb0ad4a9a84064c776d307a3a"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="44.93%" headers="mcps1.2.4.1.2 "><p id="ad5848d00fa644a619405c2eca114014e"><a name="ad5848d00fa644a619405c2eca114014e"></a><a name="ad5848d00fa644a619405c2eca114014e"></a>记录集的类型，此处为CNAME类型。</p>
+    <p id="p8911154710176"><a name="p8911154710176"></a><a name="p8911154710176"></a>添加记录集时，如果提示解析记录集已经存在，说明待添加的记录集与已有的记录集存在限制关系或者冲突。</p>
+    <p id="p091321341812"><a name="p091321341812"></a><a name="p091321341812"></a>详细内容请参见<a href="https://support.huaweicloud.com/dns_faq/dns_faq_016.html" target="_blank" rel="noopener noreferrer">为什么会提示解析记录集已经存在？</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="34.46%" headers="mcps1.2.4.1.3 "><p id="p134117018432"><a name="p134117018432"></a><a name="p134117018432"></a>CNAME – 将域名指向另外一个域名</p>
     </td>

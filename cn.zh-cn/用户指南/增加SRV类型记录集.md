@@ -6,10 +6,6 @@
 
 更多关于记录集类型的介绍，请参见[记录集管理简介](记录集管理简介.md)。
 
-## 约束与限制<a name="section10284161715528"></a>
-
-支持为公网域名和内网域名添加SRV类型记录集。
-
 ## 操作步骤<a name="section6412174644120"></a>
 
 1.  登录管理控制台。
@@ -54,6 +50,8 @@
     <tr id="row3202766171815"><td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.4.1.1 "><p id="p58097464171815"><a name="p58097464171815"></a><a name="p58097464171815"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="47.81%" headers="mcps1.2.4.1.2 "><p id="p8274126171815"><a name="p8274126171815"></a><a name="p8274126171815"></a>记录集的类型，此处为SRV类型。</p>
+    <p id="p8911154710176"><a name="p8911154710176"></a><a name="p8911154710176"></a>添加记录集时，如果提示解析记录集已经存在，说明待添加的记录集与已有的记录集存在限制关系或者冲突。</p>
+    <p id="p091321341812"><a name="p091321341812"></a><a name="p091321341812"></a>详细内容请参见<a href="https://support.huaweicloud.com/dns_faq/dns_faq_016.html" target="_blank" rel="noopener noreferrer">为什么会提示解析记录集已经存在？</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><p id="p198181054174318"><a name="p198181054174318"></a><a name="p198181054174318"></a>SRV – 记录提供特定服务的服务器</p>
     </td>

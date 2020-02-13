@@ -8,8 +8,7 @@
 
 ## 约束与限制<a name="section10284161715528"></a>
 
--   支持为公网域名和内网域名添加AAAA类型记录集。
--   已经完成网站或云服务器的搭建，并获取IPv6格式的IP地址。
+已经完成网站或云服务器的搭建，并获取IPv6格式的IP地址。
 
 ## 操作步骤<a name="section6412174644120"></a>
 
@@ -53,6 +52,8 @@
     <tr id="row3782375412739"><td class="cellrowborder" valign="top" width="20.549999999999997%" headers="mcps1.2.4.1.1 "><p id="p3932606412739"><a name="p3932606412739"></a><a name="p3932606412739"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="46.12%" headers="mcps1.2.4.1.2 "><p id="p3129459512739"><a name="p3129459512739"></a><a name="p3129459512739"></a>记录集的类型，此处为AAAA类型。</p>
+    <p id="p8911154710176"><a name="p8911154710176"></a><a name="p8911154710176"></a>添加记录集时，如果提示解析记录集已经存在，说明待添加的记录集与已有的记录集存在限制关系或者冲突。</p>
+    <p id="p091321341812"><a name="p091321341812"></a><a name="p091321341812"></a>详细内容请参见<a href="https://support.huaweicloud.com/dns_faq/dns_faq_016.html" target="_blank" rel="noopener noreferrer">为什么会提示解析记录集已经存在？</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><p id="p1943755514110"><a name="p1943755514110"></a><a name="p1943755514110"></a>AAAA – 将域名指向IPv6地址</p>
     </td>

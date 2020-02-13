@@ -10,8 +10,7 @@
 
 ## 约束与限制<a name="section10284161715528"></a>
 
--   支持为公网域名和内网域名添加MX类型记录集。
--   已经购买邮箱服务器，并通过邮箱服务商获取邮箱的域名地址。
+已经购买邮箱服务器，并通过邮箱服务商获取邮箱的域名地址。
 
 ## 操作步骤<a name="section6412174644120"></a>
 
@@ -57,6 +56,8 @@
     <tr id="row26983954123146"><td class="cellrowborder" valign="top" width="19.05%" headers="mcps1.2.4.1.1 "><p id="p38216656123146"><a name="p38216656123146"></a><a name="p38216656123146"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="47.620000000000005%" headers="mcps1.2.4.1.2 "><p id="p8541435123146"><a name="p8541435123146"></a><a name="p8541435123146"></a>记录集的类型，此处为MX类型。</p>
+    <p id="p8911154710176"><a name="p8911154710176"></a><a name="p8911154710176"></a>添加记录集时，如果提示解析记录集已经存在，说明待添加的记录集与已有的记录集存在限制关系或者冲突。</p>
+    <p id="p091321341812"><a name="p091321341812"></a><a name="p091321341812"></a>详细内容请参见<a href="https://support.huaweicloud.com/dns_faq/dns_faq_016.html" target="_blank" rel="noopener noreferrer">为什么会提示解析记录集已经存在？</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><p id="p204561425134318"><a name="p204561425134318"></a><a name="p204561425134318"></a>MX – 将域名指向邮件服务器地址</p>
     </td>

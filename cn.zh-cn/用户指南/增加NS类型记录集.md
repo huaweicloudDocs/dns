@@ -9,10 +9,7 @@
 ## 约束与限制<a name="section10284161715528"></a>
 
 -   仅支持为公网域名添加NS类型记录集。
--   同一域名，在同一解析线路下，仅支持添加一条NS类型记录集。
-
-    由于域名添加至云解析服务后，系统会自动为域名添加一条NS类型记录集，且该记录集不可修改和删除，因此，仅支持添加如下场景的NS类型记录集：
-
+-   由于域名添加至云解析服务后，系统会自动为域名添加一条NS类型记录集，且该记录集不可修改和删除，因此，仅支持添加如下场景的NS类型记录集：
     -   为主域名的子域名添加NS类型记录集，即“主机记录”不为空。
     -   为主域名添加“线路类型”为非“全网默认”的NS类型记录集。
 
@@ -60,6 +57,8 @@
     <tr id="refe0d49e4f59473ca095d1d62b1e9863"><td class="cellrowborder" valign="top" width="20.549999999999997%" headers="mcps1.2.4.1.1 "><p id="a39f9cc787b694ac0923148777e71115b"><a name="a39f9cc787b694ac0923148777e71115b"></a><a name="a39f9cc787b694ac0923148777e71115b"></a>类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="46.12%" headers="mcps1.2.4.1.2 "><p id="aba2b094ece3a49cf9f5db6872521159e"><a name="aba2b094ece3a49cf9f5db6872521159e"></a><a name="aba2b094ece3a49cf9f5db6872521159e"></a>记录集的类型，此处为NS类型。</p>
+    <p id="p8911154710176"><a name="p8911154710176"></a><a name="p8911154710176"></a>添加记录集时，如果提示解析记录集已经存在，说明待添加的记录集与已有的记录集存在限制关系或者冲突。</p>
+    <p id="p091321341812"><a name="p091321341812"></a><a name="p091321341812"></a>详细内容请参见<a href="https://support.huaweicloud.com/dns_faq/dns_faq_016.html" target="_blank" rel="noopener noreferrer">为什么会提示解析记录集已经存在？</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><p id="p84701816204213"><a name="p84701816204213"></a><a name="p84701816204213"></a>NS – 将子域名授权给其他NS服务器解析</p>
     </td>
