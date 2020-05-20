@@ -109,9 +109,9 @@
     </tr>
     <tr id="row1171304010305"><td class="cellrowborder" valign="top" width="20.61%" headers="mcps1.2.4.1.1 "><p id="p6264642113015"><a name="p6264642113015"></a><a name="p6264642113015"></a>权重</p>
     </td>
-    <td class="cellrowborder" valign="top" width="44.93%" headers="mcps1.2.4.1.2 "><p id="p13661098305"><a name="p13661098305"></a><a name="p13661098305"></a>可选参数，解析记录的权重。默认值为1，取值范围：0~100。</p>
+    <td class="cellrowborder" valign="top" width="44.93%" headers="mcps1.2.4.1.2 "><p id="p13661098305"><a name="p13661098305"></a><a name="p13661098305"></a>可选参数，返回解析记录的权重比例。默认值为1，取值范围：0~1000。</p>
     <p id="p87229173020"><a name="p87229173020"></a><a name="p87229173020"></a>仅支持为公网域名的记录集配置此参数。</p>
-    <p id="p147789173018"><a name="p147789173018"></a><a name="p147789173018"></a>当域名有多条某一类型的解析记录时，根据权重数值选择解析记录，权重数值越高，优先级越高。</p>
+    <p id="p147789173018"><a name="p147789173018"></a><a name="p147789173018"></a>当域名在同一解析线路中有多条相同类型的解析记录时，可以通过“权重”设置解析记录的响应比例。</p>
     </td>
     <td class="cellrowborder" valign="top" width="34.46%" headers="mcps1.2.4.1.3 "><p id="p02833420307"><a name="p02833420307"></a><a name="p02833420307"></a>1</p>
     </td>

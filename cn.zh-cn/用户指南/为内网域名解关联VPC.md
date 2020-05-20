@@ -22,12 +22,12 @@
 
 1.  选择待解关联VPC的内网域名，单击“已关联的VPC”列下的“![](figures/icon-close.png)”，开始解关联VPC。
 
-    **图 1**  已关联的VPC<a name="fig970741904712"></a>  
-    ![](figures/已关联的VPC-1.png "已关联的VPC-1")
+    **图 1**  已关联的VPC<a name="fig1993017326388"></a>  
+    ![](figures/已关联的VPC-0.png "已关联的VPC-0")
 
 2.  在“解关联VPC”对话框，单击“是”，完成解关联VPC。
 
-    **图 2**  解关联VPC<a name="fig35391444512"></a>  
+    **图 2**  解关联VPC<a name="fig1145124813913"></a>  
     ![](figures/解关联VPC.png "解关联VPC")
 
 

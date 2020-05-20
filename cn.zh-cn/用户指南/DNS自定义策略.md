@@ -1,6 +1,6 @@
 # DNS自定义策略<a name="dns_usermanual_0051"></a>
 
-如果系统预置的DNS权限，不满足您的授权要求，可以创建自定义策略。自定义策略中可以添加的授权项（Action）请参见[策略及授权项说明](https://support.huaweicloud.com/api-dns/zh-cn_topic_0171716105.html)_。_
+如果系统预置的DNS权限，不满足您的授权要求，可以创建自定义策略。自定义策略中可以添加的授权项（Action）请参见[策略及授权项说明](https://support.huaweicloud.com/api-dns/dns_api_70001.html)_。_
 
 目前华为云支持以下两种方式创建自定义策略：
 
