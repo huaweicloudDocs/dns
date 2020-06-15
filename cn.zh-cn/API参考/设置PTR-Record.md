@@ -1,4 +1,4 @@
-# 设置PTR Record<a name="zh-cn_topic_0042318613"></a>
+# 设置PTR Record<a name="dns_api_66002"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 
@@ -29,7 +29,7 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 </td>
 <td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.3 "><p id="p1972638718149"><a name="p1972638718149"></a><a name="p1972638718149"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="42.64%" headers="mcps1.2.5.1.4 "><p id="p5433349018149"><a name="p5433349018149"></a><a name="p5433349018149"></a>租户的区域信息。详细内容请参见<a href="终端节点.md">终端节点</a>。</p>
+<td class="cellrowborder" valign="top" width="42.64%" headers="mcps1.2.5.1.4 "><p id="p5433349018149"><a name="p5433349018149"></a><a name="p5433349018149"></a>租户的区域信息。详细内容请参见<a href="终端节点（Endpoint）.md">终端节点（Endpoint）</a>。</p>
 </td>
 </tr>
 <tr id="row1923936518149"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.5.1.1 "><p id="p1488470218149"><a name="p1488470218149"></a><a name="p1488470218149"></a>floatingip_id</p>
@@ -39,7 +39,7 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 <td class="cellrowborder" valign="top" width="17.349999999999998%" headers="mcps1.2.5.1.3 "><p id="p1513281718149"><a name="p1513281718149"></a><a name="p1513281718149"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="42.64%" headers="mcps1.2.5.1.4 "><p id="p1779865118149"><a name="p1779865118149"></a><a name="p1779865118149"></a>弹性IP的ID。</p>
-<p id="p5553155134916"><a name="p5553155134916"></a><a name="p5553155134916"></a>可以通过网络控制台的弹性公网IP页面获取或者通过<a href="https://support.huaweicloud.com/api-vpc/zh-cn_topic_0020090598.html" target="_blank" rel="noopener noreferrer">查询弹性公网IP列表</a>获取。</p>
+<p id="p5553155134916"><a name="p5553155134916"></a><a name="p5553155134916"></a>可以通过网络控制台的弹性公网IP页面获取或者通过<a href="https://support.huaweicloud.com/api-eip/eip_api_0003.html" target="_blank" rel="noopener noreferrer">查询弹性公网IP列表</a>获取。</p>
 </td>
 </tr>
 </tbody>
@@ -93,6 +93,16 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
     <p id="p368074541830"><a name="p368074541830"></a><a name="p368074541830"></a>取值范围：</p>
     <p id="p628316381830"><a name="p628316381830"></a><a name="p628316381830"></a>1～2147483647</p>
     <p id="p1339417482339"><a name="p1339417482339"></a><a name="p1339417482339"></a>默认值为300s。</p>
+    </td>
+    </tr>
+    <tr id="row9223123010229"><td class="cellrowborder" valign="top" width="21.517848215178486%" headers="mcps1.2.5.1.1 "><p id="p2408231966"><a name="p2408231966"></a><a name="p2408231966"></a>enterprise_project_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.538146185381464%" headers="mcps1.2.5.1.2 "><p id="p73741754191510"><a name="p73741754191510"></a><a name="p73741754191510"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.818218178182182%" headers="mcps1.2.5.1.3 "><p id="p43741954111519"><a name="p43741954111519"></a><a name="p43741954111519"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="42.125787421257876%" headers="mcps1.2.5.1.4 "><p id="p13997747155711"><a name="p13997747155711"></a><a name="p13997747155711"></a>反向解析关联的企业项目ID，长度不超过36个字符。</p>
+    <p id="p131131925172318"><a name="p131131925172318"></a><a name="p131131925172318"></a>默认值为0。</p>
     </td>
     </tr>
     <tr id="row13969437195229"><td class="cellrowborder" valign="top" width="21.517848215178486%" headers="mcps1.2.5.1.1 "><p id="p42211177195229"><a name="p42211177195229"></a><a name="p42211177195229"></a>tags</p>

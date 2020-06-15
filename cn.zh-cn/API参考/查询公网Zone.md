@@ -1,4 +1,4 @@
-# 查询公网Zone<a name="zh-cn_topic_0037129973"></a>
+# 查询公网Zone<a name="dns_api_62002"></a>
 
 ## 功能介绍<a name="section55898385"></a>
 

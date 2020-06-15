@@ -1,4 +1,4 @@
-# 删除Record Set<a name="zh-cn_topic_0082840631"></a>
+# 删除Record Set<a name="dns_api_65005"></a>
 
 ## 功能介绍<a name="section49332166"></a>
 

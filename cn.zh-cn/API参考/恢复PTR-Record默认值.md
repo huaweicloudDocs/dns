@@ -1,4 +1,4 @@
-# 恢复PTR Record默认值<a name="zh-cn_topic_0042318616"></a>
+# 恢复PTR Record默认值<a name="dns_api_66005"></a>
 
 ## 功能介绍<a name="section8391370"></a>
 
@@ -30,7 +30,7 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 <td class="cellrowborder" valign="top" width="13.83%" headers="mcps1.2.5.1.3 "><p id="a0a1bf1099829467e967689705fc84fe5"><a name="a0a1bf1099829467e967689705fc84fe5"></a><a name="a0a1bf1099829467e967689705fc84fe5"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50.14999999999999%" headers="mcps1.2.5.1.4 "><p id="a939d47bc868d44c290326fb1df4c5e00"><a name="a939d47bc868d44c290326fb1df4c5e00"></a><a name="a939d47bc868d44c290326fb1df4c5e00"></a>租户的区域信息。</p>
-<p id="p5433349018149"><a name="p5433349018149"></a><a name="p5433349018149"></a>详细内容请参见<a href="终端节点.md">终端节点</a>。</p>
+<p id="p5433349018149"><a name="p5433349018149"></a><a name="p5433349018149"></a>详细内容请参见<a href="终端节点（Endpoint）.md">终端节点（Endpoint）</a>。</p>
 </td>
 </tr>
 <tr id="r0588e91c222b4483b97fe5b2e56f79bb"><td class="cellrowborder" valign="top" width="18.11%" headers="mcps1.2.5.1.1 "><p id="ac3563e9e05cc422ab54a9d288aa5810c"><a name="ac3563e9e05cc422ab54a9d288aa5810c"></a><a name="ac3563e9e05cc422ab54a9d288aa5810c"></a>floatingip_id</p>
@@ -40,7 +40,7 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 <td class="cellrowborder" valign="top" width="13.83%" headers="mcps1.2.5.1.3 "><p id="a2fe0b089a6a14db1a241b4d93dc9fd5a"><a name="a2fe0b089a6a14db1a241b4d93dc9fd5a"></a><a name="a2fe0b089a6a14db1a241b4d93dc9fd5a"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50.14999999999999%" headers="mcps1.2.5.1.4 "><p id="ad2fce4accef8431b86dcaca0bd572a60"><a name="ad2fce4accef8431b86dcaca0bd572a60"></a><a name="ad2fce4accef8431b86dcaca0bd572a60"></a>弹性IP的ID。</p>
-<p id="p5553155134916"><a name="p5553155134916"></a><a name="p5553155134916"></a>可以通过网络控制台的弹性公网IP页面获取或者通过<a href="https://support.huaweicloud.com/api-vpc/zh-cn_topic_0020090598.html" target="_blank" rel="noopener noreferrer">查询弹性公网IP列表</a>获取。</p>
+<p id="p5553155134916"><a name="p5553155134916"></a><a name="p5553155134916"></a>可以通过网络控制台的弹性公网IP页面获取或者通过<a href="https://support.huaweicloud.com/api-eip/eip_api_0003.html" target="_blank" rel="noopener noreferrer">查询弹性公网IP列表</a>获取。</p>
 </td>
 </tr>
 </tbody>

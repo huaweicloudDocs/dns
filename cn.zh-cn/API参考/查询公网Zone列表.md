@@ -1,4 +1,4 @@
-# 查询公网Zone列表<a name="zh-cn_topic_0037134402"></a>
+# 查询公网Zone列表<a name="dns_api_62003"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 
@@ -6,7 +6,7 @@
 
 ## URI<a name="section53701671161015"></a>
 
-GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&name=\{name\}
+GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&name=\{name\}&status=\{status\}&enterprise\_project\_id=\{id\}
 
 参数说明请参见[表1](#table36421405182556)。
 
@@ -91,6 +91,26 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
 </td>
 <td class="cellrowborder" valign="top" width="59.4%" headers="mcps1.2.5.1.4 "><p id="p113313225126"><a name="p113313225126"></a><a name="p113313225126"></a>zone名称。</p>
 <p id="p159771524568"><a name="p159771524568"></a><a name="p159771524568"></a>搜索模式默认为模糊搜索。</p>
+</td>
+</tr>
+<tr id="row1173792401616"><td class="cellrowborder" valign="top" width="12.78%" headers="mcps1.2.5.1.1 "><p id="p6738102411167"><a name="p6738102411167"></a><a name="p6738102411167"></a>status</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.219999999999999%" headers="mcps1.2.5.1.2 "><p id="p973842401614"><a name="p973842401614"></a><a name="p973842401614"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.600000000000001%" headers="mcps1.2.5.1.3 "><p id="p1173872481613"><a name="p1173872481613"></a><a name="p1173872481613"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.4%" headers="mcps1.2.5.1.4 "><p id="p08895418160"><a name="p08895418160"></a><a name="p08895418160"></a>资源状态。</p>
+<p id="p168892041161615"><a name="p168892041161615"></a><a name="p168892041161615"></a>详细信息请参见<a href="枚举类型.md#section33673592114748">资源状态</a>。</p>
+</td>
+</tr>
+<tr id="row193191414415"><td class="cellrowborder" valign="top" width="12.78%" headers="mcps1.2.5.1.1 "><p id="p183195412449"><a name="p183195412449"></a><a name="p183195412449"></a>enterprise_project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.219999999999999%" headers="mcps1.2.5.1.2 "><p id="p1331912410447"><a name="p1331912410447"></a><a name="p1331912410447"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.600000000000001%" headers="mcps1.2.5.1.3 "><p id="p123191947448"><a name="p123191947448"></a><a name="p123191947448"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.4%" headers="mcps1.2.5.1.4 "><p id="p1331920410444"><a name="p1331920410444"></a><a name="p1331920410444"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
+<p id="p131131925172318"><a name="p131131925172318"></a><a name="p131131925172318"></a>默认值为0。</p>
 </td>
 </tr>
 </tbody>
@@ -263,6 +283,13 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </td>
     <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0037139748_p660161572"><a name="zh-cn_topic_0037139748_p660161572"></a><a name="zh-cn_topic_0037139748_p660161572"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。</p>
     <p id="p14741433184311"><a name="p14741433184311"></a><a name="p14741433184311"></a>详细信息请参见<a href="#table0172144213344">表5</a>。</p>
+    </td>
+    </tr>
+    <tr id="row540810311563"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="p2408231966"><a name="p2408231966"></a><a name="p2408231966"></a>enterprise_project_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.41%" headers="mcps1.2.4.1.2 "><p id="p9408103116617"><a name="p9408103116617"></a><a name="p9408103116617"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="p18408153111619"><a name="p18408153111619"></a><a name="p18408153111619"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
     </td>
     </tr>
     <tr id="re2fe47183e18405d92046423a13cc360"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="aaad74d843b144b02886916b90476b9eb"><a name="aaad74d843b144b02886916b90476b9eb"></a><a name="aaad74d843b144b02886916b90476b9eb"></a>masters</p>

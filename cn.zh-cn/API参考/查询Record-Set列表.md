@@ -1,4 +1,4 @@
-# 查询Record Set列表<a name="zh-cn_topic_0037129969"></a>
+# 查询Record Set列表<a name="dns_api_64003"></a>
 
 ## 功能介绍<a name="section29105235"></a>
 
@@ -179,10 +179,10 @@ GET /v2/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}&o
 
 -   请求样例
 
-    查询域名类型为公网，记录集类型为A，且域名包含“www.example.com”的域名的记录集列表。
+    查询域名类型为内网，记录集类型为A，且域名包含“www.example.com”的域名的记录集列表。
 
     ```
-    GET https://{DNS_Endpoint}/v2/recordsets?zone_type=&type=A&name=www.example.com
+    GET https://{DNS_Endpoint}/v2/recordsets?zone_type=private&type=A&name=www.example.com
     ```
 
 
@@ -277,7 +277,7 @@ GET /v2/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}&o
     <td class="cellrowborder" valign="top" width="19.67%" headers="mcps1.2.4.1.2 "><p id="a4d34d1f420ec42079710c4d92e0b7616"><a name="a4d34d1f420ec42079710c4d92e0b7616"></a><a name="a4d34d1f420ec42079710c4d92e0b7616"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="ad1150aaf4f1a44e997e3e03abe8c776e"><a name="ad1150aaf4f1a44e997e3e03abe8c776e"></a><a name="ad1150aaf4f1a44e997e3e03abe8c776e"></a>记录类型。</p>
-    <p id="p1484155154215"><a name="p1484155154215"></a><a name="p1484155154215"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
+    <p id="p1484155154215"><a name="p1484155154215"></a><a name="p1484155154215"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="p7402204505815"><a name="p7402204505815"></a><a name="p7402204505815"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>

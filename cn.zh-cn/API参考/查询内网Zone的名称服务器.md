@@ -1,4 +1,4 @@
-# 查询内网Zone的名称服务器<a name="zh-cn_topic_0057342901"></a>
+# 查询内网Zone的名称服务器<a name="dns_api_63007"></a>
 
 ## 功能介绍<a name="section55898385"></a>
 

@@ -1,4 +1,4 @@
-# 创建Record Set<a name="zh-cn_topic_0082840627"></a>
+# 创建Record Set<a name="dns_api_65001"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 
@@ -59,7 +59,6 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p45293229173211"><a name="p45293229173211"></a><a name="p45293229173211"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p5054941173211"><a name="p5054941173211"></a><a name="p5054941173211"></a>域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。</p>
-    <p id="p4141499817341"><a name="p4141499817341"></a><a name="p4141499817341"></a>当为公网域名时，子域名级别最多为5级。</p>
     <p id="p27471407151355"><a name="p27471407151355"></a><a name="p27471407151355"></a>域名格式不区分大小写，系统会将输入的大写字母统一转换为小写。</p>
     </td>
     </tr>

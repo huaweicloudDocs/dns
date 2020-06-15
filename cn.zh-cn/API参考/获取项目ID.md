@@ -1,4 +1,4 @@
-# 获取项目ID<a name="zh-cn_topic_0132758549"></a>
+# 获取项目ID<a name="dns_api_80007"></a>
 
 ## 操作场景<a name="zh-cn_topic_0121673684_section136545262478"></a>
 
@@ -9,9 +9,9 @@
 
 ## 调用API获取项目ID<a name="zh-cn_topic_0121673684_section86806471133"></a>
 
-项目ID可以通过调用[查询指定条件下的项目信息](https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845625.html)API获取。
+项目ID可以通过调用[查询指定条件下的项目列表](https://support.huaweicloud.com/api-iam/iam_06_0001.html)API获取。
 
-获取项目ID的接口为“GET https://\{Endpoint\}/v3/projects/”，其中\{Endpoint\}为IAM的终端节点，可以从[地区和终端节点](https://developer.huaweicloud.com/endpoint?DNS)获取。接口的认证鉴权请参见[认证鉴权](认证鉴权.md#zh-cn_topic_0171290951)。
+获取项目ID的接口为“GET https://\{Endpoint\}/v3/projects”，其中\{Endpoint\}为IAM的终端节点，可以从[地区和终端节点](https://developer.huaweicloud.com/endpoint?DNS)获取。接口的认证鉴权请参见[认证鉴权](认证鉴权.md#dns_api_30003)。
 
 响应示例如下，其中projects下的“id”即为项目ID。
 

@@ -1,4 +1,4 @@
-# 设置Zone状态<a name="ZH-CN_TOPIC_0200310411"></a>
+# 设置Zone状态<a name="dns_api_62007"></a>
 
 ## 功能介绍<a name="section55898385"></a>
 

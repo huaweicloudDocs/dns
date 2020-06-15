@@ -1,4 +1,4 @@
-# 设置Record Set状态<a name="zh-cn_topic_0083084650"></a>
+# 设置Record Set状态<a name="dns_api_65007"></a>
 
 ## 功能介绍<a name="section49332166"></a>
 

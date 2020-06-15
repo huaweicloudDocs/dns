@@ -1,4 +1,4 @@
-# 查询单个Zone下Record Set列表<a name="zh-cn_topic_0082840630"></a>
+# 查询单个Zone下Record Set列表<a name="dns_api_65004"></a>
 
 ## 功能介绍<a name="section8391370"></a>
 

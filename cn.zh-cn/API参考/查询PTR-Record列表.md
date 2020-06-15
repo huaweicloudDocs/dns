@@ -1,4 +1,4 @@
-# 查询PTR Record列表<a name="zh-cn_topic_0042318615"></a>
+# 查询PTR Record列表<a name="dns_api_66004"></a>
 
 ## 功能介绍<a name="section29105235"></a>
 
@@ -6,7 +6,7 @@
 
 ## URI<a name="section60620523"></a>
 
-GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}
+GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&status=\{status\}
 
 参数说明请参见[表1](#table1562846014112)。
 
@@ -56,6 +56,16 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
 <p id="p167712216335"><a name="p167712216335"></a><a name="p167712216335"></a>当前设置marker不为空时，以marker为分页起始标识。</p>
 </td>
 </tr>
+<tr id="row114826328387"><td class="cellrowborder" valign="top" width="16.62166216621662%" headers="mcps1.2.5.1.1 "><p id="p2408231966"><a name="p2408231966"></a><a name="p2408231966"></a>enterprise_project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.921592159215923%" headers="mcps1.2.5.1.2 "><p id="p73741754191510"><a name="p73741754191510"></a><a name="p73741754191510"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.01170117011701%" headers="mcps1.2.5.1.3 "><p id="p43741954111519"><a name="p43741954111519"></a><a name="p43741954111519"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.44504450445044%" headers="mcps1.2.5.1.4 "><p id="p13997747155711"><a name="p13997747155711"></a><a name="p13997747155711"></a>反向解析关联的企业项目ID，长度不超过36个字符。</p>
+<p id="p131131925172318"><a name="p131131925172318"></a><a name="p131131925172318"></a>默认值为0。</p>
+</td>
+</tr>
 <tr id="row6180858115857"><td class="cellrowborder" valign="top" width="16.62166216621662%" headers="mcps1.2.5.1.1 "><p id="p6537624212219"><a name="p6537624212219"></a><a name="p6537624212219"></a>tags</p>
 </td>
 <td class="cellrowborder" valign="top" width="15.921592159215923%" headers="mcps1.2.5.1.2 "><p id="p6098421112219"><a name="p6098421112219"></a><a name="p6098421112219"></a>否</p>
@@ -69,6 +79,16 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
 <p id="p65263192115146"><a name="p65263192115146"></a><a name="p65263192115146"></a>关于资源标签，请参见<a href="添加资源标签.md">添加资源标签</a>。</p>
 <p id="p1770514714203"><a name="p1770514714203"></a><a name="p1770514714203"></a>搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。</p>
 <p id="p71284149127"><a name="p71284149127"></a><a name="p71284149127"></a>默认值为空。</p>
+</td>
+</tr>
+<tr id="row2017310361177"><td class="cellrowborder" valign="top" width="16.62166216621662%" headers="mcps1.2.5.1.1 "><p id="p6738102411167"><a name="p6738102411167"></a><a name="p6738102411167"></a>status</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.921592159215923%" headers="mcps1.2.5.1.2 "><p id="p973842401614"><a name="p973842401614"></a><a name="p973842401614"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.01170117011701%" headers="mcps1.2.5.1.3 "><p id="p1173872481613"><a name="p1173872481613"></a><a name="p1173872481613"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.44504450445044%" headers="mcps1.2.5.1.4 "><p id="p08895418160"><a name="p08895418160"></a><a name="p08895418160"></a>资源状态。</p>
+<p id="p168892041161615"><a name="p168892041161615"></a><a name="p168892041161615"></a>详细信息请参见<a href="枚举类型.md#section33673592114748">资源状态</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -202,6 +222,13 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </td>
     <td class="cellrowborder" valign="top" width="62.56%" headers="mcps1.2.4.1.3 "><p id="ab163171b57cd4600a059890e5f4373ce"><a name="ab163171b57cd4600a059890e5f4373ce"></a><a name="ab163171b57cd4600a059890e5f4373ce"></a>指向当前资源或者其他相关资源的链接。</p>
     <p id="a4dc7ac60268d4291a27544e93c236e22"><a name="a4dc7ac60268d4291a27544e93c236e22"></a><a name="a4dc7ac60268d4291a27544e93c236e22"></a>当响应需要分页时，需要包含一个next链接来进行分页。详细信息请参见<a href="#table354521744216">表5</a>。</p>
+    </td>
+    </tr>
+    <tr id="row357192783910"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p0283162973917"><a name="p0283162973917"></a><a name="p0283162973917"></a>enterprise_project_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.259999999999998%" headers="mcps1.2.4.1.2 "><p id="p20511933131615"><a name="p20511933131615"></a><a name="p20511933131615"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.56%" headers="mcps1.2.4.1.3 "><p id="p19511933171613"><a name="p19511933171613"></a><a name="p19511933171613"></a>反向解析关联的企业项目ID，长度不超过36个字符。</p>
     </td>
     </tr>
     </tbody>

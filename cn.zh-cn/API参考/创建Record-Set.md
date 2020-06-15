@@ -1,4 +1,4 @@
-# 创建Record Set<a name="zh-cn_topic_0037134404"></a>
+# 创建Record Set<a name="dns_api_64001"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 
@@ -61,7 +61,6 @@ POST /v2/zones/\{zone\_id\}/recordsets
     <td class="cellrowborder" valign="top" width="17.82%" headers="mcps1.2.5.1.3 "><p id="p45293229173211"><a name="p45293229173211"></a><a name="p45293229173211"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.92%" headers="mcps1.2.5.1.4 "><p id="p5054941173211"><a name="p5054941173211"></a><a name="p5054941173211"></a>域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。</p>
-    <p id="p4141499817341"><a name="p4141499817341"></a><a name="p4141499817341"></a>当为公网域名时，子域名级别最多为5级。</p>
     <p id="p27471407151355"><a name="p27471407151355"></a><a name="p27471407151355"></a>域名格式不区分大小写，系统会将输入的大写字母统一转换为小写。</p>
     </td>
     </tr>
@@ -95,8 +94,7 @@ POST /v2/zones/\{zone\_id\}/recordsets
     </td>
     <td class="cellrowborder" valign="top" width="38.92%" headers="mcps1.2.5.1.4 "><p id="p44661732103918"><a name="p44661732103918"></a><a name="p44661732103918"></a>解析记录在本地DNS服务器的缓存时间，以秒为单位。</p>
     <p id="p1995185423811"><a name="p1995185423811"></a><a name="p1995185423811"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
-    <p id="p20437753173211"><a name="p20437753173211"></a><a name="p20437753173211"></a>取值范围：</p>
-    <p id="p27764803173211"><a name="p27764803173211"></a><a name="p27764803173211"></a>1~2147483647。</p>
+    <p id="p20437753173211"><a name="p20437753173211"></a><a name="p20437753173211"></a>取值范围：1~2147483647。</p>
     <p id="p1752884719548"><a name="p1752884719548"></a><a name="p1752884719548"></a>默认值为300s。</p>
     </td>
     </tr>

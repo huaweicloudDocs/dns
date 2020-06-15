@@ -1,4 +1,4 @@
-# 修改公网Zone<a name="zh-cn_topic_0080995382"></a>
+# 修改公网Zone<a name="dns_api_62006"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 

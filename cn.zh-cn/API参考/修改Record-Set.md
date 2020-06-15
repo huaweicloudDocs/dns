@@ -1,4 +1,4 @@
-# 修改Record Set<a name="zh-cn_topic_0077449085"></a>
+# 修改Record Set<a name="dns_api_64006"></a>
 
 ## 功能介绍<a name="section49332166"></a>
 

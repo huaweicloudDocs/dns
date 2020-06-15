@@ -1,4 +1,4 @@
-# 查询Record Set列表<a name="zh-cn_topic_0082840629"></a>
+# 查询Record Set列表<a name="dns_api_65003"></a>
 
 ## 功能介绍<a name="section29105235"></a>
 

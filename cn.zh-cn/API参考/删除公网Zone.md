@@ -1,4 +1,4 @@
-# 删除公网Zone<a name="zh-cn_topic_0037134403"></a>
+# 删除公网Zone<a name="dns_api_62005"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 

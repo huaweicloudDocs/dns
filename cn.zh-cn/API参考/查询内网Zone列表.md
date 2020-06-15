@@ -1,4 +1,4 @@
-# 查询内网Zone列表<a name="zh-cn_topic_0057311029"></a>
+# 查询内网Zone列表<a name="dns_api_63006"></a>
 
 ## 功能介绍<a name="section2763065016101"></a>
 
@@ -6,75 +6,75 @@
 
 ## URI<a name="section53701671161015"></a>
 
-GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&name=\{name\}
+GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&name=\{name\}&status=\{status\}&enterprise\_project\_id=\{id\}
 
 参数说明请参见[表1](#table36421405182556)。
 
 **表 1**  URI格式的参数说明
 
 <a name="table36421405182556"></a>
-<table><thead align="left"><tr id="row35113810182556"><th class="cellrowborder" valign="top" width="10.89%" id="mcps1.2.5.1.1"><p id="p29205341182624"><a name="p29205341182624"></a><a name="p29205341182624"></a>名称</p>
+<table><thead align="left"><tr id="row35113810182556"><th class="cellrowborder" valign="top" width="21.89%" id="mcps1.2.5.1.1"><p id="p29205341182624"><a name="p29205341182624"></a><a name="p29205341182624"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.740000000000004%" id="mcps1.2.5.1.2"><p id="p16822416182624"><a name="p16822416182624"></a><a name="p16822416182624"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="13.54%" id="mcps1.2.5.1.2"><p id="p16822416182624"><a name="p16822416182624"></a><a name="p16822416182624"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.350000000000001%" id="mcps1.2.5.1.3"><p id="p20438464182624"><a name="p20438464182624"></a><a name="p20438464182624"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="18.86%" id="mcps1.2.5.1.3"><p id="p20438464182624"><a name="p20438464182624"></a><a name="p20438464182624"></a>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="59.02%" id="mcps1.2.5.1.4"><p id="p44902868182624"><a name="p44902868182624"></a><a name="p44902868182624"></a>说明</p>
+<th class="cellrowborder" valign="top" width="45.71%" id="mcps1.2.5.1.4"><p id="p44902868182624"><a name="p44902868182624"></a><a name="p44902868182624"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row7883687182556"><td class="cellrowborder" valign="top" width="10.89%" headers="mcps1.2.5.1.1 "><p id="p29178851182717"><a name="p29178851182717"></a><a name="p29178851182717"></a>type</p>
+<tbody><tr id="row7883687182556"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p29178851182717"><a name="p29178851182717"></a><a name="p29178851182717"></a>type</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.740000000000004%" headers="mcps1.2.5.1.2 "><p id="p2590622182717"><a name="p2590622182717"></a><a name="p2590622182717"></a>是</p>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p2590622182717"><a name="p2590622182717"></a><a name="p2590622182717"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.350000000000001%" headers="mcps1.2.5.1.3 "><p id="p66359104182717"><a name="p66359104182717"></a><a name="p66359104182717"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p66359104182717"><a name="p66359104182717"></a><a name="p66359104182717"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.02%" headers="mcps1.2.5.1.4 "><p id="p41213064154029"><a name="p41213064154029"></a><a name="p41213064154029"></a>待查询的zone的类型。</p>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p41213064154029"><a name="p41213064154029"></a><a name="p41213064154029"></a>待查询的zone的类型。</p>
 <p id="p35373258154029"><a name="p35373258154029"></a><a name="p35373258154029"></a>取值范围：private</p>
 <p id="p426025714343"><a name="p426025714343"></a><a name="p426025714343"></a>表示查询内网类型的zone。</p>
 </td>
 </tr>
-<tr id="row12208459182556"><td class="cellrowborder" valign="top" width="10.89%" headers="mcps1.2.5.1.1 "><p id="p17456213182720"><a name="p17456213182720"></a><a name="p17456213182720"></a>marker</p>
+<tr id="row12208459182556"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p17456213182720"><a name="p17456213182720"></a><a name="p17456213182720"></a>marker</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.740000000000004%" headers="mcps1.2.5.1.2 "><p id="p4667185182720"><a name="p4667185182720"></a><a name="p4667185182720"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p4667185182720"><a name="p4667185182720"></a><a name="p4667185182720"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.350000000000001%" headers="mcps1.2.5.1.3 "><p id="p42497672182720"><a name="p42497672182720"></a><a name="p42497672182720"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p42497672182720"><a name="p42497672182720"></a><a name="p42497672182720"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.02%" headers="mcps1.2.5.1.4 "><p id="p352216816854"><a name="p352216816854"></a><a name="p352216816854"></a>分页查询起始的资源ID。</p>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p352216816854"><a name="p352216816854"></a><a name="p352216816854"></a>分页查询起始的资源ID。</p>
 <p id="p19759428182720"><a name="p19759428182720"></a><a name="p19759428182720"></a>如果为空，表示查询第一页。</p>
 <p id="p1451994172211"><a name="p1451994172211"></a><a name="p1451994172211"></a>默认值为空。</p>
 </td>
 </tr>
-<tr id="row29489517182630"><td class="cellrowborder" valign="top" width="10.89%" headers="mcps1.2.5.1.1 "><p id="p43326778182720"><a name="p43326778182720"></a><a name="p43326778182720"></a>limit</p>
+<tr id="row29489517182630"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p43326778182720"><a name="p43326778182720"></a><a name="p43326778182720"></a>limit</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.740000000000004%" headers="mcps1.2.5.1.2 "><p id="p19808096182720"><a name="p19808096182720"></a><a name="p19808096182720"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p19808096182720"><a name="p19808096182720"></a><a name="p19808096182720"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.350000000000001%" headers="mcps1.2.5.1.3 "><p id="p60951943182720"><a name="p60951943182720"></a><a name="p60951943182720"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p60951943182720"><a name="p60951943182720"></a><a name="p60951943182720"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.02%" headers="mcps1.2.5.1.4 "><p id="p230120311413"><a name="p230120311413"></a><a name="p230120311413"></a>每页返回的资源个数。</p>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p230120311413"><a name="p230120311413"></a><a name="p230120311413"></a>每页返回的资源个数。</p>
 <p id="p147131447514"><a name="p147131447514"></a><a name="p147131447514"></a>取值范围：0~500</p>
 <p id="p1385813431412"><a name="p1385813431412"></a><a name="p1385813431412"></a>取值一般为10，20，50。默认值为500。</p>
 </td>
 </tr>
-<tr id="row2721615319547"><td class="cellrowborder" valign="top" width="10.89%" headers="mcps1.2.5.1.1 "><p id="p626980719549"><a name="p626980719549"></a><a name="p626980719549"></a>offset</p>
+<tr id="row2721615319547"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p626980719549"><a name="p626980719549"></a><a name="p626980719549"></a>offset</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.740000000000004%" headers="mcps1.2.5.1.2 "><p id="p3809236019549"><a name="p3809236019549"></a><a name="p3809236019549"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p3809236019549"><a name="p3809236019549"></a><a name="p3809236019549"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.350000000000001%" headers="mcps1.2.5.1.3 "><p id="p6558235419549"><a name="p6558235419549"></a><a name="p6558235419549"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p6558235419549"><a name="p6558235419549"></a><a name="p6558235419549"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.02%" headers="mcps1.2.5.1.4 "><p id="p35951433204916"><a name="p35951433204916"></a><a name="p35951433204916"></a>分页查询起始偏移量，表示从偏移量的下一个资源开始查询。</p>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p35951433204916"><a name="p35951433204916"></a><a name="p35951433204916"></a>分页查询起始偏移量，表示从偏移量的下一个资源开始查询。</p>
 <p id="p18898143914915"><a name="p18898143914915"></a><a name="p18898143914915"></a>取值范围：0~2147483647</p>
 <p id="p13209172234718"><a name="p13209172234718"></a><a name="p13209172234718"></a>默认值为0。</p>
 <p id="p167712216335"><a name="p167712216335"></a><a name="p167712216335"></a>当前设置marker不为空时，以marker为分页起始标识。</p>
 </td>
 </tr>
-<tr id="row58681680125046"><td class="cellrowborder" valign="top" width="10.89%" headers="mcps1.2.5.1.1 "><p id="p47666033125046"><a name="p47666033125046"></a><a name="p47666033125046"></a>tags</p>
+<tr id="row58681680125046"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p47666033125046"><a name="p47666033125046"></a><a name="p47666033125046"></a>tags</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.740000000000004%" headers="mcps1.2.5.1.2 "><p id="p35743447125046"><a name="p35743447125046"></a><a name="p35743447125046"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p35743447125046"><a name="p35743447125046"></a><a name="p35743447125046"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.350000000000001%" headers="mcps1.2.5.1.3 "><p id="p9538131125046"><a name="p9538131125046"></a><a name="p9538131125046"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p9538131125046"><a name="p9538131125046"></a><a name="p9538131125046"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.02%" headers="mcps1.2.5.1.4 "><p id="p34391114125046"><a name="p34391114125046"></a><a name="p34391114125046"></a>资源标签。</p>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p34391114125046"><a name="p34391114125046"></a><a name="p34391114125046"></a>资源标签。</p>
 <p id="p41084576125046"><a name="p41084576125046"></a><a name="p41084576125046"></a>取值格式：key1,value1|key2,value2</p>
 <p id="p34216870125046"><a name="p34216870125046"></a><a name="p34216870125046"></a>多个标签之间用"|"分开，每个标签的键值用英文逗号","相隔。</p>
 <p id="p1526014454308"><a name="p1526014454308"></a><a name="p1526014454308"></a>多个标签之间为“与”的关系。</p>
@@ -82,14 +82,34 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
 <p id="p116996555212"><a name="p116996555212"></a><a name="p116996555212"></a>默认值为空。</p>
 </td>
 </tr>
-<tr id="row7779132921"><td class="cellrowborder" valign="top" width="10.89%" headers="mcps1.2.5.1.1 "><p id="p1933113222124"><a name="p1933113222124"></a><a name="p1933113222124"></a>name</p>
+<tr id="row7779132921"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p1933113222124"><a name="p1933113222124"></a><a name="p1933113222124"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.740000000000004%" headers="mcps1.2.5.1.2 "><p id="p1833110221120"><a name="p1833110221120"></a><a name="p1833110221120"></a>否</p>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p1833110221120"><a name="p1833110221120"></a><a name="p1833110221120"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.350000000000001%" headers="mcps1.2.5.1.3 "><p id="p1533162211129"><a name="p1533162211129"></a><a name="p1533162211129"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p1533162211129"><a name="p1533162211129"></a><a name="p1533162211129"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.02%" headers="mcps1.2.5.1.4 "><p id="p113313225126"><a name="p113313225126"></a><a name="p113313225126"></a>zone名称。</p>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p113313225126"><a name="p113313225126"></a><a name="p113313225126"></a>zone名称。</p>
 <p id="p159771524568"><a name="p159771524568"></a><a name="p159771524568"></a>搜索模式默认为模糊搜索。</p>
+</td>
+</tr>
+<tr id="row659075217162"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p6738102411167"><a name="p6738102411167"></a><a name="p6738102411167"></a>status</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p973842401614"><a name="p973842401614"></a><a name="p973842401614"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p1173872481613"><a name="p1173872481613"></a><a name="p1173872481613"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p08895418160"><a name="p08895418160"></a><a name="p08895418160"></a>资源状态。</p>
+<p id="p168892041161615"><a name="p168892041161615"></a><a name="p168892041161615"></a>详细信息请参见<a href="枚举类型.md#section33673592114748">资源状态</a>。</p>
+</td>
+</tr>
+<tr id="row546112490426"><td class="cellrowborder" valign="top" width="21.89%" headers="mcps1.2.5.1.1 "><p id="p7462949134214"><a name="p7462949134214"></a><a name="p7462949134214"></a>enterprise_project_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.54%" headers="mcps1.2.5.1.2 "><p id="p14462164934219"><a name="p14462164934219"></a><a name="p14462164934219"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.86%" headers="mcps1.2.5.1.3 "><p id="p1746264919428"><a name="p1746264919428"></a><a name="p1746264919428"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="45.71%" headers="mcps1.2.5.1.4 "><p id="p139321935132119"><a name="p139321935132119"></a><a name="p139321935132119"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
+<p id="p131131925172318"><a name="p131131925172318"></a><a name="p131131925172318"></a>默认值为0。</p>
 </td>
 </tr>
 </tbody>
@@ -281,6 +301,13 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="p161561141410"><a name="p161561141410"></a><a name="p161561141410"></a>与该zone关联的Router(VPC)列表。详细信息请参见<a href="#table4448008117179">表6</a>。</p>
     </td>
     </tr>
+    <tr id="row8510143391615"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="p2408231966"><a name="p2408231966"></a><a name="p2408231966"></a>enterprise_project_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p20511933131615"><a name="p20511933131615"></a><a name="p20511933131615"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="p19511933171613"><a name="p19511933171613"></a><a name="p19511933171613"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 
@@ -358,7 +385,7 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </td>
     <td class="cellrowborder" valign="top" width="61.79382061793821%" headers="mcps1.2.4.1.3 "><p id="p17587794171719"><a name="p17587794171719"></a><a name="p17587794171719"></a>Router(VPC)所属VPC的ID。</p>
     <p id="p143411822947"><a name="p143411822947"></a><a name="p143411822947"></a>该参数的值可以通过如下两种方式获取：</p>
-    <a name="ul1938314911411"></a><a name="ul1938314911411"></a><ul id="ul1938314911411"><li>通过虚拟私有云的管理控制台，在VPC的详情页面中获取VPC的ID。</li><li>通过<a href="https://support.huaweicloud.com/api-vpc/zh-cn_topic_0020090625.html" target="_blank" rel="noopener noreferrer">查询VPC列表</a>获取VPC ID。</li></ul>
+    <a name="ul1938314911411"></a><a name="ul1938314911411"></a><ul id="ul1938314911411"><li>通过虚拟私有云的管理控制台，在VPC的详情页面中获取VPC的ID。</li><li>通过<a href="https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html" target="_blank" rel="noopener noreferrer">查询VPC列表</a>获取VPC ID。</li></ul>
     </td>
     </tr>
     <tr id="row6657832817179"><td class="cellrowborder" valign="top" width="18.32816718328167%" headers="mcps1.2.4.1.1 "><p id="p3709384171719"><a name="p3709384171719"></a><a name="p3709384171719"></a>router_region</p>

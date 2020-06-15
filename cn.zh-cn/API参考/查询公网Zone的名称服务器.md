@@ -1,4 +1,4 @@
-# 查询公网Zone的名称服务器<a name="zh-cn_topic_0057343056"></a>
+# 查询公网Zone的名称服务器<a name="dns_api_62004"></a>
 
 ## 功能介绍<a name="section55898385"></a>
 

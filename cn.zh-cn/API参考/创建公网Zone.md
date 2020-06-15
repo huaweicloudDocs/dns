@@ -1,4 +1,4 @@
-# 创建公网Zone<a name="zh-cn_topic_0057310891"></a>
+# 创建公网Zone<a name="dns_api_62001"></a>
 
 ## 功能介绍<a name="section3569153217343"></a>
 
@@ -15,79 +15,88 @@ POST /v2/zones
     **表 1**  请求样例的参数说明
 
     <a name="table3720408817742"></a>
-    <table><thead align="left"><tr id="row6225671717742"><th class="cellrowborder" valign="top" width="16.33%" id="mcps1.2.5.1.1"><p id="p5153686617742"><a name="p5153686617742"></a><a name="p5153686617742"></a>名称</p>
+    <table><thead align="left"><tr id="row6225671717742"><th class="cellrowborder" valign="top" width="24.709999999999997%" id="mcps1.2.5.1.1"><p id="p5153686617742"><a name="p5153686617742"></a><a name="p5153686617742"></a>名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="12.24%" id="mcps1.2.5.1.2"><p id="p473035017742"><a name="p473035017742"></a><a name="p473035017742"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="14.37%" id="mcps1.2.5.1.2"><p id="p473035017742"><a name="p473035017742"></a><a name="p473035017742"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="18.37%" id="mcps1.2.5.1.3"><p id="p386753717742"><a name="p386753717742"></a><a name="p386753717742"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="13.51%" id="mcps1.2.5.1.3"><p id="p386753717742"><a name="p386753717742"></a><a name="p386753717742"></a>参数类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="53.059999999999995%" id="mcps1.2.5.1.4"><p id="p5956810717742"><a name="p5956810717742"></a><a name="p5956810717742"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="47.410000000000004%" id="mcps1.2.5.1.4"><p id="p5956810717742"><a name="p5956810717742"></a><a name="p5956810717742"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row1329410717742"><td class="cellrowborder" valign="top" width="16.33%" headers="mcps1.2.5.1.1 "><p id="p3414560317742"><a name="p3414560317742"></a><a name="p3414560317742"></a>name</p>
+    <tbody><tr id="row1329410717742"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p3414560317742"><a name="p3414560317742"></a><a name="p3414560317742"></a>name</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.24%" headers="mcps1.2.5.1.2 "><p id="p6603174617742"><a name="p6603174617742"></a><a name="p6603174617742"></a>是</p>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p6603174617742"><a name="p6603174617742"></a><a name="p6603174617742"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.5.1.3 "><p id="p360216817742"><a name="p360216817742"></a><a name="p360216817742"></a>String</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p360216817742"><a name="p360216817742"></a><a name="p360216817742"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="53.059999999999995%" headers="mcps1.2.5.1.4 "><p id="p2651334817742"><a name="p2651334817742"></a><a name="p2651334817742"></a>从域名注册商处获得的授权域名。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p2651334817742"><a name="p2651334817742"></a><a name="p2651334817742"></a>从域名注册商处获得的授权域名。</p>
     <a name="ul1677295557"></a><a name="ul1677295557"></a><ul id="ul1677295557"><li>若以“.”号结束，总长度不超过254个字符。</li><li>若以非“.”号结束，总长度不超过253个字符。</li><li>单个字符串不超过63个字符，字符串间以点号分割。</li></ul>
     <p id="p3680010615524"><a name="p3680010615524"></a><a name="p3680010615524"></a>域名格式不区分大小写，系统会将输入的大写字母统一转换为小写。</p>
     </td>
     </tr>
-    <tr id="row1973909717742"><td class="cellrowborder" valign="top" width="16.33%" headers="mcps1.2.5.1.1 "><p id="p5474826717742"><a name="p5474826717742"></a><a name="p5474826717742"></a>description</p>
+    <tr id="row1973909717742"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p5474826717742"><a name="p5474826717742"></a><a name="p5474826717742"></a>description</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.24%" headers="mcps1.2.5.1.2 "><p id="p759162017742"><a name="p759162017742"></a><a name="p759162017742"></a>否</p>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p759162017742"><a name="p759162017742"></a><a name="p759162017742"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.5.1.3 "><p id="p3220634117742"><a name="p3220634117742"></a><a name="p3220634117742"></a>String</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p3220634117742"><a name="p3220634117742"></a><a name="p3220634117742"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="53.059999999999995%" headers="mcps1.2.5.1.4 "><p id="p6675950017742"><a name="p6675950017742"></a><a name="p6675950017742"></a>域名的描述信息。长度不超过255个字符。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p6675950017742"><a name="p6675950017742"></a><a name="p6675950017742"></a>域名的描述信息。长度不超过255个字符。</p>
     <p id="p10578150184319"><a name="p10578150184319"></a><a name="p10578150184319"></a>默认值为空。</p>
     </td>
     </tr>
-    <tr id="row3526956217742"><td class="cellrowborder" valign="top" width="16.33%" headers="mcps1.2.5.1.1 "><p id="p5656791917742"><a name="p5656791917742"></a><a name="p5656791917742"></a>zone_type</p>
+    <tr id="row3526956217742"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p5656791917742"><a name="p5656791917742"></a><a name="p5656791917742"></a>zone_type</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.24%" headers="mcps1.2.5.1.2 "><p id="p2306625217742"><a name="p2306625217742"></a><a name="p2306625217742"></a>否</p>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p2306625217742"><a name="p2306625217742"></a><a name="p2306625217742"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.5.1.3 "><p id="p5927915117742"><a name="p5927915117742"></a><a name="p5927915117742"></a>String</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p5927915117742"><a name="p5927915117742"></a><a name="p5927915117742"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="53.059999999999995%" headers="mcps1.2.5.1.4 "><p id="p1460824917742"><a name="p1460824917742"></a><a name="p1460824917742"></a>域名类型，包括公网域名和内网域名。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p1460824917742"><a name="p1460824917742"></a><a name="p1460824917742"></a>域名类型，包括公网域名和内网域名。</p>
     <a name="ul3411250511841"></a><a name="ul3411250511841"></a><ul id="ul3411250511841"><li>公网域名（public）：域名可以被internet上的主机访问。</li><li>内网域名（private）：域名仅被具体VPC内的主机访问。</li></ul>
     <p id="p49843158113913"><a name="p49843158113913"></a><a name="p49843158113913"></a>取值范围：public、private。</p>
     <p id="p4789645117742"><a name="p4789645117742"></a><a name="p4789645117742"></a>如果为空，则默认为public。创建内网域名，请参见<a href="创建内网Zone.md">创建内网Zone</a>。</p>
     </td>
     </tr>
-    <tr id="row4358988017742"><td class="cellrowborder" valign="top" width="16.33%" headers="mcps1.2.5.1.1 "><p id="p6536976617742"><a name="p6536976617742"></a><a name="p6536976617742"></a>email</p>
+    <tr id="row4358988017742"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p6536976617742"><a name="p6536976617742"></a><a name="p6536976617742"></a>email</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.24%" headers="mcps1.2.5.1.2 "><p id="p650279617742"><a name="p650279617742"></a><a name="p650279617742"></a>否</p>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p650279617742"><a name="p650279617742"></a><a name="p650279617742"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.5.1.3 "><p id="p2054573717742"><a name="p2054573717742"></a><a name="p2054573717742"></a>String</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p2054573717742"><a name="p2054573717742"></a><a name="p2054573717742"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="53.059999999999995%" headers="mcps1.2.5.1.4 "><p id="p1997196517742"><a name="p1997196517742"></a><a name="p1997196517742"></a>管理该zone的管理员邮箱。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p1997196517742"><a name="p1997196517742"></a><a name="p1997196517742"></a>管理该zone的管理员邮箱。</p>
     <p id="p435013473818"><a name="p435013473818"></a><a name="p435013473818"></a>默认值为售后服务邮箱。</p>
     </td>
     </tr>
-    <tr id="row13489593141045"><td class="cellrowborder" valign="top" width="16.33%" headers="mcps1.2.5.1.1 "><p id="p18915273141045"><a name="p18915273141045"></a><a name="p18915273141045"></a>ttl</p>
+    <tr id="row13489593141045"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p18915273141045"><a name="p18915273141045"></a><a name="p18915273141045"></a>ttl</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.24%" headers="mcps1.2.5.1.2 "><p id="p55742162141045"><a name="p55742162141045"></a><a name="p55742162141045"></a>否</p>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p55742162141045"><a name="p55742162141045"></a><a name="p55742162141045"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.5.1.3 "><p id="p18821243141045"><a name="p18821243141045"></a><a name="p18821243141045"></a>Integer</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p18821243141045"><a name="p18821243141045"></a><a name="p18821243141045"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="53.059999999999995%" headers="mcps1.2.5.1.4 "><p id="p3447255141334"><a name="p3447255141334"></a><a name="p3447255141334"></a>用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。</p>
-    <p id="p5335091141210"><a name="p5335091141210"></a><a name="p5335091141210"></a>取值范围：</p>
-    <p id="p43707626141214"><a name="p43707626141214"></a><a name="p43707626141214"></a>1~2147483647。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p3447255141334"><a name="p3447255141334"></a><a name="p3447255141334"></a>用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。</p>
+    <p id="p5335091141210"><a name="p5335091141210"></a><a name="p5335091141210"></a>取值范围：1~2147483647。</p>
     <p id="p9461175874917"><a name="p9461175874917"></a><a name="p9461175874917"></a>默认值为300s。</p>
     </td>
     </tr>
-    <tr id="row964631312824"><td class="cellrowborder" valign="top" width="16.33%" headers="mcps1.2.5.1.1 "><p id="p5754504312824"><a name="p5754504312824"></a><a name="p5754504312824"></a>tags</p>
+    <tr id="row964631312824"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p5754504312824"><a name="p5754504312824"></a><a name="p5754504312824"></a>tags</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.24%" headers="mcps1.2.5.1.2 "><p id="p3063693212824"><a name="p3063693212824"></a><a name="p3063693212824"></a>否</p>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p3063693212824"><a name="p3063693212824"></a><a name="p3063693212824"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.5.1.3 "><p id="p6567246612824"><a name="p6567246612824"></a><a name="p6567246612824"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p6567246612824"><a name="p6567246612824"></a><a name="p6567246612824"></a>Array of objects</p>
     </td>
-    <td class="cellrowborder" valign="top" width="53.059999999999995%" headers="mcps1.2.5.1.4 "><p id="p1786954012824"><a name="p1786954012824"></a><a name="p1786954012824"></a>资源标签。详细信息请参见<a href="数据结构.md#table19530794112436">表2</a>。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p1786954012824"><a name="p1786954012824"></a><a name="p1786954012824"></a>资源标签。详细信息请参见<a href="数据结构.md#table19530794112436">表2</a>。</p>
     <p id="p391920411506"><a name="p391920411506"></a><a name="p391920411506"></a>默认值为空。</p>
+    </td>
+    </tr>
+    <tr id="row79977478574"><td class="cellrowborder" valign="top" width="24.709999999999997%" headers="mcps1.2.5.1.1 "><p id="p599717478576"><a name="p599717478576"></a><a name="p599717478576"></a>enterprise_project_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p7997184775710"><a name="p7997184775710"></a><a name="p7997184775710"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p29971047155714"><a name="p29971047155714"></a><a name="p29971047155714"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p13997747155711"><a name="p13997747155711"></a><a name="p13997747155711"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
+    <p id="p131131925172318"><a name="p131131925172318"></a><a name="p131131925172318"></a>默认值为0。</p>
     </td>
     </tr>
     </tbody>
