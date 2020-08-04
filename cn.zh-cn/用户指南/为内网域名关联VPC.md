@@ -4,8 +4,8 @@
 
 当用户创建的内网域名需要关联新的VPC时，可以在管理控制台云解析服务页面进行关联VPC操作。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->关联的VPC需要与服务器（例如ECS）所在VPC保持一致，否则会导致内网域名解析不成功。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>关联的VPC需要与服务器（例如ECS）所在VPC保持一致，否则会导致内网域名解析不成功。
 
 ## 操作步骤<a name="section117735276489"></a>
 

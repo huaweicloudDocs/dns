@@ -7,7 +7,7 @@ TXT类型记录集常用于对域名进行标识和说明，可填写任意的�
 -   记录DKIM的公钥，用于反电子邮件欺诈。
 -   用于记录域名所有者身份信息，用于域名找回。
 
-更多关于记录集类型的介绍，请参见[解析管理简介](解析管理简介.md)。
+更多关于记录集类型的介绍，请参见[记录集类型及配置规则](记录集类型及配置规则.md)。
 
 ## 操作步骤<a name="section6412174644120"></a>
 
@@ -15,6 +15,7 @@ TXT类型记录集常用于对域名进行标识和说明，可填写任意的�
 2.  选择“网络 \> 云解析服务”。
 
     进入“云解析”页面。
+
 
 
 1.  在左侧树状导航栏，选择“域名解析 \> 公网解析”或者“域名解析 \> 内网解析”。
@@ -100,17 +101,17 @@ TXT类型记录集常用于对域名进行标识和说明，可填写任意的�
     </td>
     <td class="cellrowborder" valign="top" width="47.81%" headers="mcps1.2.4.1.2 "><p id="p9326123174810"><a name="p9326123174810"></a><a name="p9326123174810"></a>填写用户所需的任意文本记录。</p>
     <p id="p13315103105719"><a name="p13315103105719"></a><a name="p13315103105719"></a>配置规则：</p>
-    <a name="ul32037609181232"></a><a name="ul32037609181232"></a><ul id="ul32037609181232"><li>文本记录需要由半角双引号包裹。</li><li>支持单个或多个文本记录，多个文本记录之间以换行符分隔。<p id="dns_usermanual_0035_p1374811251580"><a name="dns_usermanual_0035_p1374811251580"></a><a name="dns_usermanual_0035_p1374811251580"></a>最多可以输入50个不重复的文本记录。</p>
-    </li><li>单个文本记录可以包含多个文本字符串，每个文本字符串以半角双引号包裹，不同的文本字符串之间以单个空格隔开。<p id="dns_usermanual_0035_p1513914291788"><a name="dns_usermanual_0035_p1513914291788"></a><a name="dns_usermanual_0035_p1513914291788"></a>每个文本字符串长度不超过255个字符。</p>
-    <p id="dns_usermanual_0035_p5663162119222"><a name="dns_usermanual_0035_p5663162119222"></a><a name="dns_usermanual_0035_p5663162119222"></a>单个文本记录长度不超过4096个字符。</p>
+    <a name="ul32037609181232"></a><a name="ul32037609181232"></a><ul id="ul32037609181232"><li>文本记录需要由半角双引号包裹。</li><li>支持单个或多个文本记录，多个文本记录之间以换行符分隔。<p id="dns_usermanual_0601_p1374811251580"><a name="dns_usermanual_0601_p1374811251580"></a><a name="dns_usermanual_0601_p1374811251580"></a>最多可以输入50个不重复的文本记录。</p>
+    </li><li>单个文本记录可以包含多个文本字符串，每个文本字符串以半角双引号包裹，不同的文本字符串之间以单个空格隔开。<p id="dns_usermanual_0601_p1513914291788"><a name="dns_usermanual_0601_p1513914291788"></a><a name="dns_usermanual_0601_p1513914291788"></a>每个文本字符串长度不超过255个字符。</p>
+    <p id="dns_usermanual_0601_p5663162119222"><a name="dns_usermanual_0601_p5663162119222"></a><a name="dns_usermanual_0601_p5663162119222"></a>单个文本记录长度不超过4096个字符。</p>
     </li><li>不可为空。</li><li>不支持反斜杠字符“\”。</li></ul>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><a name="ul144863143119"></a><a name="ul144863143119"></a><ul id="ul144863143119"><li>单个文本记录<p id="dns_usermanual_0035_p141241414182513"><a name="dns_usermanual_0035_p141241414182513"></a><a name="dns_usermanual_0035_p141241414182513"></a>"aaa"</p>
-    </li><li>多个文本记录<p id="dns_usermanual_0035_p649982213258"><a name="dns_usermanual_0035_p649982213258"></a><a name="dns_usermanual_0035_p649982213258"></a>"bbb"</p>
-    <p id="dns_usermanual_0035_p698719260258"><a name="dns_usermanual_0035_p698719260258"></a><a name="dns_usermanual_0035_p698719260258"></a>"ccc"</p>
-    </li><li>包含多个文本字符串的文本记录<p id="dns_usermanual_0035_p04795642513"><a name="dns_usermanual_0035_p04795642513"></a><a name="dns_usermanual_0035_p04795642513"></a>"ddd" "eee" "fff"</p>
-    </li><li>用于SPF反垃圾邮件<p id="dns_usermanual_0035_p141739204018"><a name="dns_usermanual_0035_p141739204018"></a><a name="dns_usermanual_0035_p141739204018"></a>"v=spf1 a mx -all"</p>
-    <p id="dns_usermanual_0035_p1414004834119"><a name="dns_usermanual_0035_p1414004834119"></a><a name="dns_usermanual_0035_p1414004834119"></a>表示只有当前域名的 A 记录和 MX 记录中的IP地址有权限使用这个域名发送邮件。</p>
+    <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><a name="ul144863143119"></a><a name="ul144863143119"></a><ul id="ul144863143119"><li>单个文本记录<p id="dns_usermanual_0601_p141241414182513"><a name="dns_usermanual_0601_p141241414182513"></a><a name="dns_usermanual_0601_p141241414182513"></a>"aaa"</p>
+    </li><li>多个文本记录<p id="dns_usermanual_0601_p649982213258"><a name="dns_usermanual_0601_p649982213258"></a><a name="dns_usermanual_0601_p649982213258"></a>"bbb"</p>
+    <p id="dns_usermanual_0601_p698719260258"><a name="dns_usermanual_0601_p698719260258"></a><a name="dns_usermanual_0601_p698719260258"></a>"ccc"</p>
+    </li><li>包含多个文本字符串的文本记录<p id="dns_usermanual_0601_p04795642513"><a name="dns_usermanual_0601_p04795642513"></a><a name="dns_usermanual_0601_p04795642513"></a>"ddd" "eee" "fff"</p>
+    </li><li>用于SPF反垃圾邮件<p id="dns_usermanual_0601_p141739204018"><a name="dns_usermanual_0601_p141739204018"></a><a name="dns_usermanual_0601_p141739204018"></a>"v=spf1 a mx -all"</p>
+    <p id="dns_usermanual_0601_p1414004834119"><a name="dns_usermanual_0601_p1414004834119"></a><a name="dns_usermanual_0601_p1414004834119"></a>表示只有当前域名的 A 记录和 MX 记录中的IP地址有权限使用这个域名发送邮件。</p>
     </li></ul>
     </td>
     </tr>
@@ -172,9 +173,10 @@ TXT类型记录集常用于对域名进行标识和说明，可填写任意的�
     </tbody>
     </table>
 
-2.  单击“确定”，完成记录集的添加。
+2.  单击“确定”。
+3.  返回“解析记录”页面。
 
-    您可以在域名对应的记录集列表中查看添加的记录集。当记录集的状态显示为“正常”时，表示记录集添加成功。
+    添加完成后，您可以在域名对应的记录集列表中查看已添加的记录集。当记录集的状态显示为“正常”时，表示记录集添加成功。
 
 
 ## 相关操作<a name="section18984203717105"></a>
