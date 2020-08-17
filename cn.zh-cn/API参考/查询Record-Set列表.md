@@ -105,7 +105,7 @@ GET /v2/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}&o
 <td class="cellrowborder" valign="top" width="17.511751175117514%" headers="mcps1.2.5.1.3 "><p id="p399821215119"><a name="p399821215119"></a><a name="p399821215119"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50.04500450045004%" headers="mcps1.2.5.1.4 "><p id="p109982012141111"><a name="p109982012141111"></a><a name="p109982012141111"></a>待查询的Record Set的记录集类型。</p>
-<p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA，PTR（仅限内网Zone）</p>
+<p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
 <p id="p111997895417"><a name="p111997895417"></a><a name="p111997895417"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a></p>
 <p id="p13289122841911"><a name="p13289122841911"></a><a name="p13289122841911"></a>搜索模式固定为精确搜索。</p>
 <p id="p8193193917127"><a name="p8193193917127"></a><a name="p8193193917127"></a>默认值为空。</p>
@@ -277,7 +277,7 @@ GET /v2/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}&o
     <td class="cellrowborder" valign="top" width="19.67%" headers="mcps1.2.4.1.2 "><p id="a4d34d1f420ec42079710c4d92e0b7616"><a name="a4d34d1f420ec42079710c4d92e0b7616"></a><a name="a4d34d1f420ec42079710c4d92e0b7616"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="ad1150aaf4f1a44e997e3e03abe8c776e"><a name="ad1150aaf4f1a44e997e3e03abe8c776e"></a><a name="ad1150aaf4f1a44e997e3e03abe8c776e"></a>记录类型。</p>
-    <p id="p1484155154215"><a name="p1484155154215"></a><a name="p1484155154215"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+    <p id="p1351315573111"><a name="p1351315573111"></a><a name="p1351315573111"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
     <p id="p7402204505815"><a name="p7402204505815"></a><a name="p7402204505815"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>

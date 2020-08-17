@@ -111,7 +111,7 @@ DELETE /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="19.259999999999998%" headers="mcps1.2.4.1.2 "><p id="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.41%" headers="mcps1.2.4.1.3 "><p id="a3db4aa6f5f604faeb111cc5b98a05bf9"><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a>记录类型。</p>
-    <p id="ad985bae02f31423bbc18786423679035"><a name="ad985bae02f31423bbc18786423679035"></a><a name="ad985bae02f31423bbc18786423679035"></a>取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，PTR（仅限内网Zone），CAA（仅限公网Zone）。</p>
+    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
     <p id="zh-cn_topic_0037134404_p15442435577"><a name="zh-cn_topic_0037134404_p15442435577"></a><a name="zh-cn_topic_0037134404_p15442435577"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>

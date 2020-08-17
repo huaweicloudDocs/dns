@@ -4,8 +4,8 @@
 
 创建单个Record Set。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->仅公网域名支持创建多线路Record Set，该接口仅适用于公网DNS。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>仅公网域名支持创建多线路Record Set，该接口仅适用于公网DNS。
 
 ## URI<a name="section53701671161015"></a>
 
