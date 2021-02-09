@@ -202,7 +202,7 @@ PUT /v2/zones/\{zone\_id\}/statuses
     </tr>
     <tr id="r5a57c1dba2934130a772bfc188e27c7b"><td class="cellrowborder" valign="top" width="18.41%" headers="mcps1.2.4.1.1 "><p id="a414da27796154a8ea0f3f5d155266ce6"><a name="a414da27796154a8ea0f3f5d155266ce6"></a><a name="a414da27796154a8ea0f3f5d155266ce6"></a>masters</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="ac58ddffcdd4b4db48b9da9a1aa4b94b8"><a name="ac58ddffcdd4b4db48b9da9a1aa4b94b8"></a><a name="ac58ddffcdd4b4db48b9da9a1aa4b94b8"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="ac58ddffcdd4b4db48b9da9a1aa4b94b8"><a name="ac58ddffcdd4b4db48b9da9a1aa4b94b8"></a><a name="ac58ddffcdd4b4db48b9da9a1aa4b94b8"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="a67f94f4a1cee4d80ad3886d215def3de"><a name="a67f94f4a1cee4d80ad3886d215def3de"></a><a name="a67f94f4a1cee4d80ad3886d215def3de"></a>主从模式中，从DNS服务器用以获取DNS信息。</p>
     <p id="zh-cn_topic_0057310891_p05918233215"><a name="zh-cn_topic_0057310891_p05918233215"></a><a name="zh-cn_topic_0057310891_p05918233215"></a>目前暂未使用。</p>

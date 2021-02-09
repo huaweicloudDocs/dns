@@ -78,7 +78,7 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 
 -   请求样例
 
-    恢复ID为“_region\_id_:c5504932-bf23-4171-b655-b87a6bc59334”的弹性IP的PTR为默认值。
+    恢复ID为“c5504932-bf23-4171-b655-b87a6bc59334”的弹性IP的PTR为默认值。
 
     ```
     PATCH https://{DNS_Endpoint}/v2/reverse/floatingips/region_id:c5504932-bf23-4171-b655-b87a6bc59334

@@ -172,7 +172,7 @@ GET /v2/zones/\{zone\_id\}
     </tr>
     <tr id="row51726070123415"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="p29062162123415"><a name="p29062162123415"></a><a name="p29062162123415"></a>masters</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p5224955123415"><a name="p5224955123415"></a><a name="p5224955123415"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p5224955123415"><a name="p5224955123415"></a><a name="p5224955123415"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="p20568216123415"><a name="p20568216123415"></a><a name="p20568216123415"></a>主从模式中，从DNS服务器用以获取DNS信息。</p>
     <p id="p376119772512"><a name="p376119772512"></a><a name="p376119772512"></a>目前暂未使用。</p>
@@ -180,7 +180,7 @@ GET /v2/zones/\{zone\_id\}
     </tr>
     <tr id="row50896222123415"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="p28953317123415"><a name="p28953317123415"></a><a name="p28953317123415"></a>routers</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p63517332123415"><a name="p63517332123415"></a><a name="p63517332123415"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p63517332123415"><a name="p63517332123415"></a><a name="p63517332123415"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="p44630292123415"><a name="p44630292123415"></a><a name="p44630292123415"></a>与该zone关联的Router(VPC)列表。详细信息请参见<a href="#table4448008117179">表4</a>。</p>
     </td>
@@ -216,7 +216,7 @@ GET /v2/zones/\{zone\_id\}
     </tbody>
     </table>
 
-    **表 4**  router对象参数说明
+    **表 4**  routers对象参数说明
 
     <a name="table4448008117179"></a>
     <table><thead align="left"><tr id="row6132935617179"><th class="cellrowborder" valign="top" width="18.538146185381464%" id="mcps1.2.4.1.1"><p id="p36588677171719"><a name="p36588677171719"></a><a name="p36588677171719"></a>名称</p>

@@ -83,9 +83,9 @@ POST /v2/zones
     </td>
     <td class="cellrowborder" valign="top" width="14.37%" headers="mcps1.2.5.1.2 "><p id="p3063693212824"><a name="p3063693212824"></a><a name="p3063693212824"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p6567246612824"><a name="p6567246612824"></a><a name="p6567246612824"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="13.51%" headers="mcps1.2.5.1.3 "><p id="p6567246612824"><a name="p6567246612824"></a><a name="p6567246612824"></a>Array of object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p1786954012824"><a name="p1786954012824"></a><a name="p1786954012824"></a>资源标签。详细信息请参见<a href="数据结构.md#table19530794112436">表2</a>。</p>
+    <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p1786954012824"><a name="p1786954012824"></a><a name="p1786954012824"></a>资源标签。详细信息请参见<a href="#table619059185111">表2</a>。</p>
     <p id="p391920411506"><a name="p391920411506"></a><a name="p391920411506"></a>默认值为空。</p>
     </td>
     </tr>
@@ -97,6 +97,40 @@ POST /v2/zones
     </td>
     <td class="cellrowborder" valign="top" width="47.410000000000004%" headers="mcps1.2.5.1.4 "><p id="p13997747155711"><a name="p13997747155711"></a><a name="p13997747155711"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
     <p id="p131131925172318"><a name="p131131925172318"></a><a name="p131131925172318"></a>默认值为0。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 2**  tags对象参数说明
+
+    <a name="table619059185111"></a>
+    <table><thead align="left"><tr id="row15361836112436"><th class="cellrowborder" valign="top" width="24.54%" id="mcps1.2.5.1.1"><p id="p58707511112436"><a name="p58707511112436"></a><a name="p58707511112436"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="14.64%" id="mcps1.2.5.1.2"><p id="p791763775720"><a name="p791763775720"></a><a name="p791763775720"></a>是否必选</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="13.700000000000001%" id="mcps1.2.5.1.3"><p id="p42210623112436"><a name="p42210623112436"></a><a name="p42210623112436"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="47.12%" id="mcps1.2.5.1.4"><p id="p63617265112436"><a name="p63617265112436"></a><a name="p63617265112436"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row35684479112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="p13313439112530"><a name="p13313439112530"></a><a name="p13313439112530"></a>key</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.64%" headers="mcps1.2.5.1.2 "><p id="p89180372570"><a name="p89180372570"></a><a name="p89180372570"></a>是</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="p35653193112436"><a name="p35653193112436"></a><a name="p35653193112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="p48921437201850"><a name="p48921437201850"></a><a name="p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    <tr id="row20048002112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="p66095544112533"><a name="p66095544112533"></a><a name="p66095544112533"></a>value</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.64%" headers="mcps1.2.5.1.2 "><p id="p13918103725715"><a name="p13918103725715"></a><a name="p13918103725715"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="p60123528112436"><a name="p60123528112436"></a><a name="p60123528112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="p61714725112922"><a name="p61714725112922"></a><a name="p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     </tbody>
@@ -131,7 +165,7 @@ POST /v2/zones
 
 -   要素说明
 
-    **表 2**  响应样例的要素说明
+    **表 3**  响应样例的要素说明
 
     <a name="table54601120171039"></a>
     <table><thead align="left"><tr id="row54125868171039"><th class="cellrowborder" valign="top" width="18.41%" id="mcps1.2.4.1.1"><p id="p46128019171039"><a name="p46128019171039"></a><a name="p46128019171039"></a>名称</p>
@@ -242,12 +276,19 @@ POST /v2/zones
     <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="p571676251572"><a name="p571676251572"></a><a name="p571676251572"></a>Object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="p660161572"><a name="p660161572"></a><a name="p660161572"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。</p>
-    <p id="p134911211113714"><a name="p134911211113714"></a><a name="p134911211113714"></a>详细信息请参见<a href="#table0172144213344">表3</a>。</p>
+    <p id="p134911211113714"><a name="p134911211113714"></a><a name="p134911211113714"></a>详细信息请参见<a href="#table0172144213344">表4</a>。</p>
+    </td>
+    </tr>
+    <tr id="row660765834819"><td class="cellrowborder" valign="top" width="18.41%" headers="mcps1.2.4.1.1 "><p id="p2408231966"><a name="p2408231966"></a><a name="p2408231966"></a>enterprise_project_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="p9408103116617"><a name="p9408103116617"></a><a name="p9408103116617"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="p18408153111619"><a name="p18408153111619"></a><a name="p18408153111619"></a>域名关联的企业项目ID，长度不超过36个字符。</p>
     </td>
     </tr>
     <tr id="row177328815945"><td class="cellrowborder" valign="top" width="18.41%" headers="mcps1.2.4.1.1 "><p id="p1595959815945"><a name="p1595959815945"></a><a name="p1595959815945"></a>masters</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="p1765902715945"><a name="p1765902715945"></a><a name="p1765902715945"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="p1765902715945"><a name="p1765902715945"></a><a name="p1765902715945"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="p2109506015945"><a name="p2109506015945"></a><a name="p2109506015945"></a>主从模式中，从DNS服务器用以获取DNS信息。</p>
     <p id="p05918233215"><a name="p05918233215"></a><a name="p05918233215"></a>目前暂未使用。</p>
@@ -256,7 +297,7 @@ POST /v2/zones
     </tbody>
     </table>
 
-    **表 3**  links对象参数说明
+    **表 4**  links对象参数说明
 
     <a name="table0172144213344"></a>
     <table><thead align="left"><tr id="row917304253418"><th class="cellrowborder" valign="top" width="18%" id="mcps1.2.4.1.1"><p id="p101731742153416"><a name="p101731742153416"></a><a name="p101731742153416"></a>名称</p>

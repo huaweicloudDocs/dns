@@ -54,7 +54,7 @@ GET /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 
 -   请求样例
 
-    查询ID为“_region\_id_:c5504932-bf23-4171-b655-b87a6bc59334”的弹性IP的PTR。
+    查询ID为“c5504932-bf23-4171-b655-b87a6bc59334”的弹性IP的PTR。
 
     ```
     GET https://{DNS_Endpoint}/v2/reverse/floatingips/region_id:c5504932-bf23-4171-b655-b87a6bc59334

@@ -16,19 +16,23 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
 **表 1**  URI格式的参数说明
 
 <a name="table30807893173129"></a>
-<table><thead align="left"><tr id="row38661368173129"><th class="cellrowborder" valign="top" width="23.48%" id="mcps1.2.4.1.1"><p id="p14212988173129"><a name="p14212988173129"></a><a name="p14212988173129"></a>名称</p>
+<table><thead align="left"><tr id="row38661368173129"><th class="cellrowborder" valign="top" width="21.71217121712171%" id="mcps1.2.5.1.1"><p id="p14212988173129"><a name="p14212988173129"></a><a name="p14212988173129"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="20.06%" id="mcps1.2.4.1.2"><p id="p23287688173129"><a name="p23287688173129"></a><a name="p23287688173129"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="18.551855185518555%" id="mcps1.2.5.1.2"><p id="p23287688173129"><a name="p23287688173129"></a><a name="p23287688173129"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="56.46%" id="mcps1.2.4.1.3"><p id="p1114682173129"><a name="p1114682173129"></a><a name="p1114682173129"></a>说明</p>
+<th class="cellrowborder" valign="top" width="18.88188818881888%" id="mcps1.2.5.1.3"><p id="p223780153116"><a name="p223780153116"></a><a name="p223780153116"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.85408540854086%" id="mcps1.2.5.1.4"><p id="p1114682173129"><a name="p1114682173129"></a><a name="p1114682173129"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row6301875173129"><td class="cellrowborder" valign="top" width="23.48%" headers="mcps1.2.4.1.1 "><p id="p5124116173129"><a name="p5124116173129"></a><a name="p5124116173129"></a>zone_id</p>
+<tbody><tr id="row6301875173129"><td class="cellrowborder" valign="top" width="21.71217121712171%" headers="mcps1.2.5.1.1 "><p id="p5124116173129"><a name="p5124116173129"></a><a name="p5124116173129"></a>zone_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.06%" headers="mcps1.2.4.1.2 "><p id="p65804667173129"><a name="p65804667173129"></a><a name="p65804667173129"></a>是</p>
+<td class="cellrowborder" valign="top" width="18.551855185518555%" headers="mcps1.2.5.1.2 "><p id="p65804667173129"><a name="p65804667173129"></a><a name="p65804667173129"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.46%" headers="mcps1.2.4.1.3 "><p id="p13017963195717"><a name="p13017963195717"></a><a name="p13017963195717"></a>所属zone的ID。仅支持公网zone。</p>
+<td class="cellrowborder" valign="top" width="18.88188818881888%" headers="mcps1.2.5.1.3 "><p id="p82374043119"><a name="p82374043119"></a><a name="p82374043119"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.85408540854086%" headers="mcps1.2.5.1.4 "><p id="p13017963195717"><a name="p13017963195717"></a><a name="p13017963195717"></a>所属zone的ID。仅支持公网zone。</p>
 <p id="p22777371252"><a name="p22777371252"></a><a name="p22777371252"></a>可以通过<a href="查询公网Zone列表.md">查询公网Zone列表</a>获取。</p>
 </td>
 </tr>
@@ -44,9 +48,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     <a name="table9470531173211"></a>
     <table><thead align="left"><tr id="row60397351173211"><th class="cellrowborder" valign="top" width="22.45%" id="mcps1.2.5.1.1"><p id="p65819295173211"><a name="p65819295173211"></a><a name="p65819295173211"></a>名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="17.51%" id="mcps1.2.5.1.2"><p id="p42278174173211"><a name="p42278174173211"></a><a name="p42278174173211"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="17.57%" id="mcps1.2.5.1.2"><p id="p42278174173211"><a name="p42278174173211"></a><a name="p42278174173211"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="21.67%" id="mcps1.2.5.1.3"><p id="p26309572173211"><a name="p26309572173211"></a><a name="p26309572173211"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="21.61%" id="mcps1.2.5.1.3"><p id="p26309572173211"><a name="p26309572173211"></a><a name="p26309572173211"></a>参数类型</p>
     </th>
     <th class="cellrowborder" valign="top" width="38.37%" id="mcps1.2.5.1.4"><p id="p67071922173211"><a name="p67071922173211"></a><a name="p67071922173211"></a>说明</p>
     </th>
@@ -54,9 +58,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </thead>
     <tbody><tr id="row65160710173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p21415905173211"><a name="p21415905173211"></a><a name="p21415905173211"></a>name</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p58188388173211"><a name="p58188388173211"></a><a name="p58188388173211"></a>是</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p58188388173211"><a name="p58188388173211"></a><a name="p58188388173211"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p45293229173211"><a name="p45293229173211"></a><a name="p45293229173211"></a>String</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p45293229173211"><a name="p45293229173211"></a><a name="p45293229173211"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p5054941173211"><a name="p5054941173211"></a><a name="p5054941173211"></a>域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。</p>
     <p id="p27471407151355"><a name="p27471407151355"></a><a name="p27471407151355"></a>域名格式不区分大小写，系统会将输入的大写字母统一转换为小写。</p>
@@ -64,9 +68,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row34337486173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p33154613173211"><a name="p33154613173211"></a><a name="p33154613173211"></a>description</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p28540882173211"><a name="p28540882173211"></a><a name="p28540882173211"></a>否</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p28540882173211"><a name="p28540882173211"></a><a name="p28540882173211"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p37402311173211"><a name="p37402311173211"></a><a name="p37402311173211"></a>String</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p37402311173211"><a name="p37402311173211"></a><a name="p37402311173211"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p43441715173211"><a name="p43441715173211"></a><a name="p43441715173211"></a>可选配置，对域名的描述。</p>
     <p id="p9966775173211"><a name="p9966775173211"></a><a name="p9966775173211"></a>长度不超过255个字符。</p>
@@ -75,20 +79,33 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row52503862173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p4265712173211"><a name="p4265712173211"></a><a name="p4265712173211"></a>type</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p43588224173211"><a name="p43588224173211"></a><a name="p43588224173211"></a>是</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p43588224173211"><a name="p43588224173211"></a><a name="p43588224173211"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p44233480173211"><a name="p44233480173211"></a><a name="p44233480173211"></a>String</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p44233480173211"><a name="p44233480173211"></a><a name="p44233480173211"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p29114279173211"><a name="p29114279173211"></a><a name="p29114279173211"></a>Record Set的类型。</p>
     <p id="p1579233173211"><a name="p1579233173211"></a><a name="p1579233173211"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。</p>
     <p id="p1193201604"><a name="p1193201604"></a><a name="p1193201604"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
+    <tr id="row71465392615"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p1743955511345"><a name="p1743955511345"></a><a name="p1743955511345"></a>status</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p11439135523413"><a name="p11439135523413"></a><a name="p11439135523413"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p64398557341"><a name="p64398557341"></a><a name="p64398557341"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p8439125518342"><a name="p8439125518342"></a><a name="p8439125518342"></a>解析记录的状态。</p>
+    <p id="p17490132016386"><a name="p17490132016386"></a><a name="p17490132016386"></a>取值范围：</p>
+    <a name="ul1827912763818"></a><a name="ul1827912763818"></a><ul id="ul1827912763818"><li>ENABLE，表示创建启用状态的解析记录。</li><li>DISABLE，表示创建暂停状态的解析记录。</li></ul>
+    <p id="p17279153643910"><a name="p17279153643910"></a><a name="p17279153643910"></a>当参数为空时：</p>
+    <a name="ul69214558499"></a><a name="ul69214558499"></a><ul id="ul69214558499"><li>若域名状态为“正常”时，默认创建的Record Set状态为“正常”。</li><li>若域名状态为“暂停”时，默认创建的Record Set状态为“暂停”。</li></ul>
+    </td>
+    </tr>
     <tr id="row44235645173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p56753577173211"><a name="p56753577173211"></a><a name="p56753577173211"></a>ttl</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p44923213173211"><a name="p44923213173211"></a><a name="p44923213173211"></a>否</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p44923213173211"><a name="p44923213173211"></a><a name="p44923213173211"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p3678318721261"><a name="p3678318721261"></a><a name="p3678318721261"></a>Integer</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p3678318721261"><a name="p3678318721261"></a><a name="p3678318721261"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p123031523174010"><a name="p123031523174010"></a><a name="p123031523174010"></a>解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。</p>
     <p id="p1030317233408"><a name="p1030317233408"></a><a name="p1030317233408"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
@@ -98,9 +115,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row59750658173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p62596825173211"><a name="p62596825173211"></a><a name="p62596825173211"></a>records</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p32296167173211"><a name="p32296167173211"></a><a name="p32296167173211"></a>是</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p32296167173211"><a name="p32296167173211"></a><a name="p32296167173211"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p2089211781115"><a name="p2089211781115"></a><a name="p2089211781115"></a>Array of strings</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p2089211781115"><a name="p2089211781115"></a><a name="p2089211781115"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p8321575173211"><a name="p8321575173211"></a><a name="p8321575173211"></a>解析记录的值。不同类型解析记录对应的值的规则不同。</p>
     <p id="p813988173211"><a name="p813988173211"></a><a name="p813988173211"></a>如Type为AAAA类型，Value是域名对应的IPv6地址列表。</p>
@@ -110,9 +127,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row19347487142432"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p19620443142437"><a name="p19620443142437"></a><a name="p19620443142437"></a>line</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p43599524142447"><a name="p43599524142447"></a><a name="p43599524142447"></a>否</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p43599524142447"><a name="p43599524142447"></a><a name="p43599524142447"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p30969417142432"><a name="p30969417142432"></a><a name="p30969417142432"></a>String</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p30969417142432"><a name="p30969417142432"></a><a name="p30969417142432"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p25494838142432"><a name="p25494838142432"></a><a name="p25494838142432"></a>解析线路ID。请参见<a href="解析线路类型.md">解析线路类型</a>。</p>
     <p id="p39210194549"><a name="p39210194549"></a><a name="p39210194549"></a>默认值为默认线路。</p>
@@ -120,9 +137,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row46318244195034"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p17706388195034"><a name="p17706388195034"></a><a name="p17706388195034"></a>tags</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p24931324195034"><a name="p24931324195034"></a><a name="p24931324195034"></a>否</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p24931324195034"><a name="p24931324195034"></a><a name="p24931324195034"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p6171377195034"><a name="p6171377195034"></a><a name="p6171377195034"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p6171377195034"><a name="p6171377195034"></a><a name="p6171377195034"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p30119514195034"><a name="p30119514195034"></a><a name="p30119514195034"></a>资源标签。详细信息请参见<a href="数据结构.md#table19530794112436">表2</a>。</p>
     <p id="p1194174212555"><a name="p1194174212555"></a><a name="p1194174212555"></a>默认值为空。</p>
@@ -130,9 +147,9 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row3778990815215"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p3329183915215"><a name="p3329183915215"></a><a name="p3329183915215"></a>weight</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p1228445215215"><a name="p1228445215215"></a><a name="p1228445215215"></a>否</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p1228445215215"><a name="p1228445215215"></a><a name="p1228445215215"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p5551654115215"><a name="p5551654115215"></a><a name="p5551654115215"></a>Integer</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p5551654115215"><a name="p5551654115215"></a><a name="p5551654115215"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p54597115215"><a name="p54597115215"></a><a name="p54597115215"></a>解析记录的权重。</p>
     <a name="ul2108239317221"></a><a name="ul2108239317221"></a><ul id="ul2108239317221"><li>当不填时，取默认值1。</li></ul>
@@ -143,12 +160,82 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tr>
     <tr id="row165518115379"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p16554113713"><a name="p16554113713"></a><a name="p16554113713"></a>alias_target</p>
     </td>
-    <td class="cellrowborder" valign="top" width="17.51%" headers="mcps1.2.5.1.2 "><p id="p865517103714"><a name="p865517103714"></a><a name="p865517103714"></a>否</p>
+    <td class="cellrowborder" valign="top" width="17.57%" headers="mcps1.2.5.1.2 "><p id="p865517103714"><a name="p865517103714"></a><a name="p865517103714"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.67%" headers="mcps1.2.5.1.3 "><p id="p46551414372"><a name="p46551414372"></a><a name="p46551414372"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.3 "><p id="p46551414372"><a name="p46551414372"></a><a name="p46551414372"></a>Object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p365512111377"><a name="p365512111377"></a><a name="p365512111377"></a>别名记录。详细信息请参见<a href="数据结构.md#table11888161342410">表4</a>。</p>
+    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p365512111377"><a name="p365512111377"></a><a name="p365512111377"></a>别名记录。详细信息请参见<a href="#table374113120594">表4</a>。</p>
     <p id="p064135635410"><a name="p064135635410"></a><a name="p064135635410"></a>默认值为空。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 3**  tags对象参数说明
+
+    <a name="table3911153711258"></a>
+    <table><thead align="left"><tr id="dns_api_62001_row15361836112436"><th class="cellrowborder" valign="top" width="24.54%" id="mcps1.2.5.1.1"><p id="dns_api_62001_p58707511112436"><a name="dns_api_62001_p58707511112436"></a><a name="dns_api_62001_p58707511112436"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="14.64%" id="mcps1.2.5.1.2"><p id="dns_api_62001_p791763775720"><a name="dns_api_62001_p791763775720"></a><a name="dns_api_62001_p791763775720"></a>是否必选</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="13.700000000000001%" id="mcps1.2.5.1.3"><p id="dns_api_62001_p42210623112436"><a name="dns_api_62001_p42210623112436"></a><a name="dns_api_62001_p42210623112436"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="47.12%" id="mcps1.2.5.1.4"><p id="dns_api_62001_p63617265112436"><a name="dns_api_62001_p63617265112436"></a><a name="dns_api_62001_p63617265112436"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="dns_api_62001_row35684479112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="dns_api_62001_p13313439112530"><a name="dns_api_62001_p13313439112530"></a><a name="dns_api_62001_p13313439112530"></a>key</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.64%" headers="mcps1.2.5.1.2 "><p id="dns_api_62001_p89180372570"><a name="dns_api_62001_p89180372570"></a><a name="dns_api_62001_p89180372570"></a>是</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p35653193112436"><a name="dns_api_62001_p35653193112436"></a><a name="dns_api_62001_p35653193112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p48921437201850"><a name="dns_api_62001_p48921437201850"></a><a name="dns_api_62001_p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    <tr id="dns_api_62001_row20048002112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="dns_api_62001_p66095544112533"><a name="dns_api_62001_p66095544112533"></a><a name="dns_api_62001_p66095544112533"></a>value</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.64%" headers="mcps1.2.5.1.2 "><p id="dns_api_62001_p13918103725715"><a name="dns_api_62001_p13918103725715"></a><a name="dns_api_62001_p13918103725715"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p60123528112436"><a name="dns_api_62001_p60123528112436"></a><a name="dns_api_62001_p60123528112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p61714725112922"><a name="dns_api_62001_p61714725112922"></a><a name="dns_api_62001_p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 4**  alias\_target对象参数说明
+
+    <a name="table374113120594"></a>
+    <table><thead align="left"><tr id="row157419105911"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p13742917592"><a name="p13742917592"></a><a name="p13742917592"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="14.78%" id="mcps1.2.5.1.2"><p id="p07421819595"><a name="p07421819595"></a><a name="p07421819595"></a>是否必选</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="15.43%" id="mcps1.2.5.1.3"><p id="p67422111597"><a name="p67422111597"></a><a name="p67422111597"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="44.79%" id="mcps1.2.5.1.4"><p id="p11742612599"><a name="p11742612599"></a><a name="p11742612599"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row187429115919"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p19742718598"><a name="p19742718598"></a><a name="p19742718598"></a>resource_type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.78%" headers="mcps1.2.5.1.2 "><p id="p374211125916"><a name="p374211125916"></a><a name="p374211125916"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15.43%" headers="mcps1.2.5.1.3 "><p id="p197423155915"><a name="p197423155915"></a><a name="p197423155915"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="44.79%" headers="mcps1.2.5.1.4 "><p id="p17917183417599"><a name="p17917183417599"></a><a name="p17917183417599"></a>资源服务类型，支持别名记录的服务。</p>
+    <p id="p1691810346593"><a name="p1691810346593"></a><a name="p1691810346593"></a>取值：</p>
+    <a name="ul59191634115910"></a><a name="ul59191634115910"></a><ul id="ul59191634115910"><li>cloudsite：云速建站</li><li>waf：Web应用防火墙</li></ul>
+    </td>
+    </tr>
+    <tr id="row674219117592"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p10241133420012"><a name="p10241133420012"></a><a name="p10241133420012"></a>resource_domain_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.78%" headers="mcps1.2.5.1.2 "><p id="p117422135911"><a name="p117422135911"></a><a name="p117422135911"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15.43%" headers="mcps1.2.5.1.3 "><p id="p2074217112599"><a name="p2074217112599"></a><a name="p2074217112599"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="44.79%" headers="mcps1.2.5.1.4 "><p id="p843964412591"><a name="p843964412591"></a><a name="p843964412591"></a>对应服务下的域名，由各服务提供。</p>
     </td>
     </tr>
     </tbody>
@@ -346,6 +433,7 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
         }
         ```
 
+
     -   A类型（alias）
 
         ```
@@ -367,7 +455,7 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
 
 -   参数说明
 
-    **表 3**  响应样例的参数说明
+    **表 5**  响应样例的参数说明
 
     <a name="table7669703175323"></a>
     <table><thead align="left"><tr id="row52466955175323"><th class="cellrowborder" valign="top" width="18.33%" id="mcps1.2.4.1.1"><p id="p2769858175323"><a name="p2769858175323"></a><a name="p2769858175323"></a>名称</p>
@@ -479,7 +567,7 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </td>
     <td class="cellrowborder" valign="top" width="19.46%" headers="mcps1.2.4.1.2 "><p id="p1127763319366"><a name="p1127763319366"></a><a name="p1127763319366"></a>Object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="62.21%" headers="mcps1.2.4.1.3 "><p id="p4107308719366"><a name="p4107308719366"></a><a name="p4107308719366"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。详细信息请参见<a href="#table354521744216">表4</a>。</p>
+    <td class="cellrowborder" valign="top" width="62.21%" headers="mcps1.2.4.1.3 "><p id="p4107308719366"><a name="p4107308719366"></a><a name="p4107308719366"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。详细信息请参见<a href="#table354521744216">表6</a>。</p>
     </td>
     </tr>
     <tr id="row15869402143342"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="p13813035143342"><a name="p13813035143342"></a><a name="p13813035143342"></a>line</p>
@@ -513,7 +601,7 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
     </tbody>
     </table>
 
-    **表 4**  links参数说明
+    **表 6**  links参数说明
 
     <a name="table354521744216"></a>
     <table><thead align="left"><tr id="row954518179427"><th class="cellrowborder" valign="top" width="18.3018301830183%" id="mcps1.2.4.1.1"><p id="p654513173424"><a name="p654513173424"></a><a name="p654513173424"></a>名称</p>

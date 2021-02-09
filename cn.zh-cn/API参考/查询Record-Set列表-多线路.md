@@ -49,7 +49,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
 </td>
 <td class="cellrowborder" valign="top" width="17.17171717171717%" headers="mcps1.2.5.1.2 "><p id="p26550365"><a name="p26550365"></a><a name="p26550365"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.5.1.3 "><p id="p3095993"><a name="p3095993"></a><a name="p3095993"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.5.1.3 "><p id="p3095993"><a name="p3095993"></a><a name="p3095993"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p230120311413"><a name="p230120311413"></a><a name="p230120311413"></a>每页返回的资源个数。</p>
 <p id="p147131447514"><a name="p147131447514"></a><a name="p147131447514"></a>取值范围：0~500</p>
@@ -113,7 +113,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p109982012141111"><a name="p109982012141111"></a><a name="p109982012141111"></a>待查询的Record Set的记录集类型。</p>
 <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA</p>
-<p id="p1360713682913"><a name="p1360713682913"></a><a name="p1360713682913"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a></p>
+<p id="p1360713682913"><a name="p1360713682913"></a><a name="p1360713682913"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
 <p id="p1043618556290"><a name="p1043618556290"></a><a name="p1043618556290"></a>如果为空，表示查询所有类型的Record Set。</p>
 <p id="p7802199183214"><a name="p7802199183214"></a><a name="p7802199183214"></a>搜索模式固定为精确搜索。</p>
 </td>
@@ -209,7 +209,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
 
 -   请求样例
 
-    查询域名类型为公网，记录集类型为A，且域名包含www.example.com”的域名的记录集列表。
+    查询域名类型为公网，记录集类型为A，且域名包含“www.example.com”的域名的记录集列表。
 
     ```
     GET https://{DNS_Endpoint}/v2.1/recordsets?zone_type=&type=A&name=www.example.com
@@ -240,7 +240,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     </tr>
     <tr id="row7304143"><td class="cellrowborder" valign="top" width="18.13%" headers="mcps1.2.4.1.1 "><p id="p54764719"><a name="p54764719"></a><a name="p54764719"></a>recordsets</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.4.1.2 "><p id="p1266616591466"><a name="p1266616591466"></a><a name="p1266616591466"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.4.1.2 "><p id="p1266616591466"><a name="p1266616591466"></a><a name="p1266616591466"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="61.99%" headers="mcps1.2.4.1.3 "><p id="p45797138"><a name="p45797138"></a><a name="p45797138"></a>recordset列表对象。</p>
     <p id="p55131208195"><a name="p55131208195"></a><a name="p55131208195"></a>详细信息请参见<a href="#table18580737">表3</a>。</p>
@@ -329,7 +329,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="a8ad57aedc72349a29b1ee975b2518257"><a name="a8ad57aedc72349a29b1ee975b2518257"></a><a name="a8ad57aedc72349a29b1ee975b2518257"></a>域名解析后的值。</p>
     </td>
     </tr>
-    <tr id="rf1e2aa6701db4f2a9599b86ee5c744e3"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="a18066d6aebd441efad61d00896e13f08"><a name="a18066d6aebd441efad61d00896e13f08"></a><a name="a18066d6aebd441efad61d00896e13f08"></a>created_at</p>
+    <tr id="rf1e2aa6701db4f2a9599b86ee5c744e3"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="a18066d6aebd441efad61d00896e13f08"><a name="a18066d6aebd441efad61d00896e13f08"></a><a name="a18066d6aebd441efad61d00896e13f08"></a>create_at</p>
     </td>
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="ab7a29ae554744d05875a8e818d1deec0"><a name="ab7a29ae554744d05875a8e818d1deec0"></a><a name="ab7a29ae554744d05875a8e818d1deec0"></a>String</p>
     </td>
@@ -337,7 +337,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     <p id="p583516468316"><a name="p583516468316"></a><a name="p583516468316"></a>采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ</p>
     </td>
     </tr>
-    <tr id="r442ce54f5a794788a7ccb195a4b044b1"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="a88e27c6c0c4c42819998a3fdbe2013a6"><a name="a88e27c6c0c4c42819998a3fdbe2013a6"></a><a name="a88e27c6c0c4c42819998a3fdbe2013a6"></a>updated_at</p>
+    <tr id="r442ce54f5a794788a7ccb195a4b044b1"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="a88e27c6c0c4c42819998a3fdbe2013a6"><a name="a88e27c6c0c4c42819998a3fdbe2013a6"></a><a name="a88e27c6c0c4c42819998a3fdbe2013a6"></a>update_at</p>
     </td>
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="a013a9be787d946ebb42ed20b78485e35"><a name="a013a9be787d946ebb42ed20b78485e35"></a><a name="a013a9be787d946ebb42ed20b78485e35"></a>String</p>
     </td>
@@ -371,7 +371,7 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     </td>
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="a51104ec0822b4bf4bf9018680539141a"><a name="a51104ec0822b4bf4bf9018680539141a"></a><a name="a51104ec0822b4bf4bf9018680539141a"></a>Object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="aa2a07c69de424ee5bd26b246f46c26c1"><a name="aa2a07c69de424ee5bd26b246f46c26c1"></a><a name="aa2a07c69de424ee5bd26b246f46c26c1"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。详细信息请参见<a href="#table354521744216">表5</a></p>
+    <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="aa2a07c69de424ee5bd26b246f46c26c1"><a name="aa2a07c69de424ee5bd26b246f46c26c1"></a><a name="aa2a07c69de424ee5bd26b246f46c26c1"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。详细信息请参见<a href="#table354521744216">表5</a>。</p>
     </td>
     </tr>
     <tr id="row9356682144842"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="p22615737144842"><a name="p22615737144842"></a><a name="p22615737144842"></a>line</p>
@@ -379,13 +379,6 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="p209809421074"><a name="p209809421074"></a><a name="p209809421074"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="p4156471144842"><a name="p4156471144842"></a><a name="p4156471144842"></a>解析线路ID。</p>
-    </td>
-    </tr>
-    <tr id="row148366110316"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="p1837121143114"><a name="p1837121143114"></a><a name="p1837121143114"></a>line_name</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="p48388119310"><a name="p48388119310"></a><a name="p48388119310"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="p883816153119"><a name="p883816153119"></a><a name="p883816153119"></a>解析线路名字。</p>
     </td>
     </tr>
     <tr id="row53235414144842"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="p45908350113426"><a name="p45908350113426"></a><a name="p45908350113426"></a>weight</p>
@@ -485,8 +478,8 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
                 "alias_target":null,
                 "zone_id": "2c9eb155587194ec01587224c9f90149",
                 "zone_name": "example.com.",
-                "created_at": "2016-11-17T11:56:03.439",
-                "updated_at": "2016-11-17T11:56:06.439",
+                "create_at": "2016-11-17T11:56:03.439",
+                "update_at": "2016-11-17T11:56:06.439",
                 "default": true,
                 "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
                 "line": "default_view",
@@ -509,8 +502,8 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
                 "alias_target":null,
                 "zone_id": "2c9eb155587194ec01587224c9f90149",
                 "zone_name": "example.com.",
-                "created_at": "2016-11-17T11:56:03.439",
-                "updated_at": "2016-11-17T11:56:06.439",
+                "create_at": "2016-11-17T11:56:03.439",
+                "update_at": "2016-11-17T11:56:06.439",
                 "default": true,
                 "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
                 "line": "default_view",
@@ -532,8 +525,8 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
                 "alias_target":null,
                 "zone_id": "2c9eb155587228570158722996c50001",
                 "zone_name": "example.org.",
-                "created_at": "2016-11-17T12:01:17.996",
-                "updated_at": "2016-11-17T12:56:06.439",
+                "create_at": "2016-11-17T12:01:17.996",
+                "update_at": "2016-11-17T12:56:06.439",
                 "default": true,
                 "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
                 "line": "xxx",
@@ -556,8 +549,8 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
                 "alias_target":null,
                 "zone_id": "2c9eb155587228570158722996c50001",
                 "zone_name": "example.org.",
-                "created_at": "2016-11-17T12:01:17.996",
-                "updated_at": "2016-11-17T12:56:06.439",
+                "create_at": "2016-11-17T12:01:17.996",
+                "update_at": "2016-11-17T12:56:06.439",
                 "default": false,
                 "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
                 "line": "xxx",
@@ -583,8 +576,8 @@ GET /v2.1/recordsets?zone\_type=\{zone\_type\}&limit=\{limit\}&marker=\{marker\}
                 },
                 "zone_id": "2c9eb155587194ec01587224c9f90149",
                 "zone_name": "example.com.",
-                "created_at": "2016-11-17T12:03:17.827",
-                "updated_at": "2016-11-17T12:56:06.439",
+                "create_at": "2016-11-17T12:03:17.827",
+                "update_at": "2016-11-17T12:56:06.439",
                 "default": false,
                 "project_id": "e55c6f3dc4e34c9f86353b664ae0e70c",
                 "line": "default_view",

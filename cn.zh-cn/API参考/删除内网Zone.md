@@ -172,7 +172,7 @@ DELETE /v2/zones/\{zone\_id\}
     </tr>
     <tr id="re0c1a336d78e476e9a92af4699cd15f6"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="afa4e8d609031485988fbbb1110017770"><a name="afa4e8d609031485988fbbb1110017770"></a><a name="afa4e8d609031485988fbbb1110017770"></a>masters</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="a5213ae875e544cd9a70a1202ef789b50"><a name="a5213ae875e544cd9a70a1202ef789b50"></a><a name="a5213ae875e544cd9a70a1202ef789b50"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p1926195132219"><a name="p1926195132219"></a><a name="p1926195132219"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="aa6945a0932194e7d96b63a9cd5fbf016"><a name="aa6945a0932194e7d96b63a9cd5fbf016"></a><a name="aa6945a0932194e7d96b63a9cd5fbf016"></a>主从模式中，从DNS服务器用以获取DNS信息。</p>
     <p id="zh-cn_topic_0057311028_p376119772512"><a name="zh-cn_topic_0057311028_p376119772512"></a><a name="zh-cn_topic_0057311028_p376119772512"></a>目前暂未使用。</p>
@@ -180,7 +180,7 @@ DELETE /v2/zones/\{zone\_id\}
     </tr>
     <tr id="r54c70c563ba7448dac6b1af69f74ea78"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="a6a1a1c3445ea4d0da40f1d6c10bd0e77"><a name="a6a1a1c3445ea4d0da40f1d6c10bd0e77"></a><a name="a6a1a1c3445ea4d0da40f1d6c10bd0e77"></a>routers</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="a782bdeb1040b4a44aa0e86848b06d6a5"><a name="a782bdeb1040b4a44aa0e86848b06d6a5"></a><a name="a782bdeb1040b4a44aa0e86848b06d6a5"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="a782bdeb1040b4a44aa0e86848b06d6a5"><a name="a782bdeb1040b4a44aa0e86848b06d6a5"></a><a name="a782bdeb1040b4a44aa0e86848b06d6a5"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="a156b4435a50b49628fc39c7721779bf9"><a name="a156b4435a50b49628fc39c7721779bf9"></a><a name="a156b4435a50b49628fc39c7721779bf9"></a>与该zone关联的Router(VPC)列表。详细信息请参见<a href="#table4448008117179">表4</a>。</p>
     </td>
@@ -216,7 +216,7 @@ DELETE /v2/zones/\{zone\_id\}
     </tbody>
     </table>
 
-    **表 4**  router对象参数说明
+    **表 4**  routers对象参数说明
 
     <a name="table4448008117179"></a>
     <table><thead align="left"><tr id="row6132935617179"><th class="cellrowborder" valign="top" width="18.538146185381464%" id="mcps1.2.4.1.1"><p id="p36588677171719"><a name="p36588677171719"></a><a name="p36588677171719"></a>名称</p>

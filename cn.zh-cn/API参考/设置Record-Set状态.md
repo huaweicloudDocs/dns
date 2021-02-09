@@ -13,19 +13,23 @@ PUT /v2.1/recordsets/\{recordset\_id\}/statuses/set
 **表 1**  URI格式的参数说明
 
 <a name="table52104579"></a>
-<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="23.682368236823685%" id="mcps1.2.4.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
+<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="21.9%" id="mcps1.2.5.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="20.3020302030203%" id="mcps1.2.4.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="18.78%" id="mcps1.2.5.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="56.015601560156014%" id="mcps1.2.4.1.3"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
+<th class="cellrowborder" valign="top" width="19.09%" id="mcps1.2.5.1.3"><p id="p13461115163813"><a name="p13461115163813"></a><a name="p13461115163813"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="40.23%" id="mcps1.2.5.1.4"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row49313939"><td class="cellrowborder" valign="top" width="23.682368236823685%" headers="mcps1.2.4.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
+<tbody><tr id="row49313939"><td class="cellrowborder" valign="top" width="21.9%" headers="mcps1.2.5.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.3020302030203%" headers="mcps1.2.4.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
+<td class="cellrowborder" valign="top" width="18.78%" headers="mcps1.2.5.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.015601560156014%" headers="mcps1.2.4.1.3 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待设置的recordset的ID。仅支持公网zone。</p>
+<td class="cellrowborder" valign="top" width="19.09%" headers="mcps1.2.5.1.3 "><p id="p54619573814"><a name="p54619573814"></a><a name="p54619573814"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="40.23%" headers="mcps1.2.5.1.4 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待设置的recordset的ID。仅支持公网zone。</p>
 <p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表-多线路.md">查询单个Zone下Record Set列表</a>获取。</p>
 </td>
 </tr>
@@ -216,6 +220,13 @@ PUT /v2.1/recordsets/\{recordset\_id\}/statuses/set
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="p28447961153547"><a name="p28447961153547"></a><a name="p28447961153547"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="p22583537153547"><a name="p22583537153547"></a><a name="p22583537153547"></a>健康检查ID。</p>
+    </td>
+    </tr>
+    <tr id="row193065035913"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="aa28212a0f23d439f87603f35dd112cce"><a name="aa28212a0f23d439f87603f35dd112cce"></a><a name="aa28212a0f23d439f87603f35dd112cce"></a>alias_target</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0082840627_p477512344313"><a name="zh-cn_topic_0082840627_p477512344313"></a><a name="zh-cn_topic_0082840627_p477512344313"></a>Object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="abe651c805e8e47d0b3a371ae336baddd"><a name="abe651c805e8e47d0b3a371ae336baddd"></a><a name="abe651c805e8e47d0b3a371ae336baddd"></a>别名记录。详细信息请参见<a href="数据结构.md#table11888161342410">表4</a>。</p>
     </td>
     </tr>
     </tbody>

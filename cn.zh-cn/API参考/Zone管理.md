@@ -87,22 +87,34 @@
 </td>
 <td class="cellrowborder" valign="top" width="21.750000000000004%" headers="mcps1.2.7.1.2 "><p id="p1929611810161"><a name="p1929611810161"></a><a name="p1929611810161"></a>DELETE /v2/zones/{zone_id}</p>
 </td>
-<td class="cellrowborder" rowspan="2" valign="top" width="15.420000000000003%" headers="mcps1.2.7.1.3 "><p id="p7510625102717"><a name="p7510625102717"></a><a name="p7510625102717"></a>dns:zone:delete</p>
+<td class="cellrowborder" valign="top" width="15.420000000000003%" headers="mcps1.2.7.1.3 "><p id="p7510625102717"><a name="p7510625102717"></a><a name="p7510625102717"></a>dns:zone:delete</p>
 </td>
-<td class="cellrowborder" rowspan="2" valign="top" width="20.330000000000005%" headers="mcps1.2.7.1.4 "><p id="p1351015258279"><a name="p1351015258279"></a><a name="p1351015258279"></a>ces:remoteChecks:list</p>
+<td class="cellrowborder" valign="top" width="20.330000000000005%" headers="mcps1.2.7.1.4 "><p id="p1351015258279"><a name="p1351015258279"></a><a name="p1351015258279"></a>ces:remoteChecks:list</p>
 <p id="p125101625152717"><a name="p125101625152717"></a><a name="p125101625152717"></a>ces:siteMonitorHealthCheck:get</p>
 <p id="p3510122592717"><a name="p3510122592717"></a><a name="p3510122592717"></a>ces:siteMonitorHealthCheck:create</p>
 <p id="p145104254272"><a name="p145104254272"></a><a name="p145104254272"></a>ces:siteMonitorRule:delete</p>
 <p id="p9510182512273"><a name="p9510182512273"></a><a name="p9510182512273"></a>ces:siteMonitorRule:put</p>
 </td>
-<td class="cellrowborder" rowspan="2" valign="top" width="12.15%" headers="mcps1.2.7.1.5 "><p id="p7595181542911"><a name="p7595181542911"></a><a name="p7595181542911"></a>√</p>
+<td class="cellrowborder" valign="top" width="12.15%" headers="mcps1.2.7.1.5 "><p id="p7595181542911"><a name="p7595181542911"></a><a name="p7595181542911"></a>√</p>
 </td>
-<td class="cellrowborder" rowspan="2" valign="top" width="15.850000000000003%" headers="mcps1.2.7.1.6 "><p id="p1459561518299"><a name="p1459561518299"></a><a name="p1459561518299"></a>×</p>
+<td class="cellrowborder" valign="top" width="15.850000000000003%" headers="mcps1.2.7.1.6 "><p id="p1459561518299"><a name="p1459561518299"></a><a name="p1459561518299"></a>×</p>
 </td>
 </tr>
-<tr id="row171616171294"><td class="cellrowborder" valign="top" headers="mcps1.2.7.1.1 "><p id="p91618172092"><a name="p91618172092"></a><a name="p91618172092"></a>批量删除Zone</p>
+<tr id="row171616171294"><td class="cellrowborder" valign="top" width="14.500000000000002%" headers="mcps1.2.7.1.1 "><p id="p91618172092"><a name="p91618172092"></a><a name="p91618172092"></a>批量删除Zone</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.2 "><p id="p1929671819165"><a name="p1929671819165"></a><a name="p1929671819165"></a>DELETE /v2.1/zones</p>
+<td class="cellrowborder" valign="top" width="21.750000000000004%" headers="mcps1.2.7.1.2 "><p id="p1929671819165"><a name="p1929671819165"></a><a name="p1929671819165"></a>DELETE /v2.1/zones</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.420000000000003%" headers="mcps1.2.7.1.3 "><p id="p15510193252916"><a name="p15510193252916"></a><a name="p15510193252916"></a>dns:zone:delete</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.330000000000005%" headers="mcps1.2.7.1.4 "><p id="p201271745162914"><a name="p201271745162914"></a><a name="p201271745162914"></a>ces:remoteChecks:list</p>
+<p id="p11127194512911"><a name="p11127194512911"></a><a name="p11127194512911"></a>ces:siteMonitorHealthCheck:get</p>
+<p id="p1612784517299"><a name="p1612784517299"></a><a name="p1612784517299"></a>ces:siteMonitorHealthCheck:create</p>
+<p id="p4127134532913"><a name="p4127134532913"></a><a name="p4127134532913"></a>ces:siteMonitorRule:delete</p>
+<p id="p1612704572916"><a name="p1612704572916"></a><a name="p1612704572916"></a>ces:siteMonitorRule:put</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.15%" headers="mcps1.2.7.1.5 "><p id="p12768115520299"><a name="p12768115520299"></a><a name="p12768115520299"></a>√</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.850000000000003%" headers="mcps1.2.7.1.6 "><p id="p187681755172916"><a name="p187681755172916"></a><a name="p187681755172916"></a>×</p>
 </td>
 </tr>
 <tr id="row19169178918"><td class="cellrowborder" valign="top" width="14.500000000000002%" headers="mcps1.2.7.1.1 "><p id="p816131712914"><a name="p816131712914"></a><a name="p816131712914"></a>内网Zone关联VPC</p>

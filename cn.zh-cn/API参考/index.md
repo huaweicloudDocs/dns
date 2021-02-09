@@ -1,6 +1,6 @@
 # API参考
 
--   [使用前必读]
+-   [使用前必读](使用前必读.md)
     -   [概述](概述.md)
     -   [调用说明](调用说明.md)
     -   [终端节点（Endpoint）](终端节点（Endpoint）.md)
@@ -8,18 +8,17 @@
     -   [基本概念](基本概念.md)
 
 -   [API概览](API概览.md)
--   [如何调用API]
+-   [如何调用API](如何调用API.md)
     -   [构造请求](构造请求.md)
     -   [认证鉴权](认证鉴权.md)
     -   [返回结果](返回结果.md)
 
--   [快速入门](快速入门.md)
--   [API]
-    -   [版本管理]
+-   [API](API.md)
+    -   [版本管理](版本管理.md)
         -   [查询版本号列表](查询版本号列表.md)
         -   [查询版本号](查询版本号.md)
 
-    -   [公网Zone管理]
+    -   [公网Zone管理](公网Zone管理.md)
         -   [创建公网Zone](创建公网Zone.md)
         -   [查询公网Zone](查询公网Zone.md)
         -   [查询公网Zone列表](查询公网Zone列表.md)
@@ -28,7 +27,7 @@
         -   [修改公网Zone](修改公网Zone.md)
         -   [设置Zone状态](设置Zone状态.md)
 
-    -   [内网Zone管理]
+    -   [内网Zone管理](内网Zone管理.md)
         -   [创建内网Zone](创建内网Zone.md)
         -   [内网Zone关联VPC](内网Zone关联VPC.md)
         -   [内网Zone解关联VPC](内网Zone解关联VPC.md)
@@ -38,7 +37,7 @@
         -   [删除内网Zone](删除内网Zone.md)
         -   [修改内网Zone](修改内网Zone.md)
 
-    -   [Record Set管理]
+    -   [Record Set管理](Record-Set管理.md)
         -   [创建Record Set](创建Record-Set.md)
         -   [查询Record Set](查询Record-Set.md)
         -   [查询Record Set列表](查询Record-Set列表.md)
@@ -46,7 +45,7 @@
         -   [删除Record Set](删除Record-Set.md)
         -   [修改Record Set](修改Record-Set.md)
 
-    -   [Record Set多线路管理]
+    -   [Record Set多线路管理](Record-Set多线路管理.md)
         -   [创建Record Set](创建Record-Set-多线路.md)
         -   [查询Record Set](查询Record-Set-多线路.md)
         -   [查询Record Set列表](查询Record-Set列表-多线路.md)
@@ -55,14 +54,14 @@
         -   [修改Record Set](修改Record-Set-多线路.md)
         -   [设置Record Set状态](设置Record-Set状态.md)
 
-    -   [PTR Record管理]
+    -   [PTR Record管理](PTR-Record管理.md)
         -   [设置PTR Record](设置PTR-Record.md)
         -   [查询PTR Record](查询PTR-Record.md)
         -   [查询PTR Record列表](查询PTR-Record列表.md)
         -   [恢复PTR Record默认值](恢复PTR-Record默认值.md)
         -   [修改PTR Record](修改PTR-Record.md)
 
-    -   [Tag管理]
+    -   [Tag管理](Tag管理.md)
         -   [添加资源标签](添加资源标签.md)
         -   [删除资源标签](删除资源标签.md)
         -   [批量添加删除资源标签](批量添加删除资源标签.md)
@@ -70,17 +69,20 @@
         -   [查询项目标签](查询项目标签.md)
         -   [查询资源实例](查询资源实例.md)
 
-    -   [自定义线路管理]
+    -   [自定义线路管理](自定义线路管理.md)
         -   [创建自定义线路](创建自定义线路.md)
         -   [删除自定义线路](删除自定义线路.md)
         -   [更新自定义线路](更新自定义线路.md)
         -   [查询自定义线路](查询自定义线路.md)
 
-    -   [名称服务器管理]
+    -   [名称服务器管理](名称服务器管理.md)
         -   [查询名称服务器列表](查询名称服务器列表.md)
 
+-   [应用示例](应用示例.md)
+    -   [示例1：创建公网域名解析](示例1-创建公网域名解析.md)
+    -   [示例2：创建内网域名解析](示例2-创建内网域名解析.md)
 
--   [权限和授权项]
+-   [权限和授权项](权限和授权项.md)
     -   [权限及授权项说明](权限及授权项说明.md)
     -   [Zone管理](Zone管理.md)
     -   [Record Set管理](Record-Set管理-0.md)
@@ -89,7 +91,7 @@
     -   [导入管理](导入管理.md)
     -   [自定义线路管理](自定义线路管理-2.md)
 
--   [公共参数]
+-   [公共参数](公共参数.md)
     -   [状态码](状态码.md)
     -   [错误码](错误码.md)
     -   [解析线路类型](解析线路类型.md)

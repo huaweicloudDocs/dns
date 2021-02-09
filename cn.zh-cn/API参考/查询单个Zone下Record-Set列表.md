@@ -47,7 +47,7 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
 </td>
 <td class="cellrowborder" valign="top" width="17.311731173117312%" headers="mcps1.2.5.1.2 "><p id="p28788263"><a name="p28788263"></a><a name="p28788263"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.981798179817982%" headers="mcps1.2.5.1.3 "><p id="p50147992"><a name="p50147992"></a><a name="p50147992"></a>String</p>
+<td class="cellrowborder" valign="top" width="17.981798179817982%" headers="mcps1.2.5.1.3 "><p id="p50147992"><a name="p50147992"></a><a name="p50147992"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p230120311413"><a name="p230120311413"></a><a name="p230120311413"></a>每页返回的资源个数。</p>
 <p id="p147131447514"><a name="p147131447514"></a><a name="p147131447514"></a>取值范围：0~500</p>
@@ -102,8 +102,8 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
 <td class="cellrowborder" valign="top" width="17.981798179817982%" headers="mcps1.2.5.1.3 "><p id="p399821215119"><a name="p399821215119"></a><a name="p399821215119"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p109982012141111"><a name="p109982012141111"></a><a name="p109982012141111"></a>待查询的Record Set的记录集类型。</p>
-<p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
-<p id="p111997895417"><a name="p111997895417"></a><a name="p111997895417"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a></p>
+<p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+<p id="p111997895417"><a name="p111997895417"></a><a name="p111997895417"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
 <p id="p13289122841911"><a name="p13289122841911"></a><a name="p13289122841911"></a>搜索模式固定为精确搜索。</p>
 <p id="p8193193917127"><a name="p8193193917127"></a><a name="p8193193917127"></a>默认值为空。</p>
 </td>
@@ -197,7 +197,7 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
     </tr>
     <tr id="zh-cn_topic_0037129969_row7304143"><td class="cellrowborder" valign="top" width="18.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0037129969_p54764719"><a name="zh-cn_topic_0037129969_p54764719"></a><a name="zh-cn_topic_0037129969_p54764719"></a>recordsets</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.54%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0037129969_p10465156"><a name="zh-cn_topic_0037129969_p10465156"></a><a name="zh-cn_topic_0037129969_p10465156"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="18.54%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0037129969_p10465156"><a name="zh-cn_topic_0037129969_p10465156"></a><a name="zh-cn_topic_0037129969_p10465156"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.61%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0037129969_p45797138"><a name="zh-cn_topic_0037129969_p45797138"></a><a name="zh-cn_topic_0037129969_p45797138"></a>recordset列表对象，详细信息请参见<a href="#table7192645154740">表3</a>。</p>
     </td>
@@ -263,7 +263,7 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
     <td class="cellrowborder" valign="top" width="19.05%" headers="mcps1.2.4.1.2 "><p id="a0b4010d60b6b47d1be3e8ce3e44e3a36"><a name="a0b4010d60b6b47d1be3e8ce3e44e3a36"></a><a name="a0b4010d60b6b47d1be3e8ce3e44e3a36"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.519999999999996%" headers="mcps1.2.4.1.3 "><p id="a10d6bdb86d61410f8ccad0af27bf792b"><a name="a10d6bdb86d61410f8ccad0af27bf792b"></a><a name="a10d6bdb86d61410f8ccad0af27bf792b"></a>记录类型。</p>
-    <p id="p1250112591212"><a name="p1250112591212"></a><a name="p1250112591212"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
+    <p id="p1250112591212"><a name="p1250112591212"></a><a name="p1250112591212"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="a198eb45dfea94fcfa777300551454179"><a name="a198eb45dfea94fcfa777300551454179"></a><a name="a198eb45dfea94fcfa777300551454179"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>

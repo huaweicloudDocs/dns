@@ -13,28 +13,34 @@ DELETE /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 **表 1**  URI格式的参数说明
 
 <a name="table52104579"></a>
-<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="21.492149214921493%" id="mcps1.2.4.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
+<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="19.878012198780123%" id="mcps1.2.5.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.501950195019504%" id="mcps1.2.4.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="12.748725127487251%" id="mcps1.2.5.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="59.005900590059%" id="mcps1.2.4.1.3"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
+<th class="cellrowborder" valign="top" width="12.80871912808719%" id="mcps1.2.5.1.3"><p id="p540664720479"><a name="p540664720479"></a><a name="p540664720479"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="54.56454354564543%" id="mcps1.2.5.1.4"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row51170717"><td class="cellrowborder" valign="top" width="21.492149214921493%" headers="mcps1.2.4.1.1 "><p id="p51187411"><a name="p51187411"></a><a name="p51187411"></a>zone_id</p>
+<tbody><tr id="row51170717"><td class="cellrowborder" valign="top" width="19.878012198780123%" headers="mcps1.2.5.1.1 "><p id="p51187411"><a name="p51187411"></a><a name="p51187411"></a>zone_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.501950195019504%" headers="mcps1.2.4.1.2 "><p id="p52539597"><a name="p52539597"></a><a name="p52539597"></a>是</p>
+<td class="cellrowborder" valign="top" width="12.748725127487251%" headers="mcps1.2.5.1.2 "><p id="p52539597"><a name="p52539597"></a><a name="p52539597"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.005900590059%" headers="mcps1.2.4.1.3 "><p id="p27848947"><a name="p27848947"></a><a name="p27848947"></a>所属zone的ID。</p>
+<td class="cellrowborder" valign="top" width="12.80871912808719%" headers="mcps1.2.5.1.3 "><p id="p18406147194716"><a name="p18406147194716"></a><a name="p18406147194716"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.56454354564543%" headers="mcps1.2.5.1.4 "><p id="p27848947"><a name="p27848947"></a><a name="p27848947"></a>所属zone的ID。</p>
 <p id="p1528562011414"><a name="p1528562011414"></a><a name="p1528562011414"></a>公网Zone ID可以通过<a href="查询公网Zone列表.md">查询公网Zone列表</a>获取。</p>
 <p id="p22777371252"><a name="p22777371252"></a><a name="p22777371252"></a>内网Zone ID可以通过<a href="查询内网Zone列表.md">查询内网Zone列表</a>获取。</p>
 </td>
 </tr>
-<tr id="row49313939"><td class="cellrowborder" valign="top" width="21.492149214921493%" headers="mcps1.2.4.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
+<tr id="row49313939"><td class="cellrowborder" valign="top" width="19.878012198780123%" headers="mcps1.2.5.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.501950195019504%" headers="mcps1.2.4.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
+<td class="cellrowborder" valign="top" width="12.748725127487251%" headers="mcps1.2.5.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.005900590059%" headers="mcps1.2.4.1.3 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待删除recordset的ID。</p>
+<td class="cellrowborder" valign="top" width="12.80871912808719%" headers="mcps1.2.5.1.3 "><p id="p3406204715472"><a name="p3406204715472"></a><a name="p3406204715472"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.56454354564543%" headers="mcps1.2.5.1.4 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待删除recordset的ID。</p>
 <p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表.md">查询单个Zone下Record Set列表</a>获取。</p>
 </td>
 </tr>
@@ -111,7 +117,7 @@ DELETE /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="19.259999999999998%" headers="mcps1.2.4.1.2 "><p id="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.41%" headers="mcps1.2.4.1.3 "><p id="a3db4aa6f5f604faeb111cc5b98a05bf9"><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a>记录类型。</p>
-    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
+    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="zh-cn_topic_0037134404_p15442435577"><a name="zh-cn_topic_0037134404_p15442435577"></a><a name="zh-cn_topic_0037134404_p15442435577"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>

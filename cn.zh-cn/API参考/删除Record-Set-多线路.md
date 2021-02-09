@@ -13,27 +13,33 @@ DELETE /v2.1/zones/\{zone\_id\}/recordsets/\{[recordset\_id](查询单个Zone下
 **表 1**  URI格式的参数说明
 
 <a name="table52104579"></a>
-<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="22.792279227922794%" id="mcps1.2.4.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
+<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="21.08%" id="mcps1.2.5.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="20.602060206020603%" id="mcps1.2.4.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="15.9%" id="mcps1.2.5.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="56.605660566056606%" id="mcps1.2.4.1.3"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
+<th class="cellrowborder" valign="top" width="19.99%" id="mcps1.2.5.1.3"><p id="p8722175318367"><a name="p8722175318367"></a><a name="p8722175318367"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="43.03%" id="mcps1.2.5.1.4"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row51170717"><td class="cellrowborder" valign="top" width="22.792279227922794%" headers="mcps1.2.4.1.1 "><p id="p51187411"><a name="p51187411"></a><a name="p51187411"></a>zone_id</p>
+<tbody><tr id="row51170717"><td class="cellrowborder" valign="top" width="21.08%" headers="mcps1.2.5.1.1 "><p id="p51187411"><a name="p51187411"></a><a name="p51187411"></a>zone_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.602060206020603%" headers="mcps1.2.4.1.2 "><p id="p52539597"><a name="p52539597"></a><a name="p52539597"></a>是</p>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.2.5.1.2 "><p id="p52539597"><a name="p52539597"></a><a name="p52539597"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.605660566056606%" headers="mcps1.2.4.1.3 "><p id="p27848947"><a name="p27848947"></a><a name="p27848947"></a>所属zone的ID。仅支持公网zone。</p>
+<td class="cellrowborder" valign="top" width="19.99%" headers="mcps1.2.5.1.3 "><p id="p6722853133612"><a name="p6722853133612"></a><a name="p6722853133612"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="43.03%" headers="mcps1.2.5.1.4 "><p id="p27848947"><a name="p27848947"></a><a name="p27848947"></a>所属zone的ID。仅支持公网zone。</p>
 <p id="p22777371252"><a name="p22777371252"></a><a name="p22777371252"></a>可以通过<a href="查询公网Zone列表.md">查询公网Zone列表</a>获取。</p>
 </td>
 </tr>
-<tr id="row49313939"><td class="cellrowborder" valign="top" width="22.792279227922794%" headers="mcps1.2.4.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
+<tr id="row49313939"><td class="cellrowborder" valign="top" width="21.08%" headers="mcps1.2.5.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.602060206020603%" headers="mcps1.2.4.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
+<td class="cellrowborder" valign="top" width="15.9%" headers="mcps1.2.5.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.605660566056606%" headers="mcps1.2.4.1.3 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待删除recordset的ID。</p>
+<td class="cellrowborder" valign="top" width="19.99%" headers="mcps1.2.5.1.3 "><p id="p1722953103615"><a name="p1722953103615"></a><a name="p1722953103615"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="43.03%" headers="mcps1.2.5.1.4 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待删除recordset的ID。</p>
 <p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表-多线路.md">查询单个Zone下Record Set列表</a>获取。</p>
 </td>
 </tr>

@@ -68,7 +68,7 @@ GET /v2/zones/\{zone\_id\}/nameservers
     </thead>
     <tbody><tr id="row2724213119347"><td class="cellrowborder" valign="top" width="18.47%" headers="mcps1.2.4.1.1 "><p id="p5912903419347"><a name="p5912903419347"></a><a name="p5912903419347"></a>nameservers</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.040000000000003%" headers="mcps1.2.4.1.2 "><p id="p2472241219347"><a name="p2472241219347"></a><a name="p2472241219347"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="19.040000000000003%" headers="mcps1.2.4.1.2 "><p id="p2472241219347"><a name="p2472241219347"></a><a name="p2472241219347"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.49%" headers="mcps1.2.4.1.3 "><p id="p64387025171923"><a name="p64387025171923"></a><a name="p64387025171923"></a>name server列表对象，详细内容请参见<a href="#table3847447219326">表3</a>。</p>
     </td>

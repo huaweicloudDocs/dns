@@ -49,7 +49,7 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
 </td>
 <td class="cellrowborder" valign="top" width="14.219999999999999%" headers="mcps1.2.5.1.2 "><p id="p19808096182720"><a name="p19808096182720"></a><a name="p19808096182720"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.600000000000001%" headers="mcps1.2.5.1.3 "><p id="p60951943182720"><a name="p60951943182720"></a><a name="p60951943182720"></a>String</p>
+<td class="cellrowborder" valign="top" width="13.600000000000001%" headers="mcps1.2.5.1.3 "><p id="p60951943182720"><a name="p60951943182720"></a><a name="p60951943182720"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.4%" headers="mcps1.2.5.1.4 "><p id="p230120311413"><a name="p230120311413"></a><a name="p230120311413"></a>每页返回的资源个数。</p>
 <p id="p147131447514"><a name="p147131447514"></a><a name="p147131447514"></a>取值范围：0~500</p>
@@ -156,7 +156,7 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </tr>
     <tr id="row33084878171923"><td class="cellrowborder" valign="top" width="18.529999999999998%" headers="mcps1.2.4.1.1 "><p id="p10518479171923"><a name="p10518479171923"></a><a name="p10518479171923"></a>zones</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p17816324171923"><a name="p17816324171923"></a><a name="p17816324171923"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="18.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p17816324171923"><a name="p17816324171923"></a><a name="p17816324171923"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.5%" headers="mcps1.2.4.1.3 "><p id="p64387025171923"><a name="p64387025171923"></a><a name="p64387025171923"></a>zone列表对象，详细内容请参见<a href="#table6348803417233">表3</a>。</p>
     </td>
@@ -294,7 +294,7 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </tr>
     <tr id="re2fe47183e18405d92046423a13cc360"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="aaad74d843b144b02886916b90476b9eb"><a name="aaad74d843b144b02886916b90476b9eb"></a><a name="aaad74d843b144b02886916b90476b9eb"></a>masters</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.41%" headers="mcps1.2.4.1.2 "><p id="aff0aa8e5899243b5a3d5f00989d76157"><a name="aff0aa8e5899243b5a3d5f00989d76157"></a><a name="aff0aa8e5899243b5a3d5f00989d76157"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="19.41%" headers="mcps1.2.4.1.2 "><p id="ac58ddffcdd4b4db48b9da9a1aa4b94b8"><a name="ac58ddffcdd4b4db48b9da9a1aa4b94b8"></a><a name="ac58ddffcdd4b4db48b9da9a1aa4b94b8"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="a2693d405736c4ed38996b010ac12ed27"><a name="a2693d405736c4ed38996b010ac12ed27"></a><a name="a2693d405736c4ed38996b010ac12ed27"></a>主从模式中，从DNS服务器用以获取DNS信息。</p>
     <p id="p052113815317"><a name="p052113815317"></a><a name="p052113815317"></a>目前暂未使用。</p>

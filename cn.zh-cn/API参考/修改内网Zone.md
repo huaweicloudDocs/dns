@@ -230,15 +230,15 @@ PATCH /v2/zones/\{zone\_id\}
     </tr>
     <tr id="rc90495e06a7e4457b95cc2d940940567"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="afcba5be99ef0439f8b0ca0e558f90e8b"><a name="afcba5be99ef0439f8b0ca0e558f90e8b"></a><a name="afcba5be99ef0439f8b0ca0e558f90e8b"></a>masters</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.39%" headers="mcps1.2.4.1.2 "><p id="a24cc31056df64a4794ccb3989b481240"><a name="a24cc31056df64a4794ccb3989b481240"></a><a name="a24cc31056df64a4794ccb3989b481240"></a>Object</p>
+    <td class="cellrowborder" valign="top" width="19.39%" headers="mcps1.2.4.1.2 "><p id="a24cc31056df64a4794ccb3989b481240"><a name="a24cc31056df64a4794ccb3989b481240"></a><a name="a24cc31056df64a4794ccb3989b481240"></a>Array of strings</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="aecd21264341f447998b070e439eca8a0"><a name="aecd21264341f447998b070e439eca8a0"></a><a name="aecd21264341f447998b070e439eca8a0"></a>主从模式中，从DNS服务器用以获取DNS信息。</p>
     <p id="zh-cn_topic_0057311027_p9475575518"><a name="zh-cn_topic_0057311027_p9475575518"></a><a name="zh-cn_topic_0057311027_p9475575518"></a>目前暂未使用。</p>
     </td>
     </tr>
-    <tr id="r926630e41cb24a96818249071f58c48a"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="a3c260ed464664ec7a1078e96c6fa2e82"><a name="a3c260ed464664ec7a1078e96c6fa2e82"></a><a name="a3c260ed464664ec7a1078e96c6fa2e82"></a>router</p>
+    <tr id="r926630e41cb24a96818249071f58c48a"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="a3c260ed464664ec7a1078e96c6fa2e82"><a name="a3c260ed464664ec7a1078e96c6fa2e82"></a><a name="a3c260ed464664ec7a1078e96c6fa2e82"></a>routers</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.39%" headers="mcps1.2.4.1.2 "><p id="af4d8729ebfa6438aaa842810310f4cec"><a name="af4d8729ebfa6438aaa842810310f4cec"></a><a name="af4d8729ebfa6438aaa842810310f4cec"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="19.39%" headers="mcps1.2.4.1.2 "><p id="af4d8729ebfa6438aaa842810310f4cec"><a name="af4d8729ebfa6438aaa842810310f4cec"></a><a name="af4d8729ebfa6438aaa842810310f4cec"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="a1ab67663b21049b49f722e4cef72c56c"><a name="a1ab67663b21049b49f722e4cef72c56c"></a><a name="a1ab67663b21049b49f722e4cef72c56c"></a>Private zone关联的Router(VPC)信息。详细信息请参见<a href="#table4448008117179">表5</a>。</p>
     </td>
@@ -274,7 +274,7 @@ PATCH /v2/zones/\{zone\_id\}
     </tbody>
     </table>
 
-    **表 5**  router对象参数说明
+    **表 5**  routers对象参数说明
 
     <a name="table4448008117179"></a>
     <table><thead align="left"><tr id="row6132935617179"><th class="cellrowborder" valign="top" width="18.538146185381464%" id="mcps1.2.4.1.1"><p id="p36588677171719"><a name="p36588677171719"></a><a name="p36588677171719"></a>名称</p>

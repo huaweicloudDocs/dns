@@ -37,7 +37,7 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
 </td>
 <td class="cellrowborder" valign="top" width="15.921592159215923%" headers="mcps1.2.5.1.2 "><p id="a704b39f2d90b445b96e210fa5803b4be"><a name="a704b39f2d90b445b96e210fa5803b4be"></a><a name="a704b39f2d90b445b96e210fa5803b4be"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.01170117011701%" headers="mcps1.2.5.1.3 "><p id="a883425368cca4e889138f0f3a93c3850"><a name="a883425368cca4e889138f0f3a93c3850"></a><a name="a883425368cca4e889138f0f3a93c3850"></a>String</p>
+<td class="cellrowborder" valign="top" width="17.01170117011701%" headers="mcps1.2.5.1.3 "><p id="a883425368cca4e889138f0f3a93c3850"><a name="a883425368cca4e889138f0f3a93c3850"></a><a name="a883425368cca4e889138f0f3a93c3850"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="50.44504450445044%" headers="mcps1.2.5.1.4 "><p id="p230120311413"><a name="p230120311413"></a><a name="p230120311413"></a>每页返回的资源个数。</p>
 <p id="p147131447514"><a name="p147131447514"></a><a name="p147131447514"></a>取值范围：0~500</p>
@@ -134,14 +134,14 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </tr>
     <tr id="row17649295181232"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p20306794181232"><a name="p20306794181232"></a><a name="p20306794181232"></a>metadata</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.4.1.2 "><p id="p34237593181232"><a name="p34237593181232"></a><a name="p34237593181232"></a>String</p>
+    <td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.4.1.2 "><p id="p34237593181232"><a name="p34237593181232"></a><a name="p34237593181232"></a>Object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.629999999999995%" headers="mcps1.2.4.1.3 "><p id="p21781637181232"><a name="p21781637181232"></a><a name="p21781637181232"></a>返回满足过滤条件的资源总数。详细信息请参见<a href="#table16355953155210">表4</a>。</p>
     </td>
     </tr>
     <tr id="row61817005181232"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p41121470181232"><a name="p41121470181232"></a><a name="p41121470181232"></a>floatingips</p>
     </td>
-    <td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.4.1.2 "><p id="p1974516569913"><a name="p1974516569913"></a><a name="p1974516569913"></a>Array of objects</p>
+    <td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.4.1.2 "><p id="p1974516569913"><a name="p1974516569913"></a><a name="p1974516569913"></a>Array of object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.629999999999995%" headers="mcps1.2.4.1.3 "><p id="p20334170181232"><a name="p20334170181232"></a><a name="p20334170181232"></a>PTR Record对象列表。详细信息请参见<a href="#table43740677113542">表3</a>。</p>
     </td>

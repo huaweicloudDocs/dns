@@ -96,12 +96,56 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
     <p id="a36dc62b57ef14339a006576e3c266435"><a name="a36dc62b57ef14339a006576e3c266435"></a><a name="a36dc62b57ef14339a006576e3c266435"></a>默认值为300s。</p>
     </td>
     </tr>
+    <tr id="row15091142173411"><td class="cellrowborder" valign="top" width="17.908209179082093%" headers="mcps1.2.5.1.1 "><p id="p42211177195229"><a name="p42211177195229"></a><a name="p42211177195229"></a>tags</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="16.61833816618338%" headers="mcps1.2.5.1.2 "><p id="p63662158195229"><a name="p63662158195229"></a><a name="p63662158195229"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="16.90830916908309%" headers="mcps1.2.5.1.3 "><p id="p56361188195229"><a name="p56361188195229"></a><a name="p56361188195229"></a>Array of object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="48.56514348565143%" headers="mcps1.2.5.1.4 "><p id="p1853522195229"><a name="p1853522195229"></a><a name="p1853522195229"></a>资源标签。详细信息请参见<a href="#table9752964195025">表3</a>。</p>
+    <p id="p15941338343"><a name="p15941338343"></a><a name="p15941338343"></a>默认值为空。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 3**  tags对象参数说明
+
+    <a name="table9752964195025"></a>
+    <table><thead align="left"><tr id="dns_api_62001_row15361836112436"><th class="cellrowborder" valign="top" width="24.54%" id="mcps1.2.5.1.1"><p id="dns_api_62001_p58707511112436"><a name="dns_api_62001_p58707511112436"></a><a name="dns_api_62001_p58707511112436"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="14.64%" id="mcps1.2.5.1.2"><p id="dns_api_62001_p791763775720"><a name="dns_api_62001_p791763775720"></a><a name="dns_api_62001_p791763775720"></a>是否必选</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="13.700000000000001%" id="mcps1.2.5.1.3"><p id="dns_api_62001_p42210623112436"><a name="dns_api_62001_p42210623112436"></a><a name="dns_api_62001_p42210623112436"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="47.12%" id="mcps1.2.5.1.4"><p id="dns_api_62001_p63617265112436"><a name="dns_api_62001_p63617265112436"></a><a name="dns_api_62001_p63617265112436"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="dns_api_62001_row35684479112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="dns_api_62001_p13313439112530"><a name="dns_api_62001_p13313439112530"></a><a name="dns_api_62001_p13313439112530"></a>key</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.64%" headers="mcps1.2.5.1.2 "><p id="dns_api_62001_p89180372570"><a name="dns_api_62001_p89180372570"></a><a name="dns_api_62001_p89180372570"></a>是</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p35653193112436"><a name="dns_api_62001_p35653193112436"></a><a name="dns_api_62001_p35653193112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p48921437201850"><a name="dns_api_62001_p48921437201850"></a><a name="dns_api_62001_p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    <tr id="dns_api_62001_row20048002112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="dns_api_62001_p66095544112533"><a name="dns_api_62001_p66095544112533"></a><a name="dns_api_62001_p66095544112533"></a>value</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.64%" headers="mcps1.2.5.1.2 "><p id="dns_api_62001_p13918103725715"><a name="dns_api_62001_p13918103725715"></a><a name="dns_api_62001_p13918103725715"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p60123528112436"><a name="dns_api_62001_p60123528112436"></a><a name="dns_api_62001_p60123528112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p61714725112922"><a name="dns_api_62001_p61714725112922"></a><a name="dns_api_62001_p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
     </tbody>
     </table>
 
 -   请求样例
 
-    修改ID为“_region\_id_:c5504932-bf23-4171-b655-b87a6bc59334”的弹性IP的PTR。
+    修改ID为“c5504932-bf23-4171-b655-b87a6bc59334”的弹性IP的PTR。
 
     ```
     PATCH https://{DNS_Endpoint}/v2/reverse/floatingips/region_id:c5504932-bf23-4171-b655-b87a6bc59334
@@ -120,7 +164,7 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
 
 -   参数说明
 
-    **表 3**  响应样例的参数说明
+    **表 4**  响应样例的参数说明
 
     <a name="table6558745818456"></a>
     <table><thead align="left"><tr id="rc433fa5ceea44999bda6baae10282bed"><th class="cellrowborder" valign="top" width="18.18%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0042318613_p690539418456"><a name="zh-cn_topic_0042318613_p690539418456"></a><a name="zh-cn_topic_0042318613_p690539418456"></a>名称</p>
@@ -192,13 +236,13 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
     <td class="cellrowborder" valign="top" width="19.6%" headers="mcps1.2.4.1.2 "><p id="ad894d21cefa74634a62f6964f84019f6"><a name="ad894d21cefa74634a62f6964f84019f6"></a><a name="ad894d21cefa74634a62f6964f84019f6"></a>Object</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="ab163171b57cd4600a059890e5f4373ce"><a name="ab163171b57cd4600a059890e5f4373ce"></a><a name="ab163171b57cd4600a059890e5f4373ce"></a>指向当前资源或者其他相关资源的链接。</p>
-    <p id="a4dc7ac60268d4291a27544e93c236e22"><a name="a4dc7ac60268d4291a27544e93c236e22"></a><a name="a4dc7ac60268d4291a27544e93c236e22"></a>当响应需要分页时，需要包含一个next链接来进行分页。详细信息请参见<a href="#table354521744216">表4</a>。</p>
+    <p id="a4dc7ac60268d4291a27544e93c236e22"><a name="a4dc7ac60268d4291a27544e93c236e22"></a><a name="a4dc7ac60268d4291a27544e93c236e22"></a>当响应需要分页时，需要包含一个next链接来进行分页。详细信息请参见<a href="#table354521744216">表5</a>。</p>
     </td>
     </tr>
     </tbody>
     </table>
 
-    **表 4**  links参数说明
+    **表 5**  links参数说明
 
     <a name="table354521744216"></a>
     <table><thead align="left"><tr id="row954518179427"><th class="cellrowborder" valign="top" width="18.3018301830183%" id="mcps1.2.4.1.1"><p id="p654513173424"><a name="p654513173424"></a><a name="p654513173424"></a>名称</p>

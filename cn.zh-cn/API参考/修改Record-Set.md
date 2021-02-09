@@ -13,28 +13,34 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 **表 1**  URI格式的参数说明
 
 <a name="table52104579"></a>
-<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="23.582358235823584%" id="mcps1.2.4.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
+<table><thead align="left"><tr id="row50570707"><th class="cellrowborder" valign="top" width="22.240000000000002%" id="mcps1.2.5.1.1"><p id="p2586631"><a name="p2586631"></a><a name="p2586631"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="21.002100210021002%" id="mcps1.2.4.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="16.840000000000003%" id="mcps1.2.5.1.2"><p id="p8190559"><a name="p8190559"></a><a name="p8190559"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="55.415541554155425%" id="mcps1.2.4.1.3"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
+<th class="cellrowborder" valign="top" width="21.48%" id="mcps1.2.5.1.3"><p id="p21461417487"><a name="p21461417487"></a><a name="p21461417487"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.440000000000005%" id="mcps1.2.5.1.4"><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row51170717"><td class="cellrowborder" valign="top" width="23.582358235823584%" headers="mcps1.2.4.1.1 "><p id="p51187411"><a name="p51187411"></a><a name="p51187411"></a>zone_id</p>
+<tbody><tr id="row51170717"><td class="cellrowborder" valign="top" width="22.240000000000002%" headers="mcps1.2.5.1.1 "><p id="p51187411"><a name="p51187411"></a><a name="p51187411"></a>zone_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.002100210021002%" headers="mcps1.2.4.1.2 "><p id="p52539597"><a name="p52539597"></a><a name="p52539597"></a>是</p>
+<td class="cellrowborder" valign="top" width="16.840000000000003%" headers="mcps1.2.5.1.2 "><p id="p52539597"><a name="p52539597"></a><a name="p52539597"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="55.415541554155425%" headers="mcps1.2.4.1.3 "><p id="p27848947"><a name="p27848947"></a><a name="p27848947"></a>所属zone的ID。</p>
+<td class="cellrowborder" valign="top" width="21.48%" headers="mcps1.2.5.1.3 "><p id="p714101419486"><a name="p714101419486"></a><a name="p714101419486"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.440000000000005%" headers="mcps1.2.5.1.4 "><p id="p27848947"><a name="p27848947"></a><a name="p27848947"></a>所属zone的ID。</p>
 <p id="p2171125516411"><a name="p2171125516411"></a><a name="p2171125516411"></a>公网Zone ID可以通过<a href="查询公网Zone列表.md">查询公网Zone列表</a>获取。</p>
 <p id="p22777371252"><a name="p22777371252"></a><a name="p22777371252"></a>内网Zone ID可以通过<a href="查询内网Zone列表.md">查询内网Zone列表</a>获取。</p>
 </td>
 </tr>
-<tr id="row49313939"><td class="cellrowborder" valign="top" width="23.582358235823584%" headers="mcps1.2.4.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
+<tr id="row49313939"><td class="cellrowborder" valign="top" width="22.240000000000002%" headers="mcps1.2.5.1.1 "><p id="p35006119"><a name="p35006119"></a><a name="p35006119"></a>recordset_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.002100210021002%" headers="mcps1.2.4.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
+<td class="cellrowborder" valign="top" width="16.840000000000003%" headers="mcps1.2.5.1.2 "><p id="p16923420"><a name="p16923420"></a><a name="p16923420"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="55.415541554155425%" headers="mcps1.2.4.1.3 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待修改recordset的ID。</p>
+<td class="cellrowborder" valign="top" width="21.48%" headers="mcps1.2.5.1.3 "><p id="p414121454818"><a name="p414121454818"></a><a name="p414121454818"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.440000000000005%" headers="mcps1.2.5.1.4 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待修改recordset的ID。</p>
 <p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表.md">查询单个Zone下Record Set列表</a>获取。</p>
 </td>
 </tr>
@@ -58,7 +64,18 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row34337486173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p33154613173211"><a name="p33154613173211"></a><a name="p33154613173211"></a>description</p>
+    <tbody><tr id="row2428104916113"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p21415905173211"><a name="p21415905173211"></a><a name="p21415905173211"></a>name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p58188388173211"><a name="p58188388173211"></a><a name="p58188388173211"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p45293229173211"><a name="p45293229173211"></a><a name="p45293229173211"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p5054941173211"><a name="p5054941173211"></a><a name="p5054941173211"></a>域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。</p>
+    <p id="p4141499817341"><a name="p4141499817341"></a><a name="p4141499817341"></a>当为公网域名时，子域名级别最多为5级。</p>
+    <p id="p27471407151355"><a name="p27471407151355"></a><a name="p27471407151355"></a>域名格式不区分大小写，系统会将输入的大写字母统一转换为小写。</p>
+    </td>
+    </tr>
+    <tr id="row34337486173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p33154613173211"><a name="p33154613173211"></a><a name="p33154613173211"></a>description</p>
     </td>
     <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p28540882173211"><a name="p28540882173211"></a><a name="p28540882173211"></a>否</p>
     </td>
@@ -68,6 +85,18 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <p id="p9966775173211"><a name="p9966775173211"></a><a name="p9966775173211"></a>长度不超过255个字符。</p>
     <p id="p513811402423"><a name="p513811402423"></a><a name="p513811402423"></a>如果为空，表示维持原值。</p>
     <p id="p86941318184212"><a name="p86941318184212"></a><a name="p86941318184212"></a>默认值为空。</p>
+    </td>
+    </tr>
+    <tr id="row1640071516215"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p4265712173211"><a name="p4265712173211"></a><a name="p4265712173211"></a>type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p43588224173211"><a name="p43588224173211"></a><a name="p43588224173211"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p44233480173211"><a name="p44233480173211"></a><a name="p44233480173211"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p29114279173211"><a name="p29114279173211"></a><a name="p29114279173211"></a>Record Set的类型。</p>
+    <p id="p160041663916"><a name="p160041663916"></a><a name="p160041663916"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+    <p id="p1579233173211"><a name="p1579233173211"></a><a name="p1579233173211"></a>取值范围：A、AAAA、MX、CNAME、TXT、SRV、PTR（仅限内网Zone）。</p>
+    <p id="p1656255110557"><a name="p1656255110557"></a><a name="p1656255110557"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
     <tr id="row44235645173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p56753577173211"><a name="p56753577173211"></a><a name="p56753577173211"></a>ttl</p>
@@ -86,7 +115,7 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     </tr>
     <tr id="row59750658173211"><td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.1 "><p id="p62596825173211"><a name="p62596825173211"></a><a name="p62596825173211"></a>records</p>
     </td>
-    <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p32296167173211"><a name="p32296167173211"></a><a name="p32296167173211"></a>是</p>
+    <td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.2 "><p id="p32296167173211"><a name="p32296167173211"></a><a name="p32296167173211"></a>否</p>
     </td>
     <td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.5.1.3 "><p id="p5792332173211"><a name="p5792332173211"></a><a name="p5792332173211"></a>Array of strings</p>
     </td>
@@ -212,9 +241,7 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
-            "name": "www.example.com.",
             "description": "This is an example record set.",
-            "type": "CAA",
             "ttl": 300,
             "records": [
                 "0 issue \"example.com\"",
@@ -282,7 +309,7 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="a3db4aa6f5f604faeb111cc5b98a05bf9"><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a>记录类型。</p>
-    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。</p>
+    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="zh-cn_topic_0037134404_p15442435577"><a name="zh-cn_topic_0037134404_p15442435577"></a><a name="zh-cn_topic_0037134404_p15442435577"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>

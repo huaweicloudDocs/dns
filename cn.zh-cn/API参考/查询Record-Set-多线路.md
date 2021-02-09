@@ -13,27 +13,33 @@ GET /v2.1/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 **表 1**  URI格式的参数说明
 
 <a name="table21421675"></a>
-<table><thead align="left"><tr id="row9119245"><th class="cellrowborder" valign="top" width="22.19221922192219%" id="mcps1.2.4.1.1"><p id="p461342"><a name="p461342"></a><a name="p461342"></a>名称</p>
+<table><thead align="left"><tr id="row9119245"><th class="cellrowborder" valign="top" width="18.990000000000002%" id="mcps1.2.5.1.1"><p id="p461342"><a name="p461342"></a><a name="p461342"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="21.292129212921292%" id="mcps1.2.4.1.2"><p id="p37368736"><a name="p37368736"></a><a name="p37368736"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="17.5%" id="mcps1.2.5.1.2"><p id="p37368736"><a name="p37368736"></a><a name="p37368736"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="56.515651565156524%" id="mcps1.2.4.1.3"><p id="p6968762"><a name="p6968762"></a><a name="p6968762"></a>说明</p>
+<th class="cellrowborder" valign="top" width="18.990000000000002%" id="mcps1.2.5.1.3"><p id="p1463644013356"><a name="p1463644013356"></a><a name="p1463644013356"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="44.519999999999996%" id="mcps1.2.5.1.4"><p id="p6968762"><a name="p6968762"></a><a name="p6968762"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row27598869"><td class="cellrowborder" valign="top" width="22.19221922192219%" headers="mcps1.2.4.1.1 "><p id="p20915929"><a name="p20915929"></a><a name="p20915929"></a>zone_id</p>
+<tbody><tr id="row27598869"><td class="cellrowborder" valign="top" width="18.990000000000002%" headers="mcps1.2.5.1.1 "><p id="p20915929"><a name="p20915929"></a><a name="p20915929"></a>zone_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.292129212921292%" headers="mcps1.2.4.1.2 "><p id="p16468652"><a name="p16468652"></a><a name="p16468652"></a>是</p>
+<td class="cellrowborder" valign="top" width="17.5%" headers="mcps1.2.5.1.2 "><p id="p16468652"><a name="p16468652"></a><a name="p16468652"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.515651565156524%" headers="mcps1.2.4.1.3 "><p id="p58892473"><a name="p58892473"></a><a name="p58892473"></a>所属zone的ID。仅支持公网zone。</p>
+<td class="cellrowborder" valign="top" width="18.990000000000002%" headers="mcps1.2.5.1.3 "><p id="p164612053203519"><a name="p164612053203519"></a><a name="p164612053203519"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.519999999999996%" headers="mcps1.2.5.1.4 "><p id="p58892473"><a name="p58892473"></a><a name="p58892473"></a>所属zone的ID。仅支持公网zone。</p>
 <p id="p22777371252"><a name="p22777371252"></a><a name="p22777371252"></a>可以通过<a href="查询公网Zone列表.md">查询公网Zone列表</a>获取。</p>
 </td>
 </tr>
-<tr id="row60270212"><td class="cellrowborder" valign="top" width="22.19221922192219%" headers="mcps1.2.4.1.1 "><p id="p50048984"><a name="p50048984"></a><a name="p50048984"></a>recordset_id</p>
+<tr id="row60270212"><td class="cellrowborder" valign="top" width="18.990000000000002%" headers="mcps1.2.5.1.1 "><p id="p50048984"><a name="p50048984"></a><a name="p50048984"></a>recordset_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.292129212921292%" headers="mcps1.2.4.1.2 "><p id="p27435897"><a name="p27435897"></a><a name="p27435897"></a>是</p>
+<td class="cellrowborder" valign="top" width="17.5%" headers="mcps1.2.5.1.2 "><p id="p27435897"><a name="p27435897"></a><a name="p27435897"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.515651565156524%" headers="mcps1.2.4.1.3 "><p id="p7715150"><a name="p7715150"></a><a name="p7715150"></a>待查询recordset ID。</p>
+<td class="cellrowborder" valign="top" width="18.990000000000002%" headers="mcps1.2.5.1.3 "><p id="p10338195412357"><a name="p10338195412357"></a><a name="p10338195412357"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.519999999999996%" headers="mcps1.2.5.1.4 "><p id="p7715150"><a name="p7715150"></a><a name="p7715150"></a>待查询recordset ID。</p>
 <p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表-多线路.md">查询单个Zone下Record Set列表</a>获取。</p>
 </td>
 </tr>
