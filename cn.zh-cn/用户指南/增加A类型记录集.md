@@ -45,7 +45,8 @@
     </td>
     <td class="cellrowborder" valign="top" width="46.01%" headers="mcps1.2.4.1.2 "><p id="p1193205814232"><a name="p1193205814232"></a><a name="p1193205814232"></a>解析域名的前缀。</p>
     <p id="p9491202813279"><a name="p9491202813279"></a><a name="p9491202813279"></a>例如创建的域名为“example.com”，其“主机记录”设置包括：</p>
-    <a name="ul74911928142713"></a><a name="ul74911928142713"></a><ul id="ul74911928142713"><li>www：用于网站解析，表示解析的域名为“www.example.com”</li><li>空：用于网站解析，表示解析的域名为“example.com”</li><li>abc：用于子域名解析，表示解析的域名为“example.com”的子域名“abc.example.com”</li><li>mail：用于邮箱解析，表示解析的域名为“mail.example.com”</li><li>*：用于泛解析，表示解析的域名为“*.example.com”，匹配“example.com”的所有子域名。</li></ul>
+    <a name="ul74911928142713"></a><a name="ul74911928142713"></a><ul id="ul74911928142713"><li>www：用于网站解析，表示解析的域名为“www.example.com”。</li><li>空：用于网站解析，表示解析的域名为“example.com”。<p id="p210152475518"><a name="p210152475518"></a><a name="p210152475518"></a>主机记录置为空，还可用于为空头域名“@”添加解析。</p>
+    </li><li>abc：用于子域名解析，表示解析的域名为“example.com”的子域名“abc.example.com”。</li><li>mail：用于邮箱解析，表示解析的域名为“mail.example.com”。</li><li>*：用于泛解析，表示解析的域名为“*.example.com”，匹配“example.com”的所有子域名。</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="33.39%" headers="mcps1.2.4.1.3 "><p id="p181931058152317"><a name="p181931058152317"></a><a name="p181931058152317"></a>www</p>
     </td>
