@@ -9,7 +9,7 @@
 ## 操作步骤<a name="section6412174644120"></a>
 
 1.  登录管理控制台。
-2.  将鼠标悬浮于页面左侧的“![](figures/service-list.jpg)”，在服务列表中，选择“网络 \> 云解析服务”。
+2.  将鼠标悬浮于页面左侧的“![](figures/service-list.jpg)”，在服务列表中，选择“网络  \> 云解析服务”。
 
     进入“云解析”页面。
 
@@ -102,7 +102,7 @@
     <p id="p3682153514586"><a name="p3682153514586"></a><a name="p3682153514586"></a>配置规则：</p>
     <a name="ul61715031214652"></a><a name="ul61715031214652"></a><ul id="ul61715031214652"><li>优先级、权重、端口号均为数字，取值范围0～65535。</li><li>优先级：值越小，优先级越高。</li><li>权重：值越大，权重越大。</li><li>目标地址：目的主机的域名。<p id="dns_usermanual_0601_p34925965215029"><a name="dns_usermanual_0601_p34925965215029"></a><a name="dns_usermanual_0601_p34925965215029"></a>请确保该主机可以解析。</p>
     </li></ul>
-    <div class="note" id="note89971753104014"><a name="note89971753104014"></a><a name="note89971753104014"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="dns_usermanual_0601_p14596162401"><a name="dns_usermanual_0601_p14596162401"></a><a name="dns_usermanual_0601_p14596162401"></a><span>系统优先比较优先级，优先级相同时，再比较权重。</span></p>
+    <div class="note" id="note89971753104014"><a name="note89971753104014"></a><a name="note89971753104014"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="dns_usermanual_0601_p14596162401"><a name="dns_usermanual_0601_p14596162401"></a><a name="dns_usermanual_0601_p14596162401"></a>系统优先比较优先级，优先级相同时，再比较权重。</p>
     </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="33.33%" headers="mcps1.2.4.1.3 "><p id="p56751494171815"><a name="p56751494171815"></a><a name="p56751494171815"></a>2 1 2355 example_server.test.com</p>

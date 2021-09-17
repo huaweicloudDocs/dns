@@ -86,6 +86,18 @@ POST /v2/zones/\{zone\_id\}/recordsets
     <p id="p1656255110557"><a name="p1656255110557"></a><a name="p1656255110557"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
+    <tr id="row195136185618"><td class="cellrowborder" valign="top" width="22.040000000000003%" headers="mcps1.2.5.1.1 "><p id="p1743955511345"><a name="p1743955511345"></a><a name="p1743955511345"></a>status</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="21.22%" headers="mcps1.2.5.1.2 "><p id="p11439135523413"><a name="p11439135523413"></a><a name="p11439135523413"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.82%" headers="mcps1.2.5.1.3 "><p id="p64398557341"><a name="p64398557341"></a><a name="p64398557341"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="38.92%" headers="mcps1.2.5.1.4 "><p id="p8439125518342"><a name="p8439125518342"></a><a name="p8439125518342"></a>解析记录的状态。</p>
+    <p id="p17490132016386"><a name="p17490132016386"></a><a name="p17490132016386"></a>取值范围：</p>
+    <a name="ul1827912763818"></a><a name="ul1827912763818"></a><ul id="ul1827912763818"><li>ENABLE，表示创建启用状态的解析记录。</li><li>DISABLE，表示创建暂停状态的解析记录。</li></ul>
+    <p id="p17279153643910"><a name="p17279153643910"></a><a name="p17279153643910"></a>默认值为ENABLE。</p>
+    </td>
+    </tr>
     <tr id="row44235645173211"><td class="cellrowborder" valign="top" width="22.040000000000003%" headers="mcps1.2.5.1.1 "><p id="p56753577173211"><a name="p56753577173211"></a><a name="p56753577173211"></a>ttl</p>
     </td>
     <td class="cellrowborder" valign="top" width="21.22%" headers="mcps1.2.5.1.2 "><p id="p44923213173211"><a name="p44923213173211"></a><a name="p44923213173211"></a>否</p>

@@ -10,7 +10,7 @@
 ## 操作步骤<a name="section394212924913"></a>
 
 1.  登录管理控制台。
-2.  将鼠标悬浮于页面左侧的“![](figures/service-list.jpg)”，在服务列表中，选择“网络 \> 云解析服务”。
+2.  将鼠标悬浮于页面左侧的“![](figures/service-list.jpg)”，在服务列表中，选择“网络  \> 云解析服务”。
 
     进入“云解析”页面。
 
@@ -23,7 +23,7 @@
 1.  选择待解关联VPC的内网域名，单击“已关联的VPC”列下的“![](figures/icon-close.png)”，开始解关联VPC。
 
     **图 1**  已关联的VPC<a name="fig1993017326388"></a>  
-    ![](figures/已关联的VPC-0.png "已关联的VPC-0")
+    ![](figures/已关联的VPC-2.png "已关联的VPC-2")
 
 2.  在“解关联VPC”对话框，单击“是”，完成解关联VPC。
 

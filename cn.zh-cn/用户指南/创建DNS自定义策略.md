@@ -141,7 +141,6 @@
         </tbody>
         </table>
 
-
 9.  （可选）在“策略配置方式”选择JSON视图，将可视化视图配置的策略内容转换为JSON语句，您可以在JSON视图中对策略内容进行修改。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 

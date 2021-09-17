@@ -433,7 +433,6 @@ POST /v2.1/zones/\{zone\_id\}/recordsets
         }
         ```
 
-
     -   A类型（alias）
 
         ```
