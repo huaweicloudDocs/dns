@@ -25,9 +25,12 @@
     **图 1**  已关联的VPC<a name="fig1993017326388"></a>  
     ![](figures/已关联的VPC-2.png "已关联的VPC-2")
 
+    **图 2**  已关联的VPC<a name="fig12915174552416"></a>  
+    ![](figures/已关联的VPC-3.png "已关联的VPC-3")
+
 2.  在“解关联VPC”对话框，单击“是”，完成解关联VPC。
 
-    **图 2**  解关联VPC<a name="fig1145124813913"></a>  
+    **图 3**  解关联VPC<a name="fig1145124813913"></a>  
     ![](figures/解关联VPC.png "解关联VPC")
 
 

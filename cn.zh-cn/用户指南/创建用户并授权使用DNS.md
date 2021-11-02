@@ -21,7 +21,7 @@
 
 1.  <a name="zh-cn_topic_0172268189_li10269636890"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
-    在IAM控制台创建用户组，并授予云解析服务只读权限“DNS ReadOnlyAccess”。
+    在IAM控制台创建用户组，并授予云解析服务只读权限“DNS ReadOnlyAccess”。
 
 2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
@@ -32,6 +32,6 @@
     新创建的用户登录控制台，切换至授权区域，验证权限：
 
     -   在“服务列表”中选择云解析服务，进入DNS的“总览 \> 公网解析”页面，单击右上角“创建公网域名”，尝试创建公网域名，如果无法创建公网域名（假设当前权限仅包含DNS ReadOnlyAccess），表示“DNS ReadOnlyAccess”已生效。
-    -   在“服务列表”中选择除云解析服务外（假设当前策略仅包含DNS ReadOnlyAccess）的任一服务，若提示权限不足，表示“DNS ReadOnlyAccess”已生效。
+    -   在“服务列表”中选择除云解析服务外（假设当前策略仅包含DNS ReadOnlyAccess）的任一服务，若提示权限不足，表示“DNS ReadOnlyAccess”已生效。
 
 
