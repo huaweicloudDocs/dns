@@ -4,9 +4,13 @@
 
 查询单个Zone下Record Set列表。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=ListRecordSetsByZone)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section8413469"></a>
 
-GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\{marker\}&tags=\{tags\}&status=\{status\}&type=\{type\}&name=\{name\}&id=\{id\}&sort\_key=\{sort\_key\}&sort\_dir=\{sort\_dir\}
+GET /v2/zones/\{zone\_id\}/recordsets
 
 参数说明请参见[表1](#table48883615)。
 
@@ -102,7 +106,7 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
 <td class="cellrowborder" valign="top" width="17.981798179817982%" headers="mcps1.2.5.1.3 "><p id="p399821215119"><a name="p399821215119"></a><a name="p399821215119"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p109982012141111"><a name="p109982012141111"></a><a name="p109982012141111"></a>待查询的Record Set的记录集类型。</p>
-<p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+<p id="p19268104541416"><a name="p19268104541416"></a><a name="p19268104541416"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS、SOA、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
 <p id="p111997895417"><a name="p111997895417"></a><a name="p111997895417"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
 <p id="p13289122841911"><a name="p13289122841911"></a><a name="p13289122841911"></a>搜索模式固定为精确搜索。</p>
 <p id="p8193193917127"><a name="p8193193917127"></a><a name="p8193193917127"></a>默认值为空。</p>
@@ -263,7 +267,7 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
     <td class="cellrowborder" valign="top" width="19.05%" headers="mcps1.2.4.1.2 "><p id="a0b4010d60b6b47d1be3e8ce3e44e3a36"><a name="a0b4010d60b6b47d1be3e8ce3e44e3a36"></a><a name="a0b4010d60b6b47d1be3e8ce3e44e3a36"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.519999999999996%" headers="mcps1.2.4.1.3 "><p id="a10d6bdb86d61410f8ccad0af27bf792b"><a name="a10d6bdb86d61410f8ccad0af27bf792b"></a><a name="a10d6bdb86d61410f8ccad0af27bf792b"></a>记录类型。</p>
-    <p id="p1250112591212"><a name="p1250112591212"></a><a name="p1250112591212"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+    <p id="p12402123818156"><a name="p12402123818156"></a><a name="p12402123818156"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS、SOA、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="a198eb45dfea94fcfa777300551454179"><a name="a198eb45dfea94fcfa777300551454179"></a><a name="a198eb45dfea94fcfa777300551454179"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
@@ -273,6 +277,9 @@ GET /v2/zones/\{zone\_id\}/recordsets?limit=\{limit\}&offset=\{offset\}&marker=\
     </td>
     <td class="cellrowborder" valign="top" width="62.519999999999996%" headers="mcps1.2.4.1.3 "><p id="p123031523174010"><a name="p123031523174010"></a><a name="p123031523174010"></a>解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。</p>
     <p id="p1030317233408"><a name="p1030317233408"></a><a name="p1030317233408"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
+    <p id="p1042612588514"><a name="p1042612588514"></a><a name="p1042612588514"></a>取值范围：</p>
+    <a name="ul1526514741611"></a><a name="ul1526514741611"></a><ul id="ul1526514741611"><li>公网解析：1~2147483647。</li><li>内网解析：300~2147483647。</li></ul>
+    <p id="p10651531171611"><a name="p10651531171611"></a><a name="p10651531171611"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="r37b3fbaa743244edae92887f7a85879b"><td class="cellrowborder" valign="top" width="18.43%" headers="mcps1.2.4.1.1 "><p id="a58ffd09b95b745cea54e9c25ccb21394"><a name="a58ffd09b95b745cea54e9c25ccb21394"></a><a name="a58ffd09b95b745cea54e9c25ccb21394"></a>records</p>

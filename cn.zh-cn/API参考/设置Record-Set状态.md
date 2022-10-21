@@ -4,6 +4,10 @@
 
 设置Record Set状态。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=SetRecordSetsStatus)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section41336317"></a>
 
 PUT /v2.1/recordsets/\{recordset\_id\}/statuses/set
@@ -30,7 +34,7 @@ PUT /v2.1/recordsets/\{recordset\_id\}/statuses/set
 <td class="cellrowborder" valign="top" width="19.09%" headers="mcps1.2.5.1.3 "><p id="p54619573814"><a name="p54619573814"></a><a name="p54619573814"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="40.23%" headers="mcps1.2.5.1.4 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>待设置的recordset的ID。仅支持公网zone。</p>
-<p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表-多线路.md">查询单个Zone下Record Set列表</a>获取。</p>
+<p id="p12406443193011"><a name="p12406443193011"></a><a name="p12406443193011"></a>可以通过<a href="查询单个Zone下Record-Set列表-3.md">查询单个Zone下Record Set列表</a>获取。</p>
 </td>
 </tr>
 </tbody>
@@ -226,7 +230,7 @@ PUT /v2.1/recordsets/\{recordset\_id\}/statuses/set
     </td>
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0082840627_p477512344313"><a name="zh-cn_topic_0082840627_p477512344313"></a><a name="zh-cn_topic_0082840627_p477512344313"></a>Object</p>
     </td>
-    <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="abe651c805e8e47d0b3a371ae336baddd"><a name="abe651c805e8e47d0b3a371ae336baddd"></a><a name="abe651c805e8e47d0b3a371ae336baddd"></a>别名记录。详细信息请参见<a href="数据结构.md#table11888161342410">表4</a>。</p>
+    <td class="cellrowborder" valign="top" width="62.1%" headers="mcps1.2.4.1.3 "><p id="abe651c805e8e47d0b3a371ae336baddd"><a name="abe651c805e8e47d0b3a371ae336baddd"></a><a name="abe651c805e8e47d0b3a371ae336baddd"></a>别名记录。详细信息请参见<a href="#table17915846161215">表5</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -255,6 +259,36 @@ PUT /v2.1/recordsets/\{recordset\_id\}/statuses/set
     <td class="cellrowborder" valign="top" width="19.591959195919593%" headers="mcps1.2.4.1.2 "><p id="p19656144517367"><a name="p19656144517367"></a><a name="p19656144517367"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.10621062106211%" headers="mcps1.2.4.1.3 "><p id="p76567451365"><a name="p76567451365"></a><a name="p76567451365"></a>下一页资源的链接。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 5**  alias\_target对象参数说明
+
+    <a name="table17915846161215"></a>
+    <table><thead align="left"><tr id="dns_api_80006_row18392181415485"><th class="cellrowborder" valign="top" width="18.011801180118013%" id="mcps1.2.4.1.1"><p id="dns_api_80006_p183921314184812"><a name="dns_api_80006_p183921314184812"></a><a name="dns_api_80006_p183921314184812"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="19.28192819281928%" id="mcps1.2.4.1.2"><p id="dns_api_80006_p439210145483"><a name="dns_api_80006_p439210145483"></a><a name="dns_api_80006_p439210145483"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="62.70627062706271%" id="mcps1.2.4.1.3"><p id="dns_api_80006_p23921149482"><a name="dns_api_80006_p23921149482"></a><a name="dns_api_80006_p23921149482"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="dns_api_80006_row11392714154811"><td class="cellrowborder" valign="top" width="18.011801180118013%" headers="mcps1.2.4.1.1 "><p id="dns_api_80006_p1939231417484"><a name="dns_api_80006_p1939231417484"></a><a name="dns_api_80006_p1939231417484"></a>resource_type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.28192819281928%" headers="mcps1.2.4.1.2 "><p id="dns_api_80006_p163922014164812"><a name="dns_api_80006_p163922014164812"></a><a name="dns_api_80006_p163922014164812"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.70627062706271%" headers="mcps1.2.4.1.3 "><p id="dns_api_80006_p33931814104817"><a name="dns_api_80006_p33931814104817"></a><a name="dns_api_80006_p33931814104817"></a>资源服务类型，支持别名记录的服务。</p>
+    <p id="dns_api_80006_p589419319282"><a name="dns_api_80006_p589419319282"></a><a name="dns_api_80006_p589419319282"></a>取值：</p>
+    <a name="dns_api_80006_ul15851330132819"></a><a name="dns_api_80006_ul15851330132819"></a><ul id="dns_api_80006_ul15851330132819"><li>cloudsite：云速建站</li><li>waf：Web应用防火墙</li></ul>
+    </td>
+    </tr>
+    <tr id="dns_api_80006_row16393414184815"><td class="cellrowborder" valign="top" width="18.011801180118013%" headers="mcps1.2.4.1.1 "><p id="dns_api_80006_p5393181418489"><a name="dns_api_80006_p5393181418489"></a><a name="dns_api_80006_p5393181418489"></a>resource_domain_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.28192819281928%" headers="mcps1.2.4.1.2 "><p id="dns_api_80006_p8393181414818"><a name="dns_api_80006_p8393181414818"></a><a name="dns_api_80006_p8393181414818"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.70627062706271%" headers="mcps1.2.4.1.3 "><p id="dns_api_80006_p339318146487"><a name="dns_api_80006_p339318146487"></a><a name="dns_api_80006_p339318146487"></a>对应服务下的域名，由各服务提供。</p>
     </td>
     </tr>
     </tbody>

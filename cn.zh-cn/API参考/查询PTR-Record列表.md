@@ -4,9 +4,13 @@
 
 查询租户弹性IP的PTR记录列表。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=ListPtrRecords)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section60620523"></a>
 
-GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&status=\{status\}
+GET /v2/reverse/floatingips
 
 参数说明请参见[表1](#table1562846014112)。
 
@@ -224,6 +228,19 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     <p id="a4dc7ac60268d4291a27544e93c236e22"><a name="a4dc7ac60268d4291a27544e93c236e22"></a><a name="a4dc7ac60268d4291a27544e93c236e22"></a>当响应需要分页时，需要包含一个next链接来进行分页。详细信息请参见<a href="#table354521744216">表5</a>。</p>
     </td>
     </tr>
+    <tr id="row1356514291481"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p145019941317"><a name="p145019941317"></a><a name="p145019941317"></a>tags</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.259999999999998%" headers="mcps1.2.4.1.2 "><p id="p75011918138"><a name="p75011918138"></a><a name="p75011918138"></a>Array of <a href="#table8387205213225">tag</a> objects</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.56%" headers="mcps1.2.4.1.3 "><p id="p1350114961316"><a name="p1350114961316"></a><a name="p1350114961316"></a>资源标签。</p>
+    <p id="p111349461418"><a name="p111349461418"></a><a name="p111349461418"></a>取值格式：key1,value1|key2,value2</p>
+    <p id="p18134744140"><a name="p18134744140"></a><a name="p18134744140"></a>多个标签之间用"|"分开，每个标签的键值用英文逗号","相隔。</p>
+    <p id="p18134204181420"><a name="p18134204181420"></a><a name="p18134204181420"></a>多个标签之间为“与”的关系。</p>
+    <p id="p8134749148"><a name="p8134749148"></a><a name="p8134749148"></a>关于资源标签，请参见<a href="#table8387205213225">表6</a>。</p>
+    <p id="p61341740143"><a name="p61341740143"></a><a name="p61341740143"></a>搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。</p>
+    <p id="p1713404141413"><a name="p1713404141413"></a><a name="p1713404141413"></a>默认值为空。</p>
+    </td>
+    </tr>
     <tr id="row357192783910"><td class="cellrowborder" valign="top" width="18.18%" headers="mcps1.2.4.1.1 "><p id="p0283162973917"><a name="p0283162973917"></a><a name="p0283162973917"></a>enterprise_project_id</p>
     </td>
     <td class="cellrowborder" valign="top" width="19.259999999999998%" headers="mcps1.2.4.1.2 "><p id="p20511933131615"><a name="p20511933131615"></a><a name="p20511933131615"></a>String</p>
@@ -278,6 +295,36 @@ GET /v2/reverse/floatingips?limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     <td class="cellrowborder" valign="top" width="19.591959195919593%" headers="mcps1.2.4.1.2 "><p id="p19656144517367"><a name="p19656144517367"></a><a name="p19656144517367"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.10621062106211%" headers="mcps1.2.4.1.3 "><p id="p76567451365"><a name="p76567451365"></a><a name="p76567451365"></a>下一页资源的链接。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 6**  tag对象参数说明
+
+    <a name="table8387205213225"></a>
+    <table><thead align="left"><tr id="dns_api_80006_row15361836112436"><th class="cellrowborder" valign="top" width="18.011801180118013%" id="mcps1.2.4.1.1"><p id="dns_api_80006_p58707511112436"><a name="dns_api_80006_p58707511112436"></a><a name="dns_api_80006_p58707511112436"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="19.28192819281928%" id="mcps1.2.4.1.2"><p id="dns_api_80006_p42210623112436"><a name="dns_api_80006_p42210623112436"></a><a name="dns_api_80006_p42210623112436"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="62.70627062706271%" id="mcps1.2.4.1.3"><p id="dns_api_80006_p63617265112436"><a name="dns_api_80006_p63617265112436"></a><a name="dns_api_80006_p63617265112436"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="dns_api_80006_row35684479112436"><td class="cellrowborder" valign="top" width="18.011801180118013%" headers="mcps1.2.4.1.1 "><p id="dns_api_80006_p13313439112530"><a name="dns_api_80006_p13313439112530"></a><a name="dns_api_80006_p13313439112530"></a>key</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.28192819281928%" headers="mcps1.2.4.1.2 "><p id="dns_api_80006_p35653193112436"><a name="dns_api_80006_p35653193112436"></a><a name="dns_api_80006_p35653193112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.70627062706271%" headers="mcps1.2.4.1.3 "><p id="dns_api_80006_p011410211144"><a name="dns_api_80006_p011410211144"></a><a name="dns_api_80006_p011410211144"></a>键。</p>
+    <p id="dns_api_80006_p12621122816413"><a name="dns_api_80006_p12621122816413"></a><a name="dns_api_80006_p12621122816413"></a>最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    <tr id="dns_api_80006_row20048002112436"><td class="cellrowborder" valign="top" width="18.011801180118013%" headers="mcps1.2.4.1.1 "><p id="dns_api_80006_p66095544112533"><a name="dns_api_80006_p66095544112533"></a><a name="dns_api_80006_p66095544112533"></a>value</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.28192819281928%" headers="mcps1.2.4.1.2 "><p id="dns_api_80006_p60123528112436"><a name="dns_api_80006_p60123528112436"></a><a name="dns_api_80006_p60123528112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.70627062706271%" headers="mcps1.2.4.1.3 "><p id="dns_api_80006_p592417401420"><a name="dns_api_80006_p592417401420"></a><a name="dns_api_80006_p592417401420"></a>值。</p>
+    <p id="dns_api_80006_p3383124915419"><a name="dns_api_80006_p3383124915419"></a><a name="dns_api_80006_p3383124915419"></a>每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     </tbody>

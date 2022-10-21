@@ -4,6 +4,10 @@
 
 创建单个Record Set。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=CreateRecordSet)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section53701671161015"></a>
 
 POST /v2/zones/\{zone\_id\}/recordsets
@@ -106,7 +110,8 @@ POST /v2/zones/\{zone\_id\}/recordsets
     </td>
     <td class="cellrowborder" valign="top" width="38.92%" headers="mcps1.2.5.1.4 "><p id="p44661732103918"><a name="p44661732103918"></a><a name="p44661732103918"></a>解析记录在本地DNS服务器的缓存时间，以秒为单位。</p>
     <p id="p1995185423811"><a name="p1995185423811"></a><a name="p1995185423811"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
-    <p id="p20437753173211"><a name="p20437753173211"></a><a name="p20437753173211"></a>取值范围：1~2147483647。</p>
+    <p id="p258374385518"><a name="p258374385518"></a><a name="p258374385518"></a>取值范围：</p>
+    <a name="ul12272931135310"></a><a name="ul12272931135310"></a><ul id="ul12272931135310"><li>公网解析：1~2147483647。</li><li>内网解析：300~2147483647。</li></ul>
     <p id="p1752884719548"><a name="p1752884719548"></a><a name="p1752884719548"></a>默认值为300s。</p>
     </td>
     </tr>
@@ -153,7 +158,8 @@ POST /v2/zones/\{zone\_id\}/recordsets
     </td>
     <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p35653193112436"><a name="dns_api_62001_p35653193112436"></a><a name="dns_api_62001_p35653193112436"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p48921437201850"><a name="dns_api_62001_p48921437201850"></a><a name="dns_api_62001_p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p011410211144"><a name="dns_api_62001_p011410211144"></a><a name="dns_api_62001_p011410211144"></a>键。</p>
+    <p id="dns_api_62001_p12621122816413"><a name="dns_api_62001_p12621122816413"></a><a name="dns_api_62001_p12621122816413"></a>最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     <tr id="dns_api_62001_row20048002112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="dns_api_62001_p66095544112533"><a name="dns_api_62001_p66095544112533"></a><a name="dns_api_62001_p66095544112533"></a>value</p>
@@ -162,7 +168,8 @@ POST /v2/zones/\{zone\_id\}/recordsets
     </td>
     <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p60123528112436"><a name="dns_api_62001_p60123528112436"></a><a name="dns_api_62001_p60123528112436"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p61714725112922"><a name="dns_api_62001_p61714725112922"></a><a name="dns_api_62001_p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p592417401420"><a name="dns_api_62001_p592417401420"></a><a name="dns_api_62001_p592417401420"></a>值。</p>
+    <p id="dns_api_62001_p3383124915419"><a name="dns_api_62001_p3383124915419"></a><a name="dns_api_62001_p3383124915419"></a>每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     </tbody>
@@ -421,7 +428,7 @@ POST /v2/zones/\{zone\_id\}/recordsets
     <td class="cellrowborder" valign="top" width="19.77%" headers="mcps1.2.4.1.2 "><p id="p27536075175323"><a name="p27536075175323"></a><a name="p27536075175323"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p24813356175323"><a name="p24813356175323"></a><a name="p24813356175323"></a>记录类型。</p>
-    <p id="p173531225174112"><a name="p173531225174112"></a><a name="p173531225174112"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+    <p id="p53091158147"><a name="p53091158147"></a><a name="p53091158147"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="p15442435577"><a name="p15442435577"></a><a name="p15442435577"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
@@ -431,6 +438,9 @@ POST /v2/zones/\{zone\_id\}/recordsets
     </td>
     <td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p123031523174010"><a name="p123031523174010"></a><a name="p123031523174010"></a>解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。</p>
     <p id="p1030317233408"><a name="p1030317233408"></a><a name="p1030317233408"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
+    <p id="p1042612588514"><a name="p1042612588514"></a><a name="p1042612588514"></a>取值范围：</p>
+    <a name="ul1526514741611"></a><a name="ul1526514741611"></a><ul id="ul1526514741611"><li>公网解析：1~2147483647。</li><li>内网解析：300~2147483647。</li></ul>
+    <p id="p10651531171611"><a name="p10651531171611"></a><a name="p10651531171611"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="row13978060175323"><td class="cellrowborder" valign="top" width="18.23%" headers="mcps1.2.4.1.1 "><p id="p43388342175323"><a name="p43388342175323"></a><a name="p43388342175323"></a>records</p>

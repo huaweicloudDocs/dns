@@ -4,6 +4,10 @@
 
 查询单个公网Zone。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=ShowPublicZone)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section33323423"></a>
 
 GET /v2/zones/\{zone\_id\}
@@ -106,6 +110,8 @@ GET /v2/zones/\{zone\_id\}
     <td class="cellrowborder" valign="top" width="19.35%" headers="mcps1.2.4.1.2 "><p id="a292032dd82fe4a0dbf0ff69bfd93d876"><a name="a292032dd82fe4a0dbf0ff69bfd93d876"></a><a name="a292032dd82fe4a0dbf0ff69bfd93d876"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="ab96c3883e8424c3187881c9ea265794f"><a name="ab96c3883e8424c3187881c9ea265794f"></a><a name="ab96c3883e8424c3187881c9ea265794f"></a>该zone下SOA记录中的ttl值。</p>
+    <p id="p0662131993410"><a name="p0662131993410"></a><a name="p0662131993410"></a>取值范围：1~2147483647。</p>
+    <p id="p7662111973418"><a name="p7662111973418"></a><a name="p7662111973418"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="r6f01d44c0047469b9ee578db3ae2e925"><td class="cellrowborder" valign="top" width="18.41%" headers="mcps1.2.4.1.1 "><p id="ac99c652f1d284ec496be4ad0b5364a1a"><a name="ac99c652f1d284ec496be4ad0b5364a1a"></a><a name="ac99c652f1d284ec496be4ad0b5364a1a"></a>serial</p>

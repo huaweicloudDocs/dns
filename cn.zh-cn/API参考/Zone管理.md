@@ -11,9 +11,9 @@
 </th>
 <th class="cellrowborder" valign="top" width="20.330000000000005%" id="mcps1.2.7.1.4"><p id="p14675557351"><a name="p14675557351"></a><a name="p14675557351"></a>依赖的授权项</p>
 </th>
-<th class="cellrowborder" valign="top" width="12.15%" id="mcps1.2.7.1.5"><p id="p1838971541713"><a name="p1838971541713"></a><a name="p1838971541713"></a>IAM项目<span>(Project)</span></p>
+<th class="cellrowborder" valign="top" width="12.15%" id="mcps1.2.7.1.5"><p id="p1838971541713"><a name="p1838971541713"></a><a name="p1838971541713"></a>IAM项目(Project)</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.850000000000003%" id="mcps1.2.7.1.6"><p id="p475572121720"><a name="p475572121720"></a><a name="p475572121720"></a>企业项目<span>(Enterprise Project)</span></p>
+<th class="cellrowborder" valign="top" width="15.850000000000003%" id="mcps1.2.7.1.6"><p id="p475572121720"><a name="p475572121720"></a><a name="p475572121720"></a>企业项目(Enterprise Project)</p>
 </th>
 </tr>
 </thead>

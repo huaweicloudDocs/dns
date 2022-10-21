@@ -4,9 +4,13 @@
 
 查询公网Zone的列表。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=ListPublicZones)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section53701671161015"></a>
 
-GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&tags=\{tags\}&name=\{name\}&status=\{status\}&enterprise\_project\_id=\{id\}
+GET /v2/zones
 
 参数说明请参见[表1](#table36421405182556)。
 
@@ -222,6 +226,8 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     <td class="cellrowborder" valign="top" width="19.41%" headers="mcps1.2.4.1.2 "><p id="aafbde4a45c94452aa4ec4e4c0ab151ba"><a name="aafbde4a45c94452aa4ec4e4c0ab151ba"></a><a name="aafbde4a45c94452aa4ec4e4c0ab151ba"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="a10f5e4e2602f4350a2ccfc124a018d34"><a name="a10f5e4e2602f4350a2ccfc124a018d34"></a><a name="a10f5e4e2602f4350a2ccfc124a018d34"></a>该zone下SOA记录中的ttl值。</p>
+    <p id="p0662131993410"><a name="p0662131993410"></a><a name="p0662131993410"></a>取值范围：1~2147483647。</p>
+    <p id="p7662111973418"><a name="p7662111973418"></a><a name="p7662111973418"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="r6b4647120ecf46eaa33b673e28839d15"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="aebeb87bd362d4a3faacb6ca919e3981e"><a name="aebeb87bd362d4a3faacb6ca919e3981e"></a><a name="aebeb87bd362d4a3faacb6ca919e3981e"></a>serial</p>
@@ -283,6 +289,19 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     </td>
     <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0037139748_p660161572"><a name="zh-cn_topic_0037139748_p660161572"></a><a name="zh-cn_topic_0037139748_p660161572"></a>指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页。</p>
     <p id="p14741433184311"><a name="p14741433184311"></a><a name="p14741433184311"></a>详细信息请参见<a href="#table0172144213344">表5</a>。</p>
+    </td>
+    </tr>
+    <tr id="row56817311274"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="p145019941317"><a name="p145019941317"></a><a name="p145019941317"></a>tags</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.41%" headers="mcps1.2.4.1.2 "><p id="p75011918138"><a name="p75011918138"></a><a name="p75011918138"></a>Array of <a href="#table619059185111">tag</a> objects</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.22%" headers="mcps1.2.4.1.3 "><p id="p1350114961316"><a name="p1350114961316"></a><a name="p1350114961316"></a>资源标签。</p>
+    <p id="p111349461418"><a name="p111349461418"></a><a name="p111349461418"></a>取值格式：key1,value1|key2,value2</p>
+    <p id="p18134744140"><a name="p18134744140"></a><a name="p18134744140"></a>多个标签之间用"|"分开，每个标签的键值用英文逗号","相隔。</p>
+    <p id="p18134204181420"><a name="p18134204181420"></a><a name="p18134204181420"></a>多个标签之间为“与”的关系。</p>
+    <p id="p8134749148"><a name="p8134749148"></a><a name="p8134749148"></a>关于资源标签，请参见<a href="#table619059185111">表6 tag对象参数说明</a>。</p>
+    <p id="p61341740143"><a name="p61341740143"></a><a name="p61341740143"></a>搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。</p>
+    <p id="p1713404141413"><a name="p1713404141413"></a><a name="p1713404141413"></a>默认值为空。</p>
     </td>
     </tr>
     <tr id="row540810311563"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="p2408231966"><a name="p2408231966"></a><a name="p2408231966"></a>enterprise_project_id</p>
@@ -347,6 +366,36 @@ GET /v2/zones?type=\{type\}&limit=\{limit\}&marker=\{marker\}&offset=\{offset\}&
     <td class="cellrowborder" valign="top" width="19.55195519551955%" headers="mcps1.2.4.1.2 "><p id="p19656144517367"><a name="p19656144517367"></a><a name="p19656144517367"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.05620562056207%" headers="mcps1.2.4.1.3 "><p id="p76567451365"><a name="p76567451365"></a><a name="p76567451365"></a>下一页资源的链接。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **表 6**  tag对象说明
+
+    <a name="table619059185111"></a>
+    <table><thead align="left"><tr id="row15361836112436"><th class="cellrowborder" valign="top" width="18.2%" id="mcps1.2.4.1.1"><p id="p58707511112436"><a name="p58707511112436"></a><a name="p58707511112436"></a>名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="19.07%" id="mcps1.2.4.1.2"><p id="p42210623112436"><a name="p42210623112436"></a><a name="p42210623112436"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="62.73%" id="mcps1.2.4.1.3"><p id="p63617265112436"><a name="p63617265112436"></a><a name="p63617265112436"></a>说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row35684479112436"><td class="cellrowborder" valign="top" width="18.2%" headers="mcps1.2.4.1.1 "><p id="p13313439112530"><a name="p13313439112530"></a><a name="p13313439112530"></a>key</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.07%" headers="mcps1.2.4.1.2 "><p id="p35653193112436"><a name="p35653193112436"></a><a name="p35653193112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.73%" headers="mcps1.2.4.1.3 "><p id="p011410211144"><a name="p011410211144"></a><a name="p011410211144"></a>键。</p>
+    <p id="p12621122816413"><a name="p12621122816413"></a><a name="p12621122816413"></a>最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    </td>
+    </tr>
+    <tr id="row20048002112436"><td class="cellrowborder" valign="top" width="18.2%" headers="mcps1.2.4.1.1 "><p id="p66095544112533"><a name="p66095544112533"></a><a name="p66095544112533"></a>value</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="19.07%" headers="mcps1.2.4.1.2 "><p id="p60123528112436"><a name="p60123528112436"></a><a name="p60123528112436"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="62.73%" headers="mcps1.2.4.1.3 "><p id="p592417401420"><a name="p592417401420"></a><a name="p592417401420"></a>值。</p>
+    <p id="p3383124915419"><a name="p3383124915419"></a><a name="p3383124915419"></a>每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     </tbody>

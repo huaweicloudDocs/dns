@@ -2,7 +2,14 @@
 
 ## 功能介绍<a name="section8391370"></a>
 
-将弹性IP的PTR记录恢复为默认值。
+将弹性IP的PTR记录恢复为默认值，实现删除该条PTR记录。
+
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>PTR记录的[创建](设置PTR-Record.md)、[修改](修改PTR-Record.md)和[删除](恢复PTR-Record默认值.md)操作均由相同的[URI](设置PTR-Record.md#section53701671161015)实现，通过不同的请求体实现不同的功能。
+
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=RestorePtrRecord)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
 
 ## URI<a name="section8413469"></a>
 

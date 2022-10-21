@@ -4,6 +4,10 @@
 
 修改单个Record Set。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=UpdateRecordSet)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section41336317"></a>
 
 PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
@@ -95,7 +99,6 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p29114279173211"><a name="p29114279173211"></a><a name="p29114279173211"></a>Record Set的类型。</p>
     <p id="p160041663916"><a name="p160041663916"></a><a name="p160041663916"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
-    <p id="p1579233173211"><a name="p1579233173211"></a><a name="p1579233173211"></a>取值范围：A、AAAA、MX、CNAME、TXT、SRV、PTR（仅限内网Zone）。</p>
     <p id="p1656255110557"><a name="p1656255110557"></a><a name="p1656255110557"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
@@ -108,7 +111,7 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="38.37%" headers="mcps1.2.5.1.4 "><p id="p123031523174010"><a name="p123031523174010"></a><a name="p123031523174010"></a>解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。</p>
     <p id="p1030317233408"><a name="p1030317233408"></a><a name="p1030317233408"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
     <p id="p20437753173211"><a name="p20437753173211"></a><a name="p20437753173211"></a>取值范围：</p>
-    <p id="p27764803173211"><a name="p27764803173211"></a><a name="p27764803173211"></a>1~2147483647。</p>
+    <a name="ul12272931135310"></a><a name="ul12272931135310"></a><ul id="ul12272931135310"><li>公网解析：1~2147483647。</li><li>内网解析：300~2147483647。</li></ul>
     <p id="p16253220614"><a name="p16253220614"></a><a name="p16253220614"></a>如果为空，表示维持原值。</p>
     <p id="p8877142595919"><a name="p8877142595919"></a><a name="p8877142595919"></a>默认值为空。</p>
     </td>
@@ -139,7 +142,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
-            "description": "This is an example record set.",
+           "name": "www.example.com.",
+           "description": "This is an example record set.",
+            "type": "A",
             "ttl": 3600,
             "records": [
                 "192.168.10.1",
@@ -152,7 +157,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "AAAA",
             "ttl": 3600,
             "records": [
                 "fe80:0:0:0:202:b3ff:fe1e:8329",
@@ -165,7 +172,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "MX",
             "ttl": 3600,
             "records": [
                 "1 mail.example.com"
@@ -177,7 +186,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "CNAME",
             "ttl": 3600,
             "records": [
                 "server1.example.com"
@@ -189,7 +200,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "TXT",
             "ttl": 300,
             "records": [
                 "\"This host is used for sale.\""
@@ -201,7 +214,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "NS",
             "ttl": 300,
             "records": [
                 "node1.example.com.",
@@ -214,7 +229,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "SRV",
             "ttl": 3600,
             "records": [
                 "3 60 2176 sipserver.example.com.",
@@ -227,7 +244,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "PTR",
             "ttl": 3600,
             "records": [
                 "host.example.com."
@@ -241,7 +260,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
 
         ```
         {
+            "name": "www.example.com.",
             "description": "This is an example record set.",
+            "type": "CAA",
             "ttl": 300,
             "records": [
                 "0 issue \"example.com\"",
@@ -309,7 +330,7 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="19.57%" headers="mcps1.2.4.1.2 "><p id="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="a3db4aa6f5f604faeb111cc5b98a05bf9"><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a>记录类型。</p>
-    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+    <p id="p941142431517"><a name="p941142431517"></a><a name="p941142431517"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="zh-cn_topic_0037134404_p15442435577"><a name="zh-cn_topic_0037134404_p15442435577"></a><a name="zh-cn_topic_0037134404_p15442435577"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
@@ -319,6 +340,9 @@ PUT /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="62.2%" headers="mcps1.2.4.1.3 "><p id="p7539104316419"><a name="p7539104316419"></a><a name="p7539104316419"></a>解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。</p>
     <p id="p11539174314415"><a name="p11539174314415"></a><a name="p11539174314415"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
+    <p id="p1042612588514"><a name="p1042612588514"></a><a name="p1042612588514"></a>取值范围：</p>
+    <a name="ul1526514741611"></a><a name="ul1526514741611"></a><ul id="ul1526514741611"><li>公网解析：1~2147483647。</li><li>内网解析：300~2147483647。</li></ul>
+    <p id="p10651531171611"><a name="p10651531171611"></a><a name="p10651531171611"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="r8cb1518cb4b84bf0b8115a7f4a8835c4"><td class="cellrowborder" valign="top" width="18.23%" headers="mcps1.2.4.1.1 "><p id="ae57bbd14742845c2aced32f030bc6a80"><a name="ae57bbd14742845c2aced32f030bc6a80"></a><a name="ae57bbd14742845c2aced32f030bc6a80"></a>records</p>

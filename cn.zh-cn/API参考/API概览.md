@@ -255,32 +255,32 @@ Record Set多线路管理接口，用于在多线路解析中创建、查询、�
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1949174315581"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p169024112593"><a name="p169024112593"></a><a name="p169024112593"></a><a href="创建Record-Set-多线路.md">创建Record Set</a></p>
+<tbody><tr id="row1949174315581"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p169024112593"><a name="p169024112593"></a><a name="p169024112593"></a><a href="创建Record-Set-0.md">创建Record Set</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p657563415120"><a name="p657563415120"></a><a name="p657563415120"></a>创建单个Record Set。</p>
 </td>
 </tr>
-<tr id="row11491114365816"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p790171165914"><a name="p790171165914"></a><a name="p790171165914"></a><a href="查询Record-Set-多线路.md">查询Record Set</a></p>
+<tr id="row11491114365816"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p790171165914"><a name="p790171165914"></a><a name="p790171165914"></a><a href="查询Record-Set-1.md">查询Record Set</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p35759346112"><a name="p35759346112"></a><a name="p35759346112"></a>查询单个Record Set。</p>
 </td>
 </tr>
-<tr id="row17492343125817"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p1610851597"><a name="p1610851597"></a><a name="p1610851597"></a><a href="查询Record-Set列表-多线路.md">查询Record Set列表</a></p>
+<tr id="row17492343125817"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p1610851597"><a name="p1610851597"></a><a name="p1610851597"></a><a href="查询Record-Set列表-2.md">查询Record Set列表</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p205751341813"><a name="p205751341813"></a><a name="p205751341813"></a>查询租户Record Set资源列表。</p>
 </td>
 </tr>
-<tr id="row184922043135819"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p5608359597"><a name="p5608359597"></a><a name="p5608359597"></a><a href="查询单个Zone下Record-Set列表-多线路.md">查询单个Zone下Record Set列表</a></p>
+<tr id="row184922043135819"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p5608359597"><a name="p5608359597"></a><a name="p5608359597"></a><a href="查询单个Zone下Record-Set列表-3.md">查询单个Zone下Record Set列表</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p19575143415112"><a name="p19575143415112"></a><a name="p19575143415112"></a>查询单个Zone的Record Set列表。</p>
 </td>
 </tr>
-<tr id="row9492114395818"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p13605145155913"><a name="p13605145155913"></a><a name="p13605145155913"></a><a href="删除Record-Set-多线路.md">删除Record Set</a></p>
+<tr id="row9492114395818"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p13605145155913"><a name="p13605145155913"></a><a name="p13605145155913"></a><a href="删除Record-Set-4.md">删除Record Set</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p165755341315"><a name="p165755341315"></a><a name="p165755341315"></a>删除单个Record Set。</p>
 </td>
 </tr>
-<tr id="row15492043145815"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p146021253599"><a name="p146021253599"></a><a name="p146021253599"></a><a href="修改Record-Set-多线路.md">修改Record Set</a></p>
+<tr id="row15492043145815"><td class="cellrowborder" valign="top" width="34.42%" headers="mcps1.2.3.1.1 "><p id="p146021253599"><a name="p146021253599"></a><a name="p146021253599"></a><a href="修改Record-Set-5.md">修改Record Set</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="65.58%" headers="mcps1.2.3.1.2 "><p id="p557514341816"><a name="p557514341816"></a><a name="p557514341816"></a>修改单个Record Set。</p>
 </td>

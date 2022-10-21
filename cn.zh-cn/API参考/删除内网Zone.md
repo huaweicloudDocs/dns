@@ -4,6 +4,10 @@
 
 删除单个内网Zone。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=DeletePrivateZone)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section53701671161015"></a>
 
 DELETE /v2/zones/\{zone\_id\}
@@ -106,6 +110,8 @@ DELETE /v2/zones/\{zone\_id\}
     <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="af2c74817f72741c2abd84000928337ba"><a name="af2c74817f72741c2abd84000928337ba"></a><a name="af2c74817f72741c2abd84000928337ba"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="af2e3122536274be8914d68cb48be3270"><a name="af2e3122536274be8914d68cb48be3270"></a><a name="af2e3122536274be8914d68cb48be3270"></a>该zone下SOA记录中的ttl值。</p>
+    <p id="p0662131993410"><a name="p0662131993410"></a><a name="p0662131993410"></a>取值范围：300~2147483647</p>
+    <p id="p7662111973418"><a name="p7662111973418"></a><a name="p7662111973418"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="ra00af971198943759d302cccc963e19e"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="a4379ecac2b5b413cb94e9e630a818f6e"><a name="a4379ecac2b5b413cb94e9e630a818f6e"></a><a name="a4379ecac2b5b413cb94e9e630a818f6e"></a>serial</p>

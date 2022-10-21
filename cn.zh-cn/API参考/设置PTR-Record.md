@@ -4,6 +4,13 @@
 
 设置弹性IP的PTR记录。
 
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>PTR记录的[创建](设置PTR-Record.md)、[修改](修改PTR-Record.md)和[删除](恢复PTR-Record默认值.md)操作均由相同的[URI](#section53701671161015)实现，通过不同的请求体实现不同的功能。
+
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=CreateEipRecordSet)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section53701671161015"></a>
 
 PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
@@ -137,7 +144,8 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p35653193112436"><a name="dns_api_62001_p35653193112436"></a><a name="dns_api_62001_p35653193112436"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p48921437201850"><a name="dns_api_62001_p48921437201850"></a><a name="dns_api_62001_p48921437201850"></a>键。最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p011410211144"><a name="dns_api_62001_p011410211144"></a><a name="dns_api_62001_p011410211144"></a>键。</p>
+    <p id="dns_api_62001_p12621122816413"><a name="dns_api_62001_p12621122816413"></a><a name="dns_api_62001_p12621122816413"></a>最大长度36个unicode字符。 key不能为空。不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     <tr id="dns_api_62001_row20048002112436"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.5.1.1 "><p id="dns_api_62001_p66095544112533"><a name="dns_api_62001_p66095544112533"></a><a name="dns_api_62001_p66095544112533"></a>value</p>
@@ -146,7 +154,8 @@ PATCH /v2/reverse/floatingips/\{region\}:\{floatingip\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="13.700000000000001%" headers="mcps1.2.5.1.3 "><p id="dns_api_62001_p60123528112436"><a name="dns_api_62001_p60123528112436"></a><a name="dns_api_62001_p60123528112436"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p61714725112922"><a name="dns_api_62001_p61714725112922"></a><a name="dns_api_62001_p61714725112922"></a>值。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
+    <td class="cellrowborder" valign="top" width="47.12%" headers="mcps1.2.5.1.4 "><p id="dns_api_62001_p592417401420"><a name="dns_api_62001_p592417401420"></a><a name="dns_api_62001_p592417401420"></a>值。</p>
+    <p id="dns_api_62001_p3383124915419"><a name="dns_api_62001_p3383124915419"></a><a name="dns_api_62001_p3383124915419"></a>每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”、“*”、“&lt;”、“&gt;”、“\”、“,”、“|”和“/”，且首尾字符不能为空格。</p>
     </td>
     </tr>
     </tbody>

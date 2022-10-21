@@ -4,6 +4,10 @@
 
 查询单个内网Zone。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=ShowPrivateZone)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section33323423"></a>
 
 GET /v2/zones/\{zone\_id\}
@@ -106,6 +110,8 @@ GET /v2/zones/\{zone\_id\}
     <td class="cellrowborder" valign="top" width="19.33%" headers="mcps1.2.4.1.2 "><p id="p33588766123415"><a name="p33588766123415"></a><a name="p33588766123415"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.29%" headers="mcps1.2.4.1.3 "><p id="p36335531123415"><a name="p36335531123415"></a><a name="p36335531123415"></a>该zone下SOA记录中的ttl值。</p>
+    <p id="p0662131993410"><a name="p0662131993410"></a><a name="p0662131993410"></a>取值范围：300~2147483647</p>
+    <p id="p7662111973418"><a name="p7662111973418"></a><a name="p7662111973418"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="row58584329123415"><td class="cellrowborder" valign="top" width="18.38%" headers="mcps1.2.4.1.1 "><p id="p47710208123415"><a name="p47710208123415"></a><a name="p47710208123415"></a>serial</p>
@@ -290,7 +296,6 @@ GET /v2/zones/\{zone\_id\}
             }
         ]
     }
-    
     ```
 
 

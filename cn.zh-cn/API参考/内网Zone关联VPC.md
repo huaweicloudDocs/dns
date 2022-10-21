@@ -4,6 +4,10 @@
 
 在内网Zone上关联VPC。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=AssociateRouter)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section6163262617350"></a>
 
 POST /v2/zones/\{zone\_id\}/associaterouter

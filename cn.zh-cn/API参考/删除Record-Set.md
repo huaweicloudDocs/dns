@@ -4,6 +4,10 @@
 
 删除单个Record Set。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=DeleteRecordSet)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section41336317"></a>
 
 DELETE /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
@@ -117,7 +121,7 @@ DELETE /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     <td class="cellrowborder" valign="top" width="19.259999999999998%" headers="mcps1.2.4.1.2 "><p id="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a><a name="a0cacd81f8e7247ed9b3e4b4a0d5a1c1a"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.41%" headers="mcps1.2.4.1.3 "><p id="a3db4aa6f5f604faeb111cc5b98a05bf9"><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a><a name="a3db4aa6f5f604faeb111cc5b98a05bf9"></a>记录类型。</p>
-    <p id="p20817123416132"><a name="p20817123416132"></a><a name="p20817123416132"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
+    <p id="p160041663916"><a name="p160041663916"></a><a name="p160041663916"></a>取值范围：A、AAAA、MX、CNAME、TXT、NS（仅限公网Zone）、SRV、PTR（仅限内网Zone）、CAA（仅限公网Zone）。</p>
     <p id="zh-cn_topic_0037134404_p15442435577"><a name="zh-cn_topic_0037134404_p15442435577"></a><a name="zh-cn_topic_0037134404_p15442435577"></a>详细信息请参见<a href="枚举类型.md#section1188113824413">解析记录类型</a>。</p>
     </td>
     </tr>
@@ -127,6 +131,9 @@ DELETE /v2/zones/\{zone\_id\}/recordsets/\{recordset\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="62.41%" headers="mcps1.2.4.1.3 "><p id="p123031523174010"><a name="p123031523174010"></a><a name="p123031523174010"></a>解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。</p>
     <p id="p1030317233408"><a name="p1030317233408"></a><a name="p1030317233408"></a>如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。</p>
+    <p id="p1042612588514"><a name="p1042612588514"></a><a name="p1042612588514"></a>取值范围：</p>
+    <a name="ul1526514741611"></a><a name="ul1526514741611"></a><ul id="ul1526514741611"><li>公网解析：1~2147483647。</li><li>内网解析：300~2147483647。</li></ul>
+    <p id="p10651531171611"><a name="p10651531171611"></a><a name="p10651531171611"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="r8cb1518cb4b84bf0b8115a7f4a8835c4"><td class="cellrowborder" valign="top" width="18.33%" headers="mcps1.2.4.1.1 "><p id="ae57bbd14742845c2aced32f030bc6a80"><a name="ae57bbd14742845c2aced32f030bc6a80"></a><a name="ae57bbd14742845c2aced32f030bc6a80"></a>records</p>

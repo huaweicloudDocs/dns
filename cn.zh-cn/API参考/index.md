@@ -46,12 +46,15 @@
         -   [修改Record Set](修改Record-Set.md)
 
     -   [Record Set多线路管理]
-        -   [创建Record Set](创建Record-Set-多线路.md)
-        -   [查询Record Set](查询Record-Set-多线路.md)
-        -   [查询Record Set列表](查询Record-Set列表-多线路.md)
-        -   [查询单个Zone下Record Set列表](查询单个Zone下Record-Set列表-多线路.md)
-        -   [删除Record Set](删除Record-Set-多线路.md)
-        -   [修改Record Set](修改Record-Set-多线路.md)
+        -   [创建Record Set](创建Record-Set-0.md)
+        -   [查询Record Set](查询Record-Set-1.md)
+        -   [查询Record Set列表](查询Record-Set列表-2.md)
+        -   [查询单个Zone下Record Set列表](查询单个Zone下Record-Set列表-3.md)
+        -   [删除Record Set](删除Record-Set-4.md)
+        -   [修改Record Set](修改Record-Set-5.md)
+        -   [批量创建Record Set](批量创建Record-Set.md)
+        -   [批量删除单个Zone下的Record Set](批量删除单个Zone下的Record-Set.md)
+        -   [批量修改Record Set](批量修改Record-Set.md)
         -   [设置Record Set状态](设置Record-Set状态.md)
 
     -   [PTR Record管理]
@@ -85,11 +88,11 @@
 -   [权限和授权项]
     -   [权限及授权项说明](权限及授权项说明.md)
     -   [Zone管理](Zone管理.md)
-    -   [Record Set管理](Record-Set管理-0.md)
+    -   [Record Set管理](Record-Set管理-6.md)
     -   [PTR管理](PTR管理.md)
-    -   [Tag管理](Tag管理-1.md)
+    -   [Tag管理](Tag管理-7.md)
     -   [导入管理](导入管理.md)
-    -   [自定义线路管理](自定义线路管理-2.md)
+    -   [自定义线路管理](自定义线路管理-8.md)
 
 -   [附录]
     -   [状态码](状态码.md)
@@ -98,6 +101,5 @@
     -   [枚举类型](枚举类型.md)
     -   [数据结构](数据结构.md)
     -   [获取项目ID](获取项目ID.md)
-
 
 

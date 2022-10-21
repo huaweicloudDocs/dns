@@ -4,6 +4,10 @@
 
 修改单个Zone。
 
+## 调试<a name="section1062181918110"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DNS&api=UpdatePrivateZone)中调试该接口，支持自动认证鉴权。API Explorer可以自动生成SDK代码示例，并提供SDK代码示例调试功能。
+
 ## URI<a name="section6163262617350"></a>
 
 PATCH /v2/zones/\{zone\_id\}
@@ -83,7 +87,7 @@ PATCH /v2/zones/\{zone\_id\}
     </td>
     <td class="cellrowborder" valign="top" width="51.6%" headers="mcps1.2.5.1.4 "><p id="a968c40752cbb4776b95995372f3b7c1a"><a name="a968c40752cbb4776b95995372f3b7c1a"></a><a name="a968c40752cbb4776b95995372f3b7c1a"></a>用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。</p>
     <p id="affaa28ae17564304bca18b476a63f0b4"><a name="affaa28ae17564304bca18b476a63f0b4"></a><a name="affaa28ae17564304bca18b476a63f0b4"></a>取值范围：</p>
-    <p id="abdfd7506c98f46e5bfe546be775b52f4"><a name="abdfd7506c98f46e5bfe546be775b52f4"></a><a name="abdfd7506c98f46e5bfe546be775b52f4"></a>1~2147483647。</p>
+    <p id="abdfd7506c98f46e5bfe546be775b52f4"><a name="abdfd7506c98f46e5bfe546be775b52f4"></a><a name="abdfd7506c98f46e5bfe546be775b52f4"></a>300~2147483647。</p>
     <p id="zh-cn_topic_0080995382_p52661425313"><a name="zh-cn_topic_0080995382_p52661425313"></a><a name="zh-cn_topic_0080995382_p52661425313"></a>如果为空，表示维持原值。</p>
     <p id="abf25df523584405790017ac5004fb6f5"><a name="abf25df523584405790017ac5004fb6f5"></a><a name="abf25df523584405790017ac5004fb6f5"></a>默认值为空。</p>
     </td>
@@ -163,6 +167,8 @@ PATCH /v2/zones/\{zone\_id\}
     <td class="cellrowborder" valign="top" width="19.39%" headers="mcps1.2.4.1.2 "><p id="a9bd9de54fdcb4a77bc408a76a9f7a999"><a name="a9bd9de54fdcb4a77bc408a76a9f7a999"></a><a name="a9bd9de54fdcb4a77bc408a76a9f7a999"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.239999999999995%" headers="mcps1.2.4.1.3 "><p id="a3a912cb7fb2e4d579e84296f9637a0dc"><a name="a3a912cb7fb2e4d579e84296f9637a0dc"></a><a name="a3a912cb7fb2e4d579e84296f9637a0dc"></a>该zone下SOA记录中的ttl值。</p>
+    <p id="p0662131993410"><a name="p0662131993410"></a><a name="p0662131993410"></a>取值范围：300~2147483647</p>
+    <p id="p7662111973418"><a name="p7662111973418"></a><a name="p7662111973418"></a>默认值为300s。</p>
     </td>
     </tr>
     <tr id="race7c02633d648eeb49e7fcf89da86ad"><td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.1 "><p id="adc16ebab44594ab096fb4516c4f597e3"><a name="adc16ebab44594ab096fb4516c4f597e3"></a><a name="adc16ebab44594ab096fb4516c4f597e3"></a>serial</p>
@@ -342,7 +348,6 @@ PATCH /v2/zones/\{zone\_id\}
             }
         ]
     }
-    
     ```
 
 
